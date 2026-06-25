@@ -1,0 +1,13 @@
+﻿Market,EventName,EventType,ExpectedHSIDirection,StartMonth,EndMonth,OverlapStatus,ObsCount,AssetCount,MeanRiskScore,MeanOverheatScore,MeanRecoveryScore,MostCommonState,MostCommonStateCount
+US,Dot-com bubble build-up,Overheating,Mixed or Risk Warning,1999-01,2000-03,no_overlap,0,0,,,,,0
+US,Dot-com collapse,Collapse,Risk Worsening,2000-03,2002-10,no_overlap,0,0,,,,,0
+US,Global financial crisis,Risk Crisis,Risk Worsening,2007-10,2009-03,no_overlap,0,0,,,,,0
+US,COVID crash,Risk Crisis,Risk Worsening,2020-02,2020-03,overlap,22,11,4.7272727272727275,5.2272727272727275,1.7727272727272727,강한 위험악화,13
+US,COVID liquidity rebound,Recovery and Overheating,Mixed,2020-03,2021-12,overlap,279,13,2.974910394265233,3.7096774193548385,2.3942652329749103,과열 후보,60
+US,Inflation and rate-hike shock,Risk Worsening,Risk Worsening,2022-01,2022-10,overlap,130,13,4.684615384615385,3.523076923076923,1.4076923076923078,강한 위험악화,54
+KR,KOSDAQ IT bubble build-up,Overheating,Mixed or Risk Warning,1999-04,2000-02,no_overlap,0,0,,,,,0
+KR,KOSDAQ IT bubble collapse,Collapse,Risk Worsening,2000-03,2001-12,no_overlap,0,0,,,,,0
+KR,Global financial crisis Korea,Risk Crisis,Risk Worsening,2008-01,2008-10,no_overlap,0,0,,,,,0
+KR,COVID crash Korea,Risk Crisis,Risk Worsening,2020-02,2020-03,overlap,22,11,4.7272727272727275,5.2272727272727275,1.7727272727272727,강한 위험악화,13
+KR,Battery-theme overheating,Overheating,Mixed or Risk Warning,2023-04,2023-08,overlap,65,13,2.876923076923077,3.246153846153846,2.4307692307692306,위험악화,14
+KR,Global tech and carry-trade shock,Risk Crisis,Risk Worsening,2024-08,2024-08,overlap,13,13,4.3076923076923075,5.153846153846154,1.7692307692307692,강한 위험악화,6

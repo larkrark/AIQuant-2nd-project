@@ -1,0 +1,26 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Jupyter and local notebooks checkpoints
+.ipynb_checkpoints/
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Office temporary/lock files
+~$*
+*.tmp
+
+# Local render/check scratch folders
+_render_check*/
+_analysis_extract*/

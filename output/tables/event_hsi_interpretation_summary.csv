@@ -1,0 +1,7 @@
+﻿Market,EventName,EventType,ExpectedHSIDirection,StartMonth,EndMonth,TopState,TopStateShare,SecondState,SecondStateShare,Interpretation
+KR,Battery-theme overheating,Overheating,Mixed or Risk Warning,2023-04,2023-08,위험악화,0.2153846153846154,과열 후보,0.1692307692307692,"2차전지 테마 과열 구간은 특정 테마에서는 과열 성격이 강했지만, 한국 ETF 전체 자산군 기준에서는 위험악화가 가장 많이 나타났다. 따라서 이 구간은 순수 과열장이라기보다 테마 과열과 시장 전반의 위험 신호가 혼재한 구간으로 해석된다."
+KR,COVID crash Korea,Risk Crisis,Risk Worsening,2020-02,2020-03,강한 위험악화,0.5909090909090909,불안정 과열,0.1818181818181818,코로나 급락 구간은 강한 위험악화가 주된 상태로 나타났다. 다만 일부 자산에서는 반등과 급등락이 함께 나타나 불안정 과열 또는 고변동성 혼합구간도 관측되었다.
+KR,Global tech and carry-trade shock,Risk Crisis,Risk Worsening,2024-08,2024-08,강한 위험악화,0.4615384615384615,고변동성 혼합구간,0.3076923076923077,"2024년 8월 글로벌 기술주 및 엔캐리 청산 충격 구간은 강한 위험악화와 고변동성 혼합구간이 높게 나타났다. 이는 단순 하락 구간이 아니라 급락, 일부 반등, 자산별 차별적 움직임이 함께 나타난 충격성 혼합 구간으로 해석된다."
+US,COVID crash,Risk Crisis,Risk Worsening,2020-02,2020-03,강한 위험악화,0.5909090909090909,불안정 과열,0.1818181818181818,코로나 급락 구간은 강한 위험악화가 주된 상태로 나타났다. 다만 일부 자산에서는 반등과 급등락이 함께 나타나 불안정 과열 또는 고변동성 혼합구간도 관측되었다.
+US,COVID liquidity rebound,Recovery and Overheating,Mixed,2020-03,2021-12,과열 후보,0.2150537634408602,강한 위험악화,0.2078853046594982,코로나 이후 유동성 반등 구간은 과열 후보와 강한 위험악화가 함께 높게 나타났다. 이는 단순한 안정적 회복장이 아니라 급락 이후 반등과 잔존 위험이 공존한 혼합 국면으로 해석된다.
+US,Inflation and rate-hike shock,Risk Worsening,Risk Worsening,2022-01,2022-10,강한 위험악화,0.4153846153846154,위험악화,0.1692307692307692,인플레이션 및 금리 인상 충격 구간은 강한 위험악화가 가장 많이 나타났다. 다만 일부 과열 후보와 고변동성 혼합구간도 함께 관측되어 자산별 반응 차이가 존재했음을 보여준다.

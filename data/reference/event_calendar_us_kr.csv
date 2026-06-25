@@ -1,0 +1,13 @@
+﻿Market,EventName,StartDate,EndDate,EventType,ExpectedHSIDirection,MainMeaning,UseInProject,ReferenceHint
+US,Dot-com bubble build-up,1999-01-01,2000-03-10,Overheating,Mixed or Risk Warning,Large upward moves with speculative overheating,Use to test large_up with high volatility,Goldman Sachs dot-com bubble
+US,Dot-com collapse,2000-03-10,2002-10-04,Collapse,Risk Worsening,Large drawdown after speculative bubble,Use to test large_down and sustained risk,Goldman Sachs dot-com bubble
+US,Global financial crisis,2007-10-01,2009-03-09,Risk Crisis,Risk Worsening,Equity and credit risk collapse,Use to test crash detection and defensive asset shift,Global financial crisis references
+US,COVID crash,2020-02-19,2020-03-23,Risk Crisis,Risk Worsening,Fast crash within short period,Use to test large_down clustering,St. Louis Fed COVID stock performance
+US,COVID liquidity rebound,2020-03-24,2021-12-31,Recovery and Overheating,Mixed,Sharp rebound and growth stock strength,Use to test large_up vs overheating,Fed and NBER COVID recession context
+US,Inflation and rate-hike shock,2022-01-01,2022-10-31,Risk Worsening,Risk Worsening,Stocks and bonds pressured by rates,Use to test simultaneous asset stress,Rate hike period
+KR,KOSDAQ IT bubble build-up,1999-04-01,2000-02-29,Overheating,Mixed or Risk Warning,Fast rise in KOSDAQ technology shares,Use to test large_up overheating,ISEAS KOSDAQ market evolution
+KR,KOSDAQ IT bubble collapse,2000-03-01,2001-12-31,Collapse,Risk Worsening,Collapse after IT bubble,Use to test large_down after overheating,ISEAS KOSDAQ market evolution
+KR,Global financial crisis Korea,2008-01-01,2008-10-31,Risk Crisis,Risk Worsening,KOSPI and KOSDAQ sharp decline,Use to test Korean ETF risk signal,Korean financial crisis studies
+KR,COVID crash Korea,2020-02-20,2020-03-19,Risk Crisis,Risk Worsening,Fast pandemic shock and market circuit breakers,Use to test large_down clustering,COVID market crash references
+KR,Battery-theme overheating,2023-04-01,2023-08-31,Overheating,Mixed or Risk Warning,Secondary battery stocks surged with high volatility,Use to test large_up plus high volatility,Korea Times battery volatility
+KR,Global tech and carry-trade shock,2024-08-01,2024-08-05,Risk Crisis,Risk Worsening,KOSPI sharp fall and global tech selloff,Use to test large_down and risk-off signal,Reuters 2024 Korea selloff
