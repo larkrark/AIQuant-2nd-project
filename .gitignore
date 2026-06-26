@@ -15,6 +15,7 @@ data/raw/AI퀀트분석데이터셋/
 
 # Generated practice outputs
 practice/output/
+review/
 
 # Regenerable HSI intermediate tables
 output/tables/daily_event_labels.csv
