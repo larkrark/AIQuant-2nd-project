@@ -1,0 +1,5 @@
+cost_scenario,cost_rate,cost_rate_percent,interpretation,primary_use,default_role
+cost_000bp,0.0000,0.00%,비용 미반영 기준,기존 결과표와 비교하는 기준선,baseline
+cost_005bp,0.0005,0.05%,낮은 비용 가정,낮은 거래마찰 환경에서의 민감도 확인,sensitivity
+cost_010bp,0.0010,0.10%,보통 비용 가정,기본 보고용 비용 반영 시나리오,primary
+cost_020bp,0.0020,0.20%,보수적 비용 가정,비용 증가 시 후보 안정성 확인,stress
