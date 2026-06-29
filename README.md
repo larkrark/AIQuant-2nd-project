@@ -19,11 +19,34 @@ PowerShell 기준:
 ```powershell
 .\.venv\Scripts\Activate.ps1
 python --version
+python -m pip install -r requirements.txt
 ```
 
 현재 `.venv`에는 HSI 실습 노트북 실행에 필요한 `pandas`, `numpy`, `ipykernel`이 설치되어 있습니다.
 
-시각화 스크립트(`src/06_visualize_event_waves.py`, `src/09_visualize_hsi_event_annotations.py`)를 실행하려면 `matplotlib`이 추가로 필요합니다. 포트폴리오 GUI(`src/portfolio_optimizer.py`)를 실행하려면 `PyQt5`, `scipy`, `openpyxl` 등의 추가 패키지가 필요할 수 있습니다.
+시각화 스크립트(`src/06_visualize_event_waves.py`, `src/09_visualize_hsi_event_annotations.py`, `src/10_visualize_hsi_hourglass_cone.py`)를 실행하려면 `matplotlib`이 필요합니다. 포트폴리오 GUI(`src/portfolio_optimizer.py`)를 실행하려면 `PyQt5`가 추가로 필요할 수 있습니다.
+
+## HSI 원뿔형 시각화
+
+이미지 참고자료의 모래시계/원뿔형 구조를 실제 HSI 입력 지표와 연결하기 위해 다음 스크립트를 추가했습니다.
+
+```powershell
+python src\10_visualize_hsi_hourglass_cone.py
+```
+
+특정 월이나 티커를 지정할 수도 있습니다.
+
+```powershell
+python src\10_visualize_hsi_hourglass_cone.py --month 2026-06 --ticker 229200
+```
+
+생성 파일 예시:
+
+- `output/figures/fig16_hsi_hourglass_cone_2026-06_229200.png`
+- `output/figures/fig16_hsi_hourglass_cone_2026-06_229200.svg`
+- `output/tables/fig16_hsi_hourglass_cone_2026-06_229200_vectors.csv`
+
+시각화 스크립트는 Windows의 `Malgun Gothic`을 우선 사용하고, 없으면 Nanum/Noto 계열 한글 폰트를 찾아 사용합니다.
 
 ## HSI 실습 노트북
 
