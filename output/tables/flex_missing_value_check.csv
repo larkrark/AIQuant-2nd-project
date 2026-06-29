@@ -1,0 +1,10 @@
+﻿dataset,column,missing_count,missing_ratio
+daily_prices,069500,0,0.0
+daily_prices,114260,0,0.0
+daily_prices,153130,0,0.0
+monthly_prices,069500,0,0.0
+monthly_prices,114260,0,0.0
+monthly_prices,153130,0,0.0
+monthly_returns,069500,1,0.005813953488372093
+monthly_returns,114260,1,0.005813953488372093
+monthly_returns,153130,1,0.005813953488372093

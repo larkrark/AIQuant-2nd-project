@@ -1,0 +1,6 @@
+﻿robustness_id,test_name,input_candidate,test_condition,main_question,expected_output
+robust_001,기간 분할 검증,Grid Search 통과 후보,초반 / 중반 / 후반 구간 분할,특정 기간에만 우연히 좋은 결과인가?,main_v3_robustness_period_results.csv
+robust_002,위기구간 검증,Grid Search 통과 후보,큰 하락 또는 변동성 확대 구간,위기구간에서 방어 효과가 유지되는가?,main_v3_robustness_crisis_results.csv
+robust_003,거래비용 민감도 검증,Grid Search 통과 후보,팀 합의 비용률 시나리오,비용률을 반영해도 결과가 크게 무너지지 않는가?,main_v3_transaction_cost_sensitivity.csv
+robust_004,주변 파라미터 민감도 검증,최종 후보 주변 비중 조합,인접한 위험자산 비중 후보,후보 주변 값에서도 결과가 급격히 나빠지지 않는가?,main_v3_local_parameter_robustness.csv
+robust_005,rank / zscore 비교 검증,최종 후보,"rank 기본, zscore 보조",특정 점수화 방식에만 의존한 결과인가?,main_v3_method_consistency_check.csv

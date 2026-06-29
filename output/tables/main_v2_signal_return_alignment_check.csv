@@ -1,0 +1,3 @@
+﻿method,rows,first_signal_date,last_signal_date,first_return_date,last_return_date,missing_next_return_cells,alignment_rule,alignment_flag
+rank,171,2012-03-31,2026-05-31,2012-04-30,2026-06-30,0,signal_date의 HSI 상태를 next_return_date의 월간 수익률에 적용,OK
+zscore,171,2012-03-31,2026-05-31,2012-04-30,2026-06-30,0,signal_date의 HSI 상태를 next_return_date의 월간 수익률에 적용,OK

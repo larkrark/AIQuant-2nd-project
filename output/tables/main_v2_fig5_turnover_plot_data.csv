@@ -1,0 +1,7 @@
+﻿method,strategy,months,avg_turnover,max_turnover,total_turnover,experiment,display_name
+rank,EW,171,0.0,0.0,0.0,EW,EW
+rank,HSI_state5_overlay,171,0.0501949317738791,0.2333333333333333,8.583333333333334,main_v2_conflict_defense,main_v2: conflict 방어
+zscore,EW,171,0.0,0.0,0.0,EW,EW
+zscore,HSI_state5_overlay,171,0.0466861598440545,0.2333333333333333,7.983333333333334,main_v2_conflict_defense,main_v2: conflict 방어
+rank,HSI_state5_overlay_v2b,171,0.037037037037037,0.2333333333333333,6.333333333333334,main_v2b_conflict_watch,main_v2b: conflict 관찰
+zscore,HSI_state5_overlay_v2b,171,0.0413255360623781,0.2333333333333333,7.066666666666667,main_v2b_conflict_watch,main_v2b: conflict 관찰

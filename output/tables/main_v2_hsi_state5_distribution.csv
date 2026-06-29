@@ -1,0 +1,11 @@
+﻿method,hsi_state5,state_name_kr,months,total_months,ratio
+rank,accident_zone,강한 위험 악화,6,172,0.03488372093023256
+rank,conflict,충돌 상태,49,172,0.28488372093023256
+rank,neutral_watch,관찰·중립,49,172,0.28488372093023256
+rank,risk_relief,위험 완화 우세,47,172,0.27325581395348836
+rank,risk_warning,위험 악화 우세,21,172,0.12209302325581395
+zscore,accident_zone,강한 위험 악화,7,172,0.040697674418604654
+zscore,conflict,충돌 상태,28,172,0.16279069767441862
+zscore,neutral_watch,관찰·중립,70,172,0.4069767441860465
+zscore,risk_relief,위험 완화 우세,42,172,0.2441860465116279
+zscore,risk_warning,위험 악화 우세,25,172,0.14534883720930233

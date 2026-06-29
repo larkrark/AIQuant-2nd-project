@@ -1,0 +1,4 @@
+﻿dataset,rows,columns,start_date,end_date,is_date_sorted,has_duplicate_dates,numeric_column_count,non_numeric_column_count,non_numeric_columns,missing_cells,missing_ratio
+daily_prices,3485,3,2012-03-07,2026-06-26,True,False,3,0,,0,0.0
+monthly_prices,172,3,2012-03-31,2026-06-30,True,False,3,0,,0,0.0
+monthly_returns,172,3,2012-03-31,2026-06-30,True,False,3,0,,3,0.005813953488372093

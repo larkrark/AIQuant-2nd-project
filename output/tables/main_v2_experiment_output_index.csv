@@ -1,0 +1,22 @@
+﻿step,file_name,relative_path,role,exists,size_kb,modified_time
+16,main_v2_hsi_state5_table_rank.csv,output/tables/main_v2_hsi_state5_table_rank.csv,rank 기준 HSI 5상태 월별 분류표,True,62.4130859375,2026-06-29 04:32:17.487880
+16,main_v2_hsi_state5_table_zscore.csv,output/tables/main_v2_hsi_state5_table_zscore.csv,zscore 기준 HSI 5상태 월별 분류표,True,64.1328125,2026-06-29 04:32:17.490885
+16,main_v2_hsi_state5_definition.csv,output/tables/main_v2_hsi_state5_definition.csv,HSI 5상태 정의표,True,0.8779296875,2026-06-29 04:32:17.491885
+16,main_v2_allocation_rule_table.csv,output/tables/main_v2_allocation_rule_table.csv,main_v2 상태별 overlay 비중 규칙,True,0.6494140625,2026-06-29 04:32:17.492886
+16,main_v2_hsi_state5_distribution.csv,output/tables/main_v2_hsi_state5_distribution.csv,HSI 5상태 분포 요약,True,0.6904296875,2026-06-29 04:32:17.493614
+17,main_v2_backtest_timeseries_rank.csv,output/tables/main_v2_backtest_timeseries_rank.csv,main_v2 rank 기준 백테스트 시계열,True,69.455078125,2026-06-29 04:38:39.161499
+17,main_v2_backtest_timeseries_zscore.csv,output/tables/main_v2_backtest_timeseries_zscore.csv,main_v2 zscore 기준 백테스트 시계열,True,70.474609375,2026-06-29 04:38:39.164010
+17,main_v2_strategy_weights_rank.csv,output/tables/main_v2_strategy_weights_rank.csv,main_v2 rank 기준 월별 전략 비중,True,45.994140625,2026-06-29 04:38:39.166008
+17,main_v2_strategy_weights_zscore.csv,output/tables/main_v2_strategy_weights_zscore.csv,main_v2 zscore 기준 월별 전략 비중,True,48.0166015625,2026-06-29 04:38:39.168010
+18,main_v2_performance_summary.csv,output/tables/main_v2_performance_summary.csv,main_v2 정식 성과평가표,True,2.1904296875,2026-06-29 04:44:41.135696
+19,main_v2b_backtest_timeseries_rank.csv,output/tables/main_v2b_backtest_timeseries_rank.csv,main_v2b rank 기준 백테스트 시계열,True,80.396484375,2026-06-29 04:57:00.019641
+19,main_v2b_backtest_timeseries_zscore.csv,output/tables/main_v2b_backtest_timeseries_zscore.csv,main_v2b zscore 기준 백테스트 시계열,True,80.837890625,2026-06-29 04:57:00.030545
+19,main_v2b_strategy_weights_rank.csv,output/tables/main_v2b_strategy_weights_rank.csv,main_v2b rank 기준 월별 전략 비중,True,58.8505859375,2026-06-29 04:57:00.032552
+19,main_v2b_strategy_weights_zscore.csv,output/tables/main_v2b_strategy_weights_zscore.csv,main_v2b zscore 기준 월별 전략 비중,True,59.455078125,2026-06-29 04:57:00.035551
+19,main_v2b_allocation_rule_table.csv,output/tables/main_v2b_allocation_rule_table.csv,main_v2b 상태별 overlay 비중 규칙,True,1.080078125,2026-06-29 04:57:00.036545
+20,main_v2_rule_comparison_summary.csv,output/tables/main_v2_rule_comparison_summary.csv,main_v2와 main_v2b 규칙 비교표,True,4.060546875,2026-06-29 05:12:17.485281
+20,main_v2_rule_comparison_comment.csv,output/tables/main_v2_rule_comparison_comment.csv,main_v2와 main_v2b 비교 해석 코멘트,True,1.34765625,2026-06-29 05:12:17.485929
+21,main_v2b_performance_summary.csv,output/tables/main_v2b_performance_summary.csv,main_v2b 정식 성과평가표,True,2.21484375,2026-06-29 05:24:08.192874
+21,main_v2b_drawdown_timeseries.csv,output/tables/main_v2b_drawdown_timeseries.csv,main_v2b Drawdown 시계열,True,118.25390625,2026-06-29 05:24:08.198152
+21,main_v2b_cumulative_return_timeseries.csv,output/tables/main_v2b_cumulative_return_timeseries.csv,main_v2b 누적수익률 시계열,True,91.35546875,2026-06-29 05:24:08.200622
+21,main_v2b_performance_comment.csv,output/tables/main_v2b_performance_comment.csv,main_v2b 성과 해석 코멘트,True,1.2607421875,2026-06-29 05:24:08.204583

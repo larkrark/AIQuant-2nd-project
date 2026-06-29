@@ -1,0 +1,5 @@
+﻿method,strategy,months,avg_turnover,max_turnover,total_turnover
+rank,EW,171,0.0,0.0,0.0
+rank,HSI_state5_overlay,171,0.050194931773879146,0.23333333333333334,8.583333333333334
+zscore,EW,171,0.0,0.0,0.0
+zscore,HSI_state5_overlay,171,0.04668615984405459,0.23333333333333334,7.983333333333334

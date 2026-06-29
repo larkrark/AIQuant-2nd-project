@@ -1,0 +1,7 @@
+﻿hsi_state5,state_name_kr,meaning,portfolio_interpretation
+risk_relief,위험 완화 우세,위험 완화 방향 신호가 우세한 상태,기본 비중을 유지한다.
+neutral_watch,관찰·중립,방향성이 약하거나 뚜렷하지 않은 상태,무리한 비중 조정을 하지 않고 관찰한다.
+conflict,충돌 상태,위험 악화와 위험 완화 신호가 동시에 나타나는 상태,소폭 방어적으로 조정한다.
+risk_warning,위험 악화 우세,위험 악화 방향 신호가 우세한 상태,위험자산 비중을 줄이고 방어자산을 확대한다.
+accident_zone,강한 위험 악화,위험 악화 방향성과 신호 강도가 모두 높은 상태,강한 방어전환 상태로 보고 위험자산을 크게 축소한다.
+insufficient_data,자료 부족,rolling window 부족 등으로 HSI 판단이 어려운 상태,기본 동일비중을 유지한다.
