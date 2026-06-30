@@ -40,6 +40,9 @@ desktop.ini
 .vscode/
 .idea/
 
+# Local Streamlit run logs
+.streamlit-run*.log
+
 # Office temporary/lock files
 ~$*
 *.tmp
