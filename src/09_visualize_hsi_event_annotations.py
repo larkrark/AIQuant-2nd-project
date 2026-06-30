@@ -2,6 +2,7 @@ from pathlib import Path
 
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
 
 
 # =========================
@@ -19,8 +20,24 @@ FIGURE_DIR.mkdir(parents=True, exist_ok=True)
 # 1. 한글 폰트 설정
 # =========================
 
-plt.rcParams["font.family"] = "Malgun Gothic"
-plt.rcParams["axes.unicode_minus"] = False
+def configure_korean_font() -> str:
+    candidates = [
+        "Malgun Gothic",
+        "맑은 고딕",
+        "AppleGothic",
+        "NanumGothic",
+        "Noto Sans CJK KR",
+        "Noto Sans KR",
+        "Arial Unicode MS",
+    ]
+    available = {font.name for font in fm.fontManager.ttflist}
+    selected = next((name for name in candidates if name in available), "DejaVu Sans")
+    plt.rcParams["font.family"] = selected
+    plt.rcParams["axes.unicode_minus"] = False
+    return selected
+
+
+configure_korean_font()
 
 
 # =========================

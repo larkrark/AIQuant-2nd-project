@@ -1,0 +1,4 @@
+﻿ticker,name,asset_class,risk_group,listing_date,data_years,data_over_10y,note,hsi_return,hsi_ma_pos,hsi_momentum,hsi_vol,hsi_rs
+069500,KODEX 200,equity,high,2002-10-14,24,True,"국내 대표 주식형 ETF로, 위험자산 기준 ETF 및 상대강도 기준 벤치마크로 활용 가능.",True,True,True,True,True
+114260,KODEX 국고채3년,bond,low,2009-07-29,17,True,"국내 채권형 ETF로, 안전자산 또는 방어자산 역할을 검토할 수 있음.",True,True,True,True,True
+153130,KODEX 단기채권PLUS,money_market,very_low,2012-03-07,14,True,"단기채권형 ETF로 현금성 자산 역할을 검토할 수 있으나, 가격이 단조롭게 움직여 일부 추세 신호의 해석력은 낮을 수 있음.",True,False,False,True,True

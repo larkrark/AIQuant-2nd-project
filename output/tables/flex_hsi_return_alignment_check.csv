@@ -1,0 +1,4 @@
+﻿method,aligned_rows,aligned_columns,start_return_date,end_return_date,signal_column_count,return_column_count,missing_return_cells,missing_signal_cells
+rank,171,15,2012-04-30,2026-06-30,3.0,3,0,0.0
+zscore,171,15,2012-04-30,2026-06-30,3.0,3,0,0.0
+monthly_returns_raw,172,3,2012-03-31,2026-06-30,,3,3,

@@ -1,0 +1,7 @@
+﻿criteria_id,criteria_name,metric,rule,threshold,purpose
+filter_001,MDD 조건,mdd,EW 대비 MDD가 개선되거나 최소한 과도하게 악화되지 않을 것,mdd_diff_vs_ew >= 0 또는 허용범위 내,방어형 전략 목적 확인
+filter_002,평균 Turnover 상한,avg_turnover,평균 Turnover가 예비 상한을 넘지 않을 것,avg_turnover <= 0.05,과도한 매매 방지
+filter_003,최대 Turnover 상한,max_turnover,단일 리밸런싱 시점의 Turnover가 예비 상한을 넘지 않을 것,max_turnover <= 0.25,급격한 비중 변경 방지
+filter_004,Sharpe / Calmar 조건,sharpe; calmar,위험 대비 성과가 과도하게 훼손되지 않을 것,EW 및 main_v2b 기준과 비교,수익률만으로 후보를 선택하지 않기
+filter_005,거래비용 단순화 가정,cost_adjusted_return,Turnover에 팀 합의 비용률을 곱해 사후 평가,비용률은 팀 합의로 설정,실제 거래비용 정밀 추정이 아닌 백테스트 평가 방식의 합리적 단순화
+filter_006,rank / zscore 일관성,method_consistency,특정 점수화 방식에서만 우연히 좋은 후보는 후순위,rank와 zscore 결과를 함께 확인,점수화 방식 의존성 확인

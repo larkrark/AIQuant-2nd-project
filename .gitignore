@@ -29,6 +29,9 @@ output/tables/monthly_event_counts_validation.csv
 output/tables/monthly_hsi_state_labels.csv
 output/tables/monthly_hsi_state_labels_design.csv
 output/tables/monthly_hsi_state_labels_validation.csv
+output/tables/monthly_wave_features.csv
+output/tables/monthly_wave_market_summary.csv
+output/tables/fig16_hsi_hourglass_cone_*_vectors.csv
 
 # OS and editor noise
 .DS_Store

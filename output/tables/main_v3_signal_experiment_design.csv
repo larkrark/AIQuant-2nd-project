@@ -1,0 +1,6 @@
+﻿experiment_id,experiment_name,base_signals,additional_signals,fixed_allocation_rule,main_question,purpose,status
+main_v3_baseline,기준 HSI 5지표,ret_1m; momentum_13612w; sma10_gap; vol_3m; relative_strength_cash,,main_v2b,기존 HSI 5지표와 main_v2b 비중 규칙의 기준 성과는 어떠한가?,후속 신호 확장 실험의 기준선,planned
+main_v3a_trend,추세 보강 실험,ret_1m; momentum_13612w; sma10_gap; vol_3m; relative_strength_cash,ma20_gap; ma60_gap,main_v2b,단기·중기 추세 정보를 추가하면 HSI 상태분류가 더 안정되는가?,추세 신호 보강 효과 확인,planned
+main_v3b_risk_damage,위험강도·손상도 보강 실험,ret_1m; momentum_13612w; sma10_gap; vol_3m; relative_strength_cash,vol20; drawdown_60,main_v2b,최근 변동성과 고점 대비 손상도를 추가하면 방어 신호가 더 명확해지는가?,위험 악화 상태 포착력 확인,planned
+main_v3c_relative_strength,상대강도 보강 실험,ret_1m; momentum_13612w; sma10_gap; vol_3m; relative_strength_cash,risk_vs_cash_ret20,main_v2b,위험자산이 현금성 자산보다 약해지는 구간을 HSI가 더 잘 포착하는가?,위험자산과 현금성 자산 간 상대 우위 확인,planned
+main_v3d_core_signal_enhanced,통합 보강형 실험,ret_1m; momentum_13612w; sma10_gap; vol_3m; relative_strength_cash,ma20_gap; ma60_gap; vol20; drawdown_60; risk_vs_cash_ret20,main_v2b,추세·위험강도·손상도·상대강도를 모두 보강하면 HSI overlay가 개선되는가?,전체 확장 신호 조합의 종합 효과 확인,planned
