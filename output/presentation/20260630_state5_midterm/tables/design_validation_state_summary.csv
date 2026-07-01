@@ -1,0 +1,11 @@
+﻿Period,HSIState5,Count,Share,StateLabelKR
+design,accident_zone,284,0.23529411764705882,강한 위험 악화
+design,risk_warning,184,0.15244407622203812,위험 악화 우세
+design,conflict,263,0.21789560894780446,충돌 상태
+design,neutral_watch,343,0.28417564208782103,관찰·중립
+design,risk_relief,133,0.11019055509527755,위험 완화 우세
+validation,accident_zone,109,0.19963369963369965,강한 위험 악화
+validation,risk_warning,91,0.16666666666666666,위험 악화 우세
+validation,conflict,125,0.22893772893772893,충돌 상태
+validation,neutral_watch,176,0.32234432234432236,관찰·중립
+validation,risk_relief,45,0.08241758241758242,위험 완화 우세

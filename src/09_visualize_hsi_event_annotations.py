@@ -188,6 +188,7 @@ def short_event_label(name: str) -> str:
     """
     mapping = {
         "COVID crash": "COVID\ncrash",
+        "COVID crash Korea": "COVID\ncrash",
         "COVID liquidity rebound": "COVID\nrebound",
         "Inflation and rate-hike shock": "Rate hike\nshock",
         "Battery-theme overheating": "Battery\noverheat",
@@ -197,22 +198,67 @@ def short_event_label(name: str) -> str:
     return mapping.get(name, name[:12])
 
 
-def add_event_backgrounds(ax, events: list[dict]) -> None:
-    """
-    그래프에 사건 구간 배경색과 라벨을 추가한다.
-    """
-    for event in events:
-        start = event.get("start", "")
-        end = event.get("end", "")
 
-        if not start or not end or start == "nan" or end == "nan":
+def parse_event_window(event: dict) -> tuple[pd.Timestamp, pd.Timestamp] | None:
+    start = event.get("start", "")
+    end = event.get("end", "")
+
+    if not start or not end or start == "nan" or end == "nan":
+        return None
+
+    start_date = pd.to_datetime(start + "-01")
+    end_date = pd.to_datetime(end + "-01") + pd.offsets.MonthEnd(0)
+
+    return start_date, end_date
+
+
+def deduplicate_event_windows(events: list[dict]) -> list[dict]:
+    deduped = []
+    seen = set()
+
+    for event in events:
+        window = parse_event_window(event)
+
+        if window is None:
             continue
 
-        start_date = pd.to_datetime(start + "-01")
-        end_date = pd.to_datetime(end + "-01") + pd.offsets.MonthEnd(0)
+        start_date, end_date = window
+        label = short_event_label(event.get("name", ""))
+        key = (start_date.strftime("%Y-%m"), end_date.strftime("%Y-%m"), label)
 
+        if key in seen:
+            continue
+
+        deduped.append(event)
+        seen.add(key)
+
+    return deduped
+
+
+def add_event_backgrounds(ax, events: list[dict]) -> None:
+    """
+    Add event background spans and staggered labels to avoid overlapping annotations.
+    """
+    label_levels = [0.98, 0.87, 0.76]
+    last_label_date_by_level = [None for _ in label_levels]
+    min_gap_days = 170
+    event_items = []
+
+    for event in deduplicate_event_windows(events):
+        window = parse_event_window(event)
+
+        if window is None:
+            continue
+
+        start_date, end_date = window
+        event_items.append((start_date, end_date, event))
+
+    event_items.sort(key=lambda item: (item[0], item[1]))
+
+    for start_date, end_date, event in event_items:
         color = get_event_color(event.get("event_type", ""))
         label = short_event_label(event.get("name", ""))
+        label_date = start_date + (end_date - start_date) / 2
 
         ax.axvspan(
             start_date,
@@ -222,15 +268,32 @@ def add_event_backgrounds(ax, events: list[dict]) -> None:
             zorder=0,
         )
 
+        label_level = label_levels[-1]
+
+        for level_index, level in enumerate(label_levels):
+            last_label_date = last_label_date_by_level[level_index]
+
+            if last_label_date is None or abs((label_date - last_label_date).days) >= min_gap_days:
+                label_level = level
+                last_label_date_by_level[level_index] = label_date
+                break
+
         ax.text(
-            start_date,
-            0.98,
+            label_date,
+            label_level,
             label,
             transform=ax.get_xaxis_transform(),
             fontsize=8,
             va="top",
-            ha="left",
-            rotation=90,
+            ha="center",
+            rotation=0,
+            linespacing=0.95,
+            bbox=dict(
+                boxstyle="round,pad=0.18",
+                facecolor="white",
+                edgecolor="none",
+                alpha=0.72,
+            ),
         )
 
 
