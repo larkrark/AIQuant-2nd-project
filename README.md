@@ -97,3 +97,12 @@ Git에서 제외하는 자료:
 ```text
 docs/lightweight/
 ```
+
+## Figure 관리 기준
+
+본 프로젝트에는 초기 prototype 실험에서 생성된 그림과 최종 보고서용 그림이 함께 존재한다.  
+최종 보고서와 발표에서는 `output/figures/report_final/` 폴더의 그림만 사용한다.
+
+`output/figures/archive_prototype/` 폴더에는 00~36번 prototype 실험, main_v2 계열 실험, P/S wave 및 event pressure 계열 시각화가 보존되어 있다. 이 그림들은 프로젝트 아이디어 발전 과정을 보여주는 참고 자료이지만, 최종 성과 판단이나 발표용 근거로 사용하지 않는다.
+
+특히 최종 프로젝트 기준은 `direction / intensity / conflict / HSI 5상태 / λ overlay` 구조이며, 과거 prototype 그림은 이 기준과 용어 또는 계산 흐름이 다를 수 있으므로 본문 결과와 혼용하지 않는다.
