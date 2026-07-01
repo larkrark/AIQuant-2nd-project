@@ -17,6 +17,9 @@ data/raw/AI퀀트분석데이터셋/
 practice/output/
 review/
 
+# Local external download/code/document classification scratch folder
+external_downloads_classification/
+
 # Regenerable HSI intermediate tables
 output/tables/daily_event_labels.csv
 output/tables/event_calendar_overlap_summary.csv

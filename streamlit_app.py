@@ -11,12 +11,14 @@ SRC_DIR = ROOT / "src"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
-from dashboard import hsi_candidates, midterm  # noqa: E402
+from dashboard import home, hsi_candidates, midterm  # noqa: E402
+from dashboard.paths import HSI_CANDIDATE_OUTPUT_DIR  # noqa: E402
 
 
 PAGES = {
-    "candidates": ("HSI 후보 전략", hsi_candidates.render),
-    "midterm": ("기존 중간발표 자료", midterm.render),
+    "home": ("HSI란 무엇인가?", home.render),
+    "candidates": ("후보 전략 시각화", hsi_candidates.render),
+    "midterm": ("중간발표 아카이브", midterm.render),
 }
 
 
@@ -43,36 +45,88 @@ def configure_page() -> None:
         div[data-testid="stAlert"] {
             border-radius: 8px;
         }
+        .nav-link {
+            display: block;
+            padding: 0.45rem 0.55rem;
+            margin: 0.12rem 0;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #475569 !important;
+        }
+        .nav-link-active {
+            background: #eff6ff;
+            color: #1f77b4 !important;
+            font-weight: 700;
+        }
+        .top-nav a {
+            text-decoration: none;
+        }
         </style>
         """,
         unsafe_allow_html=True,
     )
 
 
-def main() -> None:
-    configure_page()
+def page_link(page_key: str, active_key: str) -> str:
+    label = PAGES[page_key][0]
+    active_class = " nav-link-active" if page_key == active_key else ""
+    return f"<a class='nav-link{active_class}' href='?page={page_key}'>{label}</a>"
+
+
+def render_sidebar(active_key: str) -> None:
+    dashboard_html = HSI_CANDIDATE_OUTPUT_DIR / "hsi_candidate_visual_dashboard.html"
 
     with st.sidebar:
         st.header("AIQuant HSI")
-        st.caption("새 후보전략 자료를 시작 페이지로 통일하고, 기존 중간발표 자료는 보존 페이지에서 참조합니다.")
+        st.caption("HSI 개념, 후보 전략 시각화, 중간발표 아카이브를 한 Streamlit 앱에서 확인합니다.")
+        st.markdown("**페이지 이동**")
+        st.markdown(
+            "\n".join(
+                [
+                    page_link("home", active_key),
+                    page_link("candidates", active_key),
+                    page_link("midterm", active_key),
+                ]
+            ),
+            unsafe_allow_html=True,
+        )
+        st.divider()
+        st.markdown("**바로가기**")
+        st.markdown("[중간발표 아카이브](?page=midterm)")
+        st.markdown("[기존 시각화 페이지](?page=candidates)")
+        if dashboard_html.exists():
+            st.download_button(
+                "정적 HTML 대시보드",
+                data=dashboard_html.read_bytes(),
+                file_name=dashboard_html.name,
+                mime="text/html",
+                use_container_width=True,
+            )
 
-    page_key = st.query_params.get("page", "candidates")
-    if page_key not in PAGES:
-        page_key = "candidates"
 
-    active_style = "font-weight:700; color:#1f77b4;"
-    inactive_style = "color:#475569;"
+def render_top_nav(active_key: str) -> None:
+    links = []
+    for key, (label, _) in PAGES.items():
+        color = "#1f77b4" if key == active_key else "#475569"
+        weight = "700" if key == active_key else "500"
+        links.append(f"<a href='?page={key}' style='color:{color}; font-weight:{weight};'>{label}</a>")
+    separator = ' <span style="color:#cbd5e1; padding:0 0.6rem;">|</span> '
     st.markdown(
-        (
-            f"<a href='?page=candidates' style='{active_style if page_key == 'candidates' else inactive_style}'>"
-            "HSI 후보 전략</a>"
-            "<span style='color:#cbd5e1; padding:0 0.75rem;'>|</span>"
-            f"<a href='?page=midterm' style='{active_style if page_key == 'midterm' else inactive_style}'>"
-            "기존 중간발표 자료</a>"
-        ),
+        f"<div class='top-nav'>{separator.join(links)}</div>",
         unsafe_allow_html=True,
     )
     st.divider()
+
+
+def main() -> None:
+    configure_page()
+
+    page_key = st.query_params.get("page", "home")
+    if page_key not in PAGES:
+        page_key = "home"
+
+    render_sidebar(page_key)
+    render_top_nav(page_key)
     PAGES[page_key][1]()
 
 
