@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import streamlit as st
+from streamlit_mermaid import st_mermaid
 
 from .paths import MIDTERM_FIGURE_DIR, ROOT
 
@@ -14,23 +15,28 @@ STATE_ROWS = [
 ]
 
 
-def render_signal_flow() -> None:
-    st.subheader("가격 신호가 HSI가 되는 흐름")
-    st.markdown(
-        """
-```mermaid
+SIGNAL_FLOW = """
 flowchart LR
     A["ETF 가격"] --> B["일별 수익률"]
-    B --> C["60거래일 기준 사건 크기 분류"]
-    C --> D["상승/하락 사건 카운트"]
-    A --> E["모멘텀, 이동평균 괴리, 변동성, 상대강도"]
-    D --> F["risk / overheat / recovery 점수"]
+    B --> C["60거래일 기준<br/>사건 크기 분류"]
+    C --> D["상승/하락<br/>사건 카운트"]
+    A --> E["모멘텀, 이동평균 괴리<br/>변동성, 상대강도"]
+    D --> F["risk / overheat / recovery<br/>3개 점수"]
     E --> F
     F --> G["5상태 HSI"]
-    G --> H["시장상태 해석 및 비중 조절 overlay"]
-```
-        """
+    G --> H["시장상태 해석 및<br/>비중 조절 overlay"]
+"""
+
+
+def render_signal_flow() -> None:
+    st.subheader("가격 신호가 HSI가 되는 흐름")
+    st_mermaid(
+        SIGNAL_FLOW,
+        height="360px",
+        show_controls=False,
+        key="hsi_signal_flow",
     )
+    st.caption("가격에서 출발한 사건 신호와 보조 지표를 점수화하고, 최종적으로 해석 가능한 5상태 HSI로 압축합니다.")
 
 
 def render_state_table() -> None:
