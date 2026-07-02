@@ -3,6 +3,16 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from common.backtest import (
+    align_state_with_next_returns,
+    calculate_turnover,
+    make_alignment_check,
+    make_turnover_summary,
+)
+from common.config import ASSETS, INITIAL_CAPITAL
+from common.io_utils import read_csv_with_date as _read_csv
+from common.paths import PROCESSED_DIR, TABLE_DIR
+
 
 """
 19_main_v2b_backtest_state5_overlay_relaxed.py
@@ -42,12 +52,8 @@ output/tables/main_v2b_turnover_summary.csv
 
 
 # ============================================================
-# 0. 경로 설정
+# 0. 경로 설정 (common.paths 사용)
 # ============================================================
-
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-TABLE_DIR = PROJECT_ROOT / "output" / "tables"
-PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 
 STATE5_RANK_PATH = TABLE_DIR / "main_v2_hsi_state5_table_rank.csv"
 STATE5_ZSCORE_PATH = TABLE_DIR / "main_v2_hsi_state5_table_zscore.csv"
@@ -63,28 +69,17 @@ OUTPUT_TURNOVER_SUMMARY_PATH = TABLE_DIR / "main_v2b_turnover_summary.csv"
 
 
 # ============================================================
-# 1. 실험 설정
+# 1. 실험 설정 (ASSETS/INITIAL_CAPITAL → common.config)
 # ============================================================
-
-ASSETS = ["069500", "114260", "153130"]
-INITIAL_CAPITAL = 1.0
 
 
 # ============================================================
-# 2. 데이터 로드
+# 2. 데이터 로드 (read_csv_with_date → common, 엄격형 동작 유지)
 # ============================================================
 
 def read_csv_with_date(path: Path) -> pd.DataFrame:
-    if not path.exists():
-        raise FileNotFoundError(f"파일을 찾을 수 없습니다: {path}")
-
-    df = pd.read_csv(path)
-
-    if "Date" not in df.columns:
-        raise ValueError(f"Date 컬럼이 없습니다: {path}")
-
-    df["Date"] = pd.to_datetime(df["Date"])
-    return df
+    """기존 엄격형 로더 동작(Date 필수, signal_date 미파싱)을 common으로 위임."""
+    return _read_csv(path, require_date=True, parse_signal_date=False)
 
 
 # ============================================================
@@ -220,35 +215,8 @@ def apply_v2b_weights(state5: pd.DataFrame, method: str) -> pd.DataFrame:
 
 # ============================================================
 # 4. 월말 HSI → 다음 달 수익률 정렬
+#    align_state_with_next_returns → common.backtest
 # ============================================================
-
-def align_state_with_next_returns(state5: pd.DataFrame, monthly_returns: pd.DataFrame, method: str) -> pd.DataFrame:
-    returns = monthly_returns[["Date"] + ASSETS].copy()
-    returns = returns.sort_values("Date").reset_index(drop=True)
-
-    for asset in ASSETS:
-        returns[f"{asset}_next_return"] = returns[asset].shift(-1)
-
-    returns["next_return_date"] = returns["Date"].shift(-1)
-
-    aligned = state5.copy()
-    aligned = aligned.sort_values("Date").reset_index(drop=True)
-
-    aligned = aligned.merge(
-        returns[
-            ["Date", "next_return_date"]
-            + [f"{asset}_next_return" for asset in ASSETS]
-        ],
-        on="Date",
-        how="left",
-    )
-
-    aligned["method"] = method
-
-    next_return_cols = [f"{asset}_next_return" for asset in ASSETS]
-    aligned = aligned.dropna(subset=next_return_cols).reset_index(drop=True)
-
-    return aligned
 
 
 # ============================================================
@@ -341,63 +309,10 @@ def build_backtest_for_method(aligned: pd.DataFrame, method: str) -> tuple[pd.Da
 
 
 # ============================================================
-# 6. Turnover 계산
+# 6. Turnover 계산 · 7. 정렬 점검표
+#    calculate_turnover / make_turnover_summary / make_alignment_check
+#    → common.backtest
 # ============================================================
-
-def calculate_turnover(weights: pd.DataFrame) -> pd.DataFrame:
-    weight_cols = [f"{asset}_weight" for asset in ASSETS]
-
-    result_parts = []
-
-    for (method, strategy), group in weights.groupby(["method", "strategy"], dropna=False):
-        group = group.sort_values("Date").copy()
-
-        diff = group[weight_cols].diff().abs()
-        group["turnover"] = 0.5 * diff.sum(axis=1)
-        group.loc[group.index[0], "turnover"] = 0.0
-
-        result_parts.append(group)
-
-    return pd.concat(result_parts, ignore_index=True)
-
-
-def make_turnover_summary(turnover: pd.DataFrame) -> pd.DataFrame:
-    return (
-        turnover
-        .groupby(["method", "strategy"], dropna=False)
-        .agg(
-            months=("Date", "count"),
-            avg_turnover=("turnover", "mean"),
-            max_turnover=("turnover", "max"),
-            total_turnover=("turnover", "sum"),
-        )
-        .reset_index()
-    )
-
-
-# ============================================================
-# 7. 정렬 점검표
-# ============================================================
-
-def make_alignment_check(aligned_rank: pd.DataFrame, aligned_zscore: pd.DataFrame) -> pd.DataFrame:
-    rows = []
-
-    for method, aligned in [("rank", aligned_rank), ("zscore", aligned_zscore)]:
-        rows.append(
-            {
-                "method": method,
-                "rows": len(aligned),
-                "first_signal_date": aligned["Date"].min(),
-                "last_signal_date": aligned["Date"].max(),
-                "first_return_date": aligned["next_return_date"].min(),
-                "last_return_date": aligned["next_return_date"].max(),
-                "missing_next_return_cells": aligned[[f"{asset}_next_return" for asset in ASSETS]].isna().sum().sum(),
-                "alignment_rule": "signal_date의 HSI 상태를 next_return_date의 월간 수익률에 적용",
-                "alignment_flag": "OK",
-            }
-        )
-
-    return pd.DataFrame(rows)
 
 
 # ============================================================

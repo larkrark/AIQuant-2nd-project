@@ -1,7 +1,8 @@
-from pathlib import Path
-
-import numpy as np
 import pandas as pd
+
+from common.io_utils import read_csv_with_date
+from common.metrics import add_diff_vs_ew, calculate_performance_metrics, make_performance_summary
+from common.paths import TABLE_DIR
 
 
 """
@@ -36,11 +37,8 @@ output/tables/main_v2b_performance_comment.csv
 
 
 # ============================================================
-# 0. 경로 설정
+# 0. 경로 설정 (common.paths.TABLE_DIR 사용)
 # ============================================================
-
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-TABLE_DIR = PROJECT_ROOT / "output" / "tables"
 
 BACKTEST_RANK_PATH = TABLE_DIR / "main_v2b_backtest_timeseries_rank.csv"
 BACKTEST_ZSCORE_PATH = TABLE_DIR / "main_v2b_backtest_timeseries_zscore.csv"
@@ -53,150 +51,9 @@ OUTPUT_COMMENT_PATH = TABLE_DIR / "main_v2b_performance_comment.csv"
 
 
 # ============================================================
-# 1. 데이터 로드
+# 1. 데이터 로드 · 2. 성과지표 · 3. EW 대비 차이
+#    → common.io_utils / common.metrics 로 통합
 # ============================================================
-
-def read_csv_with_date(path: Path) -> pd.DataFrame:
-    if not path.exists():
-        raise FileNotFoundError(f"파일을 찾을 수 없습니다: {path}")
-
-    df = pd.read_csv(path)
-
-    if "Date" in df.columns:
-        df["Date"] = pd.to_datetime(df["Date"])
-
-    if "signal_date" in df.columns:
-        df["signal_date"] = pd.to_datetime(df["signal_date"])
-
-    return df
-
-
-# ============================================================
-# 2. 성과지표 계산
-# ============================================================
-
-def calculate_performance_metrics(group: pd.DataFrame) -> pd.Series:
-    group = group.sort_values("Date").copy()
-
-    monthly_returns = group["monthly_return"].dropna()
-    months = len(monthly_returns)
-
-    if months == 0:
-        raise ValueError("monthly_return 데이터가 없습니다.")
-
-    cumulative = (1 + monthly_returns).cumprod()
-    total_return = cumulative.iloc[-1] - 1
-
-    years = months / 12
-    cagr = (1 + total_return) ** (1 / years) - 1 if years > 0 else np.nan
-
-    monthly_mean = monthly_returns.mean()
-    monthly_std = monthly_returns.std(ddof=1)
-
-    annual_volatility = monthly_std * np.sqrt(12)
-
-    if annual_volatility == 0 or pd.isna(annual_volatility):
-        sharpe = np.nan
-    else:
-        sharpe = (monthly_mean * 12) / annual_volatility
-
-    running_max = cumulative.cummax()
-    drawdown = cumulative / running_max - 1
-    mdd = drawdown.min()
-
-    if mdd == 0 or pd.isna(mdd):
-        calmar = np.nan
-    else:
-        calmar = cagr / abs(mdd)
-
-    downside_returns = monthly_returns[monthly_returns < 0]
-    downside_std = downside_returns.std(ddof=1) * np.sqrt(12)
-
-    if downside_std == 0 or pd.isna(downside_std):
-        sortino = np.nan
-    else:
-        sortino = (monthly_mean * 12) / downside_std
-
-    win_rate = (monthly_returns > 0).mean()
-
-    return pd.Series(
-        {
-            "months": months,
-            "total_return": total_return,
-            "cagr": cagr,
-            "annual_volatility": annual_volatility,
-            "sharpe": sharpe,
-            "sortino": sortino,
-            "mdd": mdd,
-            "calmar": calmar,
-            "win_rate": win_rate,
-            "mean_monthly_return": monthly_mean,
-            "std_monthly_return": monthly_std,
-            "min_monthly_return": monthly_returns.min(),
-            "max_monthly_return": monthly_returns.max(),
-        }
-    )
-
-
-def make_performance_summary(backtest: pd.DataFrame, turnover_summary: pd.DataFrame) -> pd.DataFrame:
-    summary = (
-        backtest
-        .groupby(["method", "strategy"], dropna=False)
-        .apply(calculate_performance_metrics)
-        .reset_index()
-    )
-
-    summary = summary.merge(
-        turnover_summary,
-        on=["method", "strategy"],
-        how="left",
-        suffixes=("", "_turnover"),
-    )
-
-    return summary
-
-
-# ============================================================
-# 3. EW 대비 차이 계산
-# ============================================================
-
-def add_diff_vs_ew(summary: pd.DataFrame) -> pd.DataFrame:
-    result = summary.copy()
-
-    metrics = [
-        "total_return",
-        "cagr",
-        "annual_volatility",
-        "sharpe",
-        "sortino",
-        "mdd",
-        "calmar",
-        "win_rate",
-        "mean_monthly_return",
-        "avg_turnover",
-        "max_turnover",
-        "total_turnover",
-    ]
-
-    for method in result["method"].dropna().unique():
-        ew_row = result[
-            (result["method"] == method)
-            & (result["strategy"] == "EW")
-        ]
-
-        if ew_row.empty:
-            continue
-
-        ew_values = ew_row.iloc[0]
-
-        for metric in metrics:
-            if metric in result.columns:
-                result.loc[
-                    result["method"] == method,
-                    f"{metric}_diff_vs_ew",
-                ] = result.loc[result["method"] == method, metric] - ew_values[metric]
-
-    return result
 
 
 # ============================================================

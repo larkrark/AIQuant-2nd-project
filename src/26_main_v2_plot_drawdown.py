@@ -3,6 +3,10 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import pandas as pd
 
+from common.io_utils import read_csv_with_date as _read_csv
+from common.paths import DOCS_DIR, FIGURE_DIR, TABLE_DIR
+from common.viz import STRATEGY_LABEL_MAP, set_korean_font
+
 
 """
 26_main_v2_plot_drawdown.py
@@ -31,11 +35,6 @@ docs/main_v2_fig3_drawdown_note.md
 """
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-TABLE_DIR = PROJECT_ROOT / "output" / "tables"
-FIGURE_DIR = PROJECT_ROOT / "output" / "figures"
-DOCS_DIR = PROJECT_ROOT / "docs"
-
 FIGURE_DIR.mkdir(parents=True, exist_ok=True)
 DOCS_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -48,29 +47,9 @@ OUTPUT_PLOT_DATA_PATH = TABLE_DIR / "main_v2_fig3_drawdown_plot_data.csv"
 OUTPUT_NOTE_PATH = DOCS_DIR / "main_v2_fig3_drawdown_note.md"
 
 
-def set_korean_font() -> None:
-    plt.rcParams["font.family"] = "Malgun Gothic"
-    plt.rcParams["axes.unicode_minus"] = False
-
-
-STRATEGY_LABEL_MAP = {
-    "EW": "EW",
-    "HSI_state5_overlay": "main_v2: conflict 방어",
-    "HSI_state5_overlay_v2b": "main_v2b: conflict 관찰",
-}
-
-
 def read_csv_with_date(path: Path) -> pd.DataFrame:
-    if not path.exists():
-        raise FileNotFoundError(f"파일을 찾을 수 없습니다: {path}")
-
-    df = pd.read_csv(path)
-
-    if "Date" not in df.columns:
-        raise ValueError(f"Date 컬럼이 없습니다: {path}")
-
-    df["Date"] = pd.to_datetime(df["Date"])
-    return df
+    """기존 엄격형 로더 동작(Date 필수, signal_date 미파싱)을 common으로 위임."""
+    return _read_csv(path, require_date=True, parse_signal_date=False)
 
 
 def load_and_prepare_data() -> pd.DataFrame:

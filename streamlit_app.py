@@ -78,7 +78,7 @@ def render_sidebar(active_key: str) -> None:
 
     with st.sidebar:
         st.header("AIQuant HSI")
-        st.caption("HSI 개념, 후보 전략 시각화, 중간발표 아카이브를 한 Streamlit 앱에서 확인합니다.")
+        st.caption("프로젝트 개념과 시각화 자료를 한 곳에서 확인합니다.")
         st.markdown("**페이지 이동**")
         st.markdown(
             "\n".join(
@@ -90,11 +90,10 @@ def render_sidebar(active_key: str) -> None:
             ),
             unsafe_allow_html=True,
         )
-        st.divider()
-        st.markdown("**바로가기**")
-        st.markdown("[중간발표 아카이브](?page=midterm)")
-        st.markdown("[기존 시각화 페이지](?page=candidates)")
+
         if dashboard_html.exists():
+            st.divider()
+            st.markdown("**자료 다운로드**")
             st.download_button(
                 "정적 HTML 대시보드",
                 data=dashboard_html.read_bytes(),

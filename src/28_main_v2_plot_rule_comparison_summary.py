@@ -3,6 +3,9 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import pandas as pd
 
+from common.paths import DOCS_DIR, FIGURE_DIR, TABLE_DIR
+from common.viz import set_korean_font
+
 
 """
 28_main_v2_plot_rule_comparison_summary.py
@@ -32,13 +35,8 @@ docs/main_v2_fig6_rule_comparison_note.md
 
 
 # ============================================================
-# 0. 경로 설정
+# 0. 경로 설정 (common.paths 사용)
 # ============================================================
-
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-TABLE_DIR = PROJECT_ROOT / "output" / "tables"
-FIGURE_DIR = PROJECT_ROOT / "output" / "figures"
-DOCS_DIR = PROJECT_ROOT / "docs"
 
 FIGURE_DIR.mkdir(parents=True, exist_ok=True)
 DOCS_DIR.mkdir(parents=True, exist_ok=True)
@@ -63,9 +61,7 @@ EXPERIMENT_LABEL_MAP = {
 }
 
 
-def set_korean_font() -> None:
-    plt.rcParams["font.family"] = "Malgun Gothic"
-    plt.rcParams["axes.unicode_minus"] = False
+# set_korean_font → common.viz
 
 
 # ============================================================

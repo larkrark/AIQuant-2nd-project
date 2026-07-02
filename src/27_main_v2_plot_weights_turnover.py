@@ -3,6 +3,10 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import pandas as pd
 
+from common.io_utils import read_csv_with_date
+from common.paths import DOCS_DIR, FIGURE_DIR, TABLE_DIR
+from common.viz import set_korean_font
+
 
 """
 27_main_v2_plot_weights_turnover.py
@@ -37,13 +41,8 @@ docs/main_v2_fig4_fig5_weights_turnover_note.md
 
 
 # ============================================================
-# 0. 경로 설정
+# 0. 경로 설정 (common.paths 사용)
 # ============================================================
-
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-TABLE_DIR = PROJECT_ROOT / "output" / "tables"
-FIGURE_DIR = PROJECT_ROOT / "output" / "figures"
-DOCS_DIR = PROJECT_ROOT / "docs"
 
 FIGURE_DIR.mkdir(parents=True, exist_ok=True)
 DOCS_DIR.mkdir(parents=True, exist_ok=True)
@@ -76,35 +75,17 @@ ASSET_LABEL_MAP = {
     "153130_weight": "153130 단기채권",
 }
 
+# 이 스크립트의 STRATEGY_LABEL_MAP은 EW 키가 없다(비중/turnover 그림은 overlay만 표기).
+# common.viz.STRATEGY_LABEL_MAP(EW 포함)과 의도적으로 다르므로 로컬 유지.
 STRATEGY_LABEL_MAP = {
     "HSI_state5_overlay": "main_v2: conflict 방어",
     "HSI_state5_overlay_v2b": "main_v2b: conflict 관찰",
 }
 
 
-def set_korean_font() -> None:
-    plt.rcParams["font.family"] = "Malgun Gothic"
-    plt.rcParams["axes.unicode_minus"] = False
-
-
 # ============================================================
-# 2. 데이터 로드
+# 2. 데이터 로드 (read_csv_with_date → common, 관대형 기본 동작 동일)
 # ============================================================
-
-def read_csv_with_date(path: Path) -> pd.DataFrame:
-    if not path.exists():
-        raise FileNotFoundError(f"파일을 찾을 수 없습니다: {path}")
-
-    df = pd.read_csv(path)
-
-    if "Date" in df.columns:
-        df["Date"] = pd.to_datetime(df["Date"])
-
-    if "signal_date" in df.columns:
-        df["signal_date"] = pd.to_datetime(df["signal_date"])
-
-    return df
-
 
 def load_weight_data() -> pd.DataFrame:
     v2_rank = read_csv_with_date(WEIGHTS_V2_RANK_PATH)

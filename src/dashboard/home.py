@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import streamlit as st
+import streamlit.components.v1 as components
 
 from .paths import MIDTERM_FIGURE_DIR, ROOT
 
@@ -14,23 +15,122 @@ STATE_ROWS = [
 ]
 
 
+def render_flowchart(height: int = 420) -> None:
+    components.html(
+        """
+        <style>
+          body {
+            margin: 0;
+            font-family: Arial, "Malgun Gothic", sans-serif;
+            color: #20242c;
+          }
+          .flow-wrap {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(120px, 1fr));
+            gap: 14px;
+            align-items: center;
+            padding: 8px 2px 18px;
+          }
+          .flow-card {
+            min-height: 86px;
+            border: 1px solid #bfdbfe;
+            border-radius: 8px;
+            background: #eff6ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 12px;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1.35;
+          }
+          .flow-card.secondary {
+            background: #f8fafc;
+            border-color: #cbd5e1;
+            font-weight: 600;
+          }
+          .arrow {
+            position: relative;
+            height: 2px;
+            background: #64748b;
+          }
+          .arrow::after {
+            content: "";
+            position: absolute;
+            right: -1px;
+            top: -5px;
+            border-left: 10px solid #64748b;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+          }
+          .flow-row {
+            display: grid;
+            grid-template-columns: 1fr 34px 1fr 34px 1fr 34px 1fr 34px 1fr;
+            gap: 0;
+            align-items: center;
+          }
+          .branch {
+            margin: 18px auto 0;
+            max-width: 760px;
+            display: grid;
+            grid-template-columns: 1fr 34px 1fr 34px 1fr;
+            align-items: center;
+          }
+          .caption {
+            margin-top: 12px;
+            color: #64748b;
+            font-size: 13px;
+          }
+          @media (max-width: 760px) {
+            .flow-row, .branch {
+              display: block;
+            }
+            .arrow {
+              width: 2px;
+              height: 22px;
+              margin: 8px auto;
+            }
+            .arrow::after {
+              right: -5px;
+              top: 18px;
+              border-left: 6px solid transparent;
+              border-right: 6px solid transparent;
+              border-top: 10px solid #64748b;
+              border-bottom: none;
+            }
+          }
+        </style>
+        <div class="flow-row">
+          <div class="flow-card">ETF 가격</div>
+          <div class="arrow"></div>
+          <div class="flow-card">일별 수익률</div>
+          <div class="arrow"></div>
+          <div class="flow-card">60거래일 기준<br>사건 크기 분류</div>
+          <div class="arrow"></div>
+          <div class="flow-card">상승/하락<br>사건 카운트</div>
+          <div class="arrow"></div>
+          <div class="flow-card">risk / overheat / recovery<br>3개 점수</div>
+        </div>
+        <div class="branch">
+          <div class="flow-card secondary">모멘텀, 이동평균 괴리<br>변동성, 상대강도</div>
+          <div class="arrow"></div>
+          <div class="flow-card">5상태 HSI</div>
+          <div class="arrow"></div>
+          <div class="flow-card">시장상태 해석 및<br>비중 조절 overlay</div>
+        </div>
+        <p class="caption">
+          가격에서 출발한 사건 신호와 보조 지표를 점수화하고, 최종적으로 해석 가능한 5상태 HSI로 압축합니다.
+        </p>
+        """,
+        height=height,
+        scrolling=False,
+    )
+
+
 def render_signal_flow() -> None:
     st.subheader("가격 신호가 HSI가 되는 흐름")
-    st.markdown(
-        """
-```mermaid
-flowchart LR
-    A["ETF 가격"] --> B["일별 수익률"]
-    B --> C["60거래일 기준 사건 크기 분류"]
-    C --> D["상승/하락 사건 카운트"]
-    A --> E["모멘텀, 이동평균 괴리, 변동성, 상대강도"]
-    D --> F["risk / overheat / recovery 점수"]
-    E --> F
-    F --> G["5상태 HSI"]
-    G --> H["시장상태 해석 및 비중 조절 overlay"]
-```
-        """
-    )
+    render_flowchart()
 
 
 def render_state_table() -> None:

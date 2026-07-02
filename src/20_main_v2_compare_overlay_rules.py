@@ -1,7 +1,9 @@
-from pathlib import Path
-
 import numpy as np
 import pandas as pd
+
+from common.io_utils import read_csv_with_date as read_csv
+from common.metrics import calculate_performance_metrics
+from common.paths import TABLE_DIR
 
 
 """
@@ -37,11 +39,8 @@ output/tables/main_v2_rule_comparison_comment.csv
 
 
 # ============================================================
-# 0. 경로 설정
+# 0. 경로 설정 (common.paths.TABLE_DIR 사용)
 # ============================================================
-
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-TABLE_DIR = PROJECT_ROOT / "output" / "tables"
 
 MAIN_V2_PERFORMANCE_PATH = TABLE_DIR / "main_v2_performance_summary.csv"
 
@@ -54,77 +53,12 @@ OUTPUT_COMPARISON_COMMENT_PATH = TABLE_DIR / "main_v2_rule_comparison_comment.cs
 
 
 # ============================================================
-# 1. 데이터 로드
+# 1. 데이터 로드 · 2. 성과지표
+#    → common.io_utils.read_csv_with_date(as read_csv),
+#      common.metrics.calculate_performance_metrics 로 통합
+#    (기존 20의 성과지표 사본은 Sortino/months==0 가드가 누락돼 있어
+#     정본으로 교체하며, 그 결과 sortino/std_monthly_return 컬럼이 추가된다.)
 # ============================================================
-
-def read_csv(path: Path) -> pd.DataFrame:
-    if not path.exists():
-        raise FileNotFoundError(f"파일을 찾을 수 없습니다: {path}")
-
-    df = pd.read_csv(path)
-
-    if "Date" in df.columns:
-        df["Date"] = pd.to_datetime(df["Date"])
-
-    if "signal_date" in df.columns:
-        df["signal_date"] = pd.to_datetime(df["signal_date"])
-
-    return df
-
-
-# ============================================================
-# 2. 성과지표 계산
-# ============================================================
-
-def calculate_performance_metrics(group: pd.DataFrame) -> pd.Series:
-    group = group.sort_values("Date").copy()
-
-    monthly_returns = group["monthly_return"].dropna()
-    months = len(monthly_returns)
-
-    cumulative = (1 + monthly_returns).cumprod()
-    total_return = cumulative.iloc[-1] - 1
-
-    years = months / 12
-    cagr = (1 + total_return) ** (1 / years) - 1 if years > 0 else np.nan
-
-    monthly_mean = monthly_returns.mean()
-    monthly_std = monthly_returns.std(ddof=1)
-
-    annual_volatility = monthly_std * np.sqrt(12)
-
-    if annual_volatility == 0 or pd.isna(annual_volatility):
-        sharpe = np.nan
-    else:
-        sharpe = (monthly_mean * 12) / annual_volatility
-
-    running_max = cumulative.cummax()
-    drawdown = cumulative / running_max - 1
-    mdd = drawdown.min()
-
-    if mdd == 0 or pd.isna(mdd):
-        calmar = np.nan
-    else:
-        calmar = cagr / abs(mdd)
-
-    win_rate = (monthly_returns > 0).mean()
-
-    return pd.Series(
-        {
-            "months": months,
-            "total_return": total_return,
-            "cagr": cagr,
-            "annual_volatility": annual_volatility,
-            "sharpe": sharpe,
-            "mdd": mdd,
-            "calmar": calmar,
-            "win_rate": win_rate,
-            "mean_monthly_return": monthly_mean,
-            "min_monthly_return": monthly_returns.min(),
-            "max_monthly_return": monthly_returns.max(),
-        }
-    )
-
 
 def make_v2b_performance_summary(
     backtest_rank: pd.DataFrame,
