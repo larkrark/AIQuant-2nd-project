@@ -1,0 +1,12 @@
+﻿signal_name,signal_family,direction_sign,event_interpretation,available_in_bundle
+ret_1m,return,-1,수익률이 높을수록 위험 완화이므로 부호를 반전한다.,True
+ret_3m,return,-1,수익률이 높을수록 위험 완화이므로 부호를 반전한다.,True
+ma_gap,trend,-1,이동평균 대비 위치가 좋을수록 위험 완화로 본다.,True
+momentum,trend,-1,모멘텀이 좋을수록 위험 완화로 본다.,True
+volatility,risk_damage,1,변동성이 클수록 위험 악화로 본다.,True
+relative_strength,relative_strength,-1,상대강도가 좋을수록 위험 완화로 본다.,True
+ret_6m,return,-1,장기 수익률이 높을수록 위험 완화로 본다.,True
+ret_12m,return,-1,장기 수익률이 높을수록 위험 완화로 본다.,True
+drawdown,risk_damage,-1,drawdown은 더 음수일수록 위험이므로 방향을 보정한다.,True
+shock_count,risk_damage,1,급락일 수가 많을수록 위험 악화로 본다.,True
+defensive_rs,relative_strength,-1,방어자산 상대강도는 완화 방향으로 해석한다.,True

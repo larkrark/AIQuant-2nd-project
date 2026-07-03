@@ -1,0 +1,12 @@
+﻿signal_column,available
+ret_1m,True
+ret_3m,True
+ma_gap,True
+momentum,True
+volatility,True
+relative_strength,True
+ret_6m,True
+ret_12m,True
+drawdown,True
+shock_count,True
+defensive_rs,True
