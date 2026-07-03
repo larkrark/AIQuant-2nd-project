@@ -16,6 +16,7 @@ data/raw/AI퀀트분석데이터셋/
 # Generated practice outputs
 practice/output/
 review/
+_backups/
 
 # Local external download/code/document classification scratch folder
 external_downloads_classification/
@@ -45,6 +46,7 @@ desktop.ini
 
 # Local Streamlit run logs
 .streamlit-run*.log
+.streamlit-*.log
 
 # Office temporary/lock files
 ~$*
