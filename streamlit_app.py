@@ -11,7 +11,7 @@ SRC_DIR = ROOT / "src"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
-from dashboard import artifacts, home, hsi_candidates, midterm, strategy_detail  # noqa: E402
+from dashboard import artifacts, factor_attribution, home, hsi_candidates, midterm, strategy_detail  # noqa: E402
 from dashboard.paths import HSI_CANDIDATE_OUTPUT_DIR  # noqa: E402
 
 
@@ -19,6 +19,7 @@ PAGES = {
     "home": ("HSI란 무엇인가?", home.render),
     "candidates": ("후보 전략 시각화", hsi_candidates.render),
     "detail": ("전략 상세 분석", strategy_detail.render),
+    "factor": ("팩터·기여도", factor_attribution.render),
     "artifacts": ("산출물 비교 테스트", artifacts.render),
     "midterm": ("중간발표 아카이브", midterm.render),
 }
@@ -88,6 +89,7 @@ def render_sidebar(active_key: str) -> None:
                     page_link("home", active_key),
                     page_link("candidates", active_key),
                     page_link("detail", active_key),
+                    page_link("factor", active_key),
                     page_link("artifacts", active_key),
                     page_link("midterm", active_key),
                 ]

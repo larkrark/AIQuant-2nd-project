@@ -2,6 +2,55 @@
 
 AIQuant 2차 프로젝트 작업 저장소입니다. 현재 흐름은 한국 상장 ETF 가격 데이터를 기반으로 HSI(Hourglass Signal Index) 시장 상태 지표를 생성하고, 이를 market timing 보조 신호로 활용할 수 있는지 검토하는 방향입니다.
 
+## 🔧 최근 대규모 업데이트 (2026-07-06): 구조 리팩터링 · RA 확장 · 작업환경 주의
+
+> 다른 조원 및 후속 에이전트를 위한 요약. 상세는 `docs/` 관련 문서 참조.
+
+### 1) src/ 구조 재편
+```
+src/
+├── common/     공통 모듈 (paths·config·io_utils·viz·metrics·backtest)
+├── pipeline/   새 파이프라인 (리포트 00~17·20~23 반영)
+├── dashboard/  Streamlit 대시보드
+├── legacy/     과거 00~30 + portfolio_optimizer (복구용 보존)
+└── tests/      pytest
+```
+- 옛 번호 스크립트(main_v2/flex/v3 계열)는 `src/legacy/`로 이동(경로 깊이만 보정). 구조 설명: `src/STRUCTURE.md`.
+- 최상위 `20~23_*` 스크립트는 조원 최종 리포트/선별 원본(참조용), 로직은 `pipeline/`으로 이식됨.
+
+### 2) 새 파이프라인 (`src/pipeline`) — 단계 지도: `cd src && python3 -m pipeline.run`
+- 구현: `stage_d_lambda`(λ 부분조정), `stage_g_benchmark`(Fixed 70/20/10), `stage_selection`(비용·Turnover 선별), `stage_factor`(팩터 로딩), `stage_attribution`(성과 기여도).
+- 스텁(데이터 인제스트 후 구현): `stage_a_data`, `stage_b_hsi`, `stage_c_diagnostics`, `stage_e_macro`, `stage_f_robustness`.
+
+### 3) RA(로보어드바이저) 확장 — 신규
+- `stage_factor.py`: 팩터 로딩 회귀(β·t-stat·R²·VIF·36개월 rolling), expanding z-score·시차로 룩어헤드 차단.
+- `stage_attribution.py`: EW 대비 초과수익 = SAA + 타이밍 + λ smoothing + 비용 (가법 항등식 분해).
+- 대시보드 "팩터·기여도" 페이지 추가: `streamlit run streamlit_app.py`.
+
+### 4) 테스트
+```
+cd src && python3 -m pytest tests/ -q     # 30 passing
+```
+모든 신규 로직은 numpy/pandas 합성 데이터로 검증됨(외부 데이터 불필요).
+
+### 5) 실행에 필요한 미보유 데이터 (0단계 = 데이터 인제스트)
+- `data/processed/main_final_*_backtest_timeseries.csv` (조원 20_select 등 최종 스크립트 입력)
+- `data/factors/monthly_factors.csv` (팩터 원자료 — ECOS 무료: 회사채/국고 수익률·금리, KRX: VKOSPI·거래대금)
+→ 이 데이터가 채워지면 `stage_selection`/`stage_factor`/`stage_attribution`이 실제 값으로 실행됨.
+
+### 6) ⚠️ 작업환경 주의 (에이전트 필독)
+- 일부 편집이 **샌드박스 마운트**를 통해 이뤄졌고, 그 환경에서 **(a) git 커밋 불가, (b) 파일 저장 시 간헐적 손상**(트레일링 널바이트·유령 코드 조각 주입)이 발생함.
+- 따라서 편집 후 **반드시 `python -m py_compile` + `pytest`로 검증**하고, 파일이 손상돼 보이면 **`_backups/src_<타임스탬프>/` 스냅샷에서 복구**할 것.
+- **커밋은 반드시 PC 네이티브 git에서** 수행(샌드박스 불가). 관련: `docs/git_복구_및_커밋_안전장치_2026-07-03.md`.
+- 위험 작업 전 스냅샷: `bash backup_src.sh`.
+
+### 7) 관련 문서
+- `docs/RA_확장성_검토_2026-07-03.md` — RA 요구사항 충족도·갭
+- `docs/meetings/HSI_RA_팩터후보_통합표_2026-07-03.md` — 팩터 후보(기본+추가, 팀검토 반영)
+- `docs/팩터_파이프라인_시각화_반영_설계_2026-07-03.md` — 팩터 반영 설계
+- `docs/src_common_리팩터링_요약_2026-07-02.md`, `docs/src_파이프라인_코드분석_개선방향_2026-07-02.md`
+
+
 ## 최근 업데이트
 
 - `practice/` 실습 폴더를 추가했습니다.

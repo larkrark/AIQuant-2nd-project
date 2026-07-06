@@ -67,3 +67,16 @@ FACTOR_LAG = {                       # 발표 시차/룩어헤드 차단용 lag(
 }
 FACTOR_CORR_THRESHOLD = 0.80         # 상관 중복 경고 임계
 FACTOR_VIF_THRESHOLD = 5.0           # 다중공선성 경고 임계
+
+# --- 동적 lambda (감마) : 실험용, 기본 비활성 ---
+# lambda_t = clip(lam_min, lam_max, lambda_base + gamma * risk_score_t)
+# gamma 부호는 경제적 근거로 a priori 고정(위험↑ -> lambda↓ 이면 gamma<0).
+# 반드시 train/validation/test 또는 walk-forward 로 검증 후 사용.
+DYNAMIC_LAMBDA = {
+    "enabled": False,
+    "lambda_base": 0.3,
+    "gamma": -0.05,
+    "lam_min": 0.10,
+    "lam_max": 0.50,
+    "risk_score": "composite",  # 예: 표준화 realized_vol/stock_bond_corr 합성
+}
