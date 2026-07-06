@@ -52,3 +52,18 @@ SELECTION_SCORE_WEIGHTS = {
 }
 
 REBALANCE = "monthly"
+
+# --- 팩터 로딩 (stage_factor) ---
+FACTOR_SET = ["market", "bond", "vkospi", "liquidity", "downside_risk"]
+FACTOR_ROLLING_WINDOW = 36           # 기본 rolling window(개월). 24는 부록 민감도.
+FACTOR_STANDARDIZE = "expanding_z"   # 룩어헤드 차단: 전체표본 아닌 expanding z-score
+FACTOR_MIN_PERIODS = 12              # 표준화/회귀 최소 관측
+FACTOR_LAG = {                       # 발표 시차/룩어헤드 차단용 lag(개월)
+    "vkospi": 0,
+    "liquidity": 0,
+    "us_spillover": 1,
+    "macro": 1,
+    "credit_spread": 1,
+}
+FACTOR_CORR_THRESHOLD = 0.80         # 상관 중복 경고 임계
+FACTOR_VIF_THRESHOLD = 5.0           # 다중공선성 경고 임계

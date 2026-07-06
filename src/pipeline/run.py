@@ -24,6 +24,7 @@ STAGES = [
     Stage("stage_e_macro", "12~15", "Macro companion/soft overlay", "스텁"),
     Stage("stage_f_robustness", "16", "Regime robustness", "스텁"),
     Stage("stage_g_benchmark", "17", "Benchmark alignment(Fixed 70/20/10)", "구현"),
+    Stage("stage_factor", "RA팩터", "팩터 로딩 분석(β·t-stat·VIF·rolling)", "구현"),
     Stage("stage_selection", "20~23", "최종 후보 선별(비용·Turnover)", "구현"),
 ]
 
