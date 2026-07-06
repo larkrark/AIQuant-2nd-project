@@ -62,27 +62,51 @@ def render() -> None:
 
     with tabs[0]:
         st.plotly_chart(fc.factor_loading_heatmap_fig(data["loading_summary"]), use_container_width=True)
-        st.caption("β>0: 해당 팩터에 양의 노출. alpha 행은 팩터로 설명되지 않는 초과수익.")
+        st.info(
+            "**해석 방법**: β가 +이면(빨강) 그 팩터가 오를 때 전략도 같이 오르는 노출, "
+            "−이면(파랑) 반대 방향 노출. |β|가 1을 크게 넘으면 해당 팩터에 과도하게 기대는 전략이다. "
+            "alpha가 0보다 뚜렷하게 크면 팩터로 설명되지 않는 초과수익이 있다는 뜻."
+        )
         st.dataframe(data["loading_summary"], use_container_width=True, hide_index=True)
 
     with tabs[1]:
         factors = fc.rolling_factor_columns(data["rolling_ts"])
         if factors:
-            sel = st.selectbox("팩터 선택", factors, index=0)
+            sel = st.selectbox(
+                "팩터 선택", factors, index=0,
+                format_func=fc.factor_label_kr,
+            )
             st.plotly_chart(fc.rolling_exposure_fig(data["rolling_ts"], sel), use_container_width=True)
-            st.caption("36개월 rolling 회귀 β. 시간에 따른 노출 변화를 본다.")
+            st.info(
+                "**해석 방법**: 선이 0 위에 있으면 그 시기에 팩터와 같은 방향으로 움직였다는 뜻. "
+                "β가 시기에 따라 부호가 뒤집히거나 크게 출렁이면 노출이 불안정해 "
+                "전체 기간 β 하나로 전략 성격을 단정하기 어렵다."
+            )
         else:
             st.warning("rolling 시계열에 팩터 컬럼(_beta)이 없습니다.")
 
     with tabs[2]:
         if data.get("vif") is not None:
             st.plotly_chart(fc.vif_bar_fig(data["vif"]), use_container_width=True)
-            st.caption("VIF가 임계(기본 5)를 넘으면 다중공선성 → 중복 팩터 제거 검토(팀검토 반영).")
+            st.info(
+                "**해석 방법**: VIF가 5 이상이면 다른 팩터와 정보가 겹쳐(다중공선성) "
+                "β 추정이 불안정해지고 과적합 위험이 커진다 → 해당 팩터 제거·통합을 검토. "
+                "10 이상이면 사실상 중복 팩터로 본다."
+            )
         else:
             st.info("VIF 표(factor_vif.csv)가 없어 생략했습니다. screen_factors로 생성할 수 있습니다.")
 
     with tabs[3]:
         st.plotly_chart(fc.attribution_waterfall_fig(data["attr_summary"]), use_container_width=True)
-        st.caption("EW 대비 초과수익 = SAA + 타이밍 + λ smoothing + 비용 (가법 분해).")
+        st.info(
+            "**해석 방법**: 막대가 +이면 그 요인이 EW 대비 초과수익에 보탬, −이면 깎아먹음. "
+            "상태 타이밍이 +인데 거래비용 −가 그만큼 크면 신호는 맞아도 실익이 없는 전략이다. "
+            "네 요인의 합 = 맨 오른쪽 합계(가법 분해)."
+        )
         st.plotly_chart(fc.attribution_cumulative_fig(data["attr_cumulative"]), use_container_width=True)
+        st.info(
+            "**해석 방법**: 각 선이 우상향하면 그 요인이 꾸준히 기여했다는 뜻. "
+            "특정 구간(위기 등)에서만 급등했다면 그 시기 방어가 성과의 대부분 — "
+            "구간 의존적 성과인지 확인이 필요하다."
+        )
         st.dataframe(data["attr_summary"], use_container_width=True, hide_index=True)

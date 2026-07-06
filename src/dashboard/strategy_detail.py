@@ -12,7 +12,7 @@ from .paths import HSI_CANDIDATE_DATA_DIR
 TS_FILE = "23_main_final_report_candidate_timeseries_subset_dedup.csv"
 SHORTLIST_FILE = "23_main_final_report_candidate_shortlist.csv"
 
-# λ=0.7은 shortlist에 없어 docs/main_final_lambda_experiment_note.md 성과 표 값을 사용
+# λ=0.7은 shortlist에 없어 docs/experiment_notes/main_final_lambda_experiment_note.md 성과 표 값을 사용
 LAMBDA_07_ROW = {
     "lambda_value": 0.7,
     "CAGR_pct": 8.0646,
@@ -451,7 +451,7 @@ def render() -> None:
     st.subheader("λ 민감도 분석")
     st.caption(
         "부분조정 계수 λ에 따른 성과 변화입니다. λ=0.7은 shortlist에 없어 "
-        "docs/main_final_lambda_experiment_note.md의 성과 표 값을 사용했습니다."
+        "docs/experiment_notes/main_final_lambda_experiment_note.md의 성과 표 값을 사용했습니다."
     )
     fam, ew_row = load_lambda_family()
     metric_label = st.radio(

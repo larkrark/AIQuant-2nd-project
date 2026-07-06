@@ -436,7 +436,7 @@ def main() -> None:
 
     # 3) 배치 메모
     print("[3] 그림 배치 메모 저장")
-    note_path = DOCS_DIR / "main_final_report_additional_figure_placement_note.md"
+    note_path = DOCS_DIR / "experiment_notes" / "main_final_report_additional_figure_placement_note.md"
     write_placement_note(note_path)
     print(f"    저장: {note_path}")
 

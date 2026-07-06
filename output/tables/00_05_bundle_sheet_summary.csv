@@ -1,0 +1,17 @@
+﻿sheet_name,rows,columns,status
+input_structure,12,8,OK
+output_structure,14,8,OK
+etf_info,3,8,OK
+asset_class,3,15,OK
+monthly_price,172,4,OK
+monthly_return,171,4,OK
+signal_inputs,10458,13,OK
+raw_scores,3486,16,OK
+hsi_direction,3486,4,OK
+hsi_signal,3486,4,OK
+signal_direction_map,5,4,OK
+snapshot,3,11,OK
+data_period,3,8,OK
+missing_summary,3,6,OK
+liquidity_check,3,11,OK
+exclusions,4,3,OK

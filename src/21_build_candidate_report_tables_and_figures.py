@@ -583,7 +583,7 @@ def main() -> None:
         **fig_paths,
     }
     note_text = build_markdown_note(shortlist, note_paths)
-    note_path = DOCS_DIR / "main_final_candidate_report_pack_note.md"
+    note_path = DOCS_DIR / "experiment_notes" / "main_final_candidate_report_pack_note.md"
     note_path.write_text(note_text, encoding="utf-8")
     print(f"    저장: {note_path}")
 

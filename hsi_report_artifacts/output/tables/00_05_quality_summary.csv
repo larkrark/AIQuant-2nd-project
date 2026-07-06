@@ -1,7 +1,0 @@
-﻿check_item,result,status,note
-bundle_file,hsi_data_bundle.xlsx,OK,기준 데이터 번들
-sheet_count,16,OK,엑셀 번들 시트 수
-monthly_price_period,2012-03~2026-06,OK,월말 가격 기간
-monthly_return_period,2012-04~2026-06,OK,월간 수익률 기간
-etf_count,3,OK,최종 ETF 유니버스 개수
-baseline_months,172,OK,HSI baseline 월별 관측치

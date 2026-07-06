@@ -61,7 +61,7 @@ OUTPUT_ALL_COST = cfg.TABLE_DIR / "main_final_candidate_all_cost_sensitivity.csv
 OUTPUT_TURNOVER_FILTERED = cfg.TABLE_DIR / "main_final_candidate_turnover_filtered.csv"
 OUTPUT_FINAL_JUDGEMENT = cfg.TABLE_DIR / "main_final_candidate_final_judgement.csv"
 OUTPUT_SELECTION_SUMMARY = cfg.TABLE_DIR / "main_final_candidate_selection_summary.csv"
-OUTPUT_NOTE = cfg.DOCS_DIR / "main_final_candidate_selection_note.md"
+OUTPUT_NOTE = cfg.DOCS_DIR / "experiment_notes" / "main_final_candidate_selection_note.md"
 
 YEAR_MONTH_COL = "year_month"
 RETURN_YEAR_MONTH_COL = "return_year_month"

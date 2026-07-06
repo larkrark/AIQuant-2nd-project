@@ -1,6 +1,0 @@
-﻿summary_type,segment,months,macro_data_available_months,macro_risk_months,adjusted_months,avg_delta_pctp,max_delta_pctp,total_delta_pctp,avg_strength,max_strength
-by_macro_hsi_overlap_type,both_hsi_and_macro_risk,26,26,26,8,0.4423076923076923,2.5,11.5,1.0,1.0
-by_macro_hsi_overlap_type,both_relief_or_neutral,55,55,0,0,0.0,0.0,0.0,0.0,0.0
-by_macro_hsi_overlap_type,hsi_risk_only,21,21,0,0,0.0,0.0,0.0,0.0,0.0
-by_macro_hsi_overlap_type,macro_data_unavailable,22,0,0,0,0.0,0.0,0.0,0.0,0.0
-by_macro_hsi_overlap_type,macro_risk_only,48,48,48,48,0.4322916666666667,1.25,20.75,0.34375,0.5

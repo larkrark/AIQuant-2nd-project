@@ -13,9 +13,11 @@ MIDTERM_FIGURE_DIR = MIDTERM_DIR / "figures"
 LEGACY_TABLE_DIR = ROOT / "output" / "tables"
 LEGACY_FIGURE_DIR = ROOT / "output" / "figures"
 
-ARTIFACTS_DIR = ROOT / "hsi_report_artifacts"
-ARTIFACT_REPORT_DIR = ARTIFACTS_DIR / "reports"
-ARTIFACT_NOTE_DIR = ARTIFACTS_DIR / "notes"
-ARTIFACT_TABLE_DIR = ARTIFACTS_DIR / "output" / "tables"
-ARTIFACT_FIGURE_DIR = ARTIFACTS_DIR / "output" / "figures"
-ARTIFACT_META_DIR = ARTIFACTS_DIR / "meta"
+# hsi_report_artifacts 해체 후 root 구조로 통합 (2026-07-06 정리)
+# manifest의 repo_path가 ROOT 기준 상대경로이므로 ARTIFACTS_DIR = ROOT
+ARTIFACTS_DIR = ROOT
+ARTIFACT_REPORT_DIR = ROOT / "docs" / "reports"
+ARTIFACT_NOTE_DIR = ROOT / "docs" / "experiment_notes"
+ARTIFACT_TABLE_DIR = ROOT / "output" / "tables"
+ARTIFACT_FIGURE_DIR = ROOT / "output" / "figures"
+ARTIFACT_META_DIR = ROOT / "output" / "streamlit" / "artifacts_meta"

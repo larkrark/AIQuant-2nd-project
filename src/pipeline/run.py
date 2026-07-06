@@ -41,7 +41,7 @@ def print_pipeline_map() -> None:
     print("-" * 76)
     done = sum(s.status != "스텁" for s in STAGES)
     print(f"구현/부분구현 {done} / 전체 {len(STAGES)} 단계")
-    print("공통 기반: src/common | 과거 코드: src/legacy | 참고: hsi_report_artifacts/reports")
+    print("공통 기반: src/common | 과거 코드: src/legacy | 참고: docs/reports")
     print("스텁 단계 실행에는 리포트가 참조하는 main_final_* 입력 데이터가 필요(현재 repo에 없음).")
     print("=" * 76)
 

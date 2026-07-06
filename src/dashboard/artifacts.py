@@ -313,8 +313,8 @@ def render_report_reader() -> None:
 
 def render() -> None:
     st.title("HSI 산출물 비교용 테스트")
-    st.caption(f"격리 패키지: {ARTIFACTS_DIR}")
-    st.info("root 구조로 풀기 전에 hsi_report_artifacts 내부 자료만 읽어 보고서, 그림, CSV 표를 비교합니다.")
+    st.caption(f"프로젝트 루트 기준: {ARTIFACTS_DIR}")
+    st.info("hsi_report_artifacts를 root 구조(docs/reports, docs/experiment_notes, output/figures, output/tables)로 통합한 자료를 읽어 보고서, 그림, CSV 표를 비교합니다.")
 
     render_metric_row()
 

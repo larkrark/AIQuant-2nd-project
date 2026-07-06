@@ -51,11 +51,11 @@ OUTPUT_FIGURES.mkdir(parents=True, exist_ok=True)
 # ============================================================
 
 INPUT_CANDIDATES = [
-    DOCS_DIR / "main_final_hsi_overlay_result_report_with_recommendations.md",
-    DOCS_DIR / "main_final_hsi_overlay_result_report.md",
+    DOCS_DIR / "reports" / "main_final_hsi_overlay_result_report_with_recommendations.md",
+    DOCS_DIR / "reports" / "main_final_hsi_overlay_result_report.md",
 ]
 
-OUTPUT_PATH = DOCS_DIR / "main_final_hsi_overlay_result_report_with_figures.md"
+OUTPUT_PATH = DOCS_DIR / "reports" / "main_final_hsi_overlay_result_report_with_figures.md"
 
 
 def find_input_report() -> Path:

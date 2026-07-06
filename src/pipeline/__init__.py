@@ -1,7 +1,7 @@
 """
 HSI Overlay 새 파이프라인 패키지.
 
-hsi_report_artifacts/reports/ 의 최종 00~17 · 20~23 실험 흐름을 단계 모듈로 재구성한다.
+docs/reports/ 의 최종 00~17 · 20~23 실험 흐름을 단계 모듈로 재구성한다.
 공통 로직은 src/common(경로/설정/IO/성과지표/백테스트)을 재사용한다.
 
 단계

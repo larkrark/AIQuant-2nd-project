@@ -3,7 +3,7 @@
 ```
 src/
 ├── common/     # 공통 모듈 (경로/설정/IO/시각화/성과지표/백테스트)
-├── pipeline/   # 새 파이프라인 (hsi_report_artifacts 리포트 00~17·20~23 반영)
+├── pipeline/   # 새 파이프라인 (docs/reports 리포트 00~17·20~23 반영)
 ├── dashboard/  # Streamlit 대시보드
 ├── legacy/     # 과거·중간 파이프라인 (00~30, portfolio_optimizer) — 복구용 보존
 └── tests/      # pytest
