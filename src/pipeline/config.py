@@ -80,3 +80,37 @@ DYNAMIC_LAMBDA = {
     "lam_max": 0.50,
     "risk_score": "composite",  # 예: 표준화 realized_vol/stock_bond_corr 합성
 }
+
+# --- E30-M 규칙 기반 동적 lambda (기본 0.3 + 고위험/안정완화 예외) ---
+# 값은 E28 단일 λ 실험에서 의미가 확인된 후보(0.1/0.3/0.5)에서만 가져온다(과적합 방지).
+# 우선순위: 고위험 > 안정완화 > 기본. threshold는 IS에서만 결정할 것.
+DYNAMIC_LAMBDA_RULE = {
+    "lam_default": 0.3,        # 기본(균형형 후보) = 과적합 방지 기준 속도
+    "lam_high_risk": 0.1,      # 고위험 시(방어형 후보로 느리게)
+    "lam_easing": 0.5,         # 안정 완화 확인 시(반영 가속)
+    "vol_z_high": 1.0,         # volatility_z > 1
+    "drawdown_low": -0.10,     # rolling_drawdown < -10%
+    "macro_risk_high": 2,      # macro_risk_score >= 2 (rate_up + fx_up >= 2)
+    "relief_persist_months": 3,  # risk_relief 3개월 이상 지속
+}
+
+# --- IS/OOS 분리 (보고서 §9) ---
+IS_END = "2020-12-31"       # IS: 2012-04 ~ 2020-12
+OOS_START = "2021-01-01"    # OOS: 2021-01 ~ 2026-06
+
+# --- Adoption decision: 사전등록 비열등 4조건 (보고서 §13 표7, OOS 10bp net) ---
+# Score식이 아니라 4조건 AND 통과(비열등)로 채택 판정.
+ADOPTION = {
+    "cost_bp": 10,
+    "calmar_ratio_min": 0.90,      # ① Calmar_net >= 대칭 최우수 Calmar × 0.90
+    "mdd_worsen_allow_pct": 2.0,   # ② MDD가 대칭 λ=0.1 대비 2.0%p 이상 악화 금지
+    "tail_worsen_allow_pct": 0.3,  # ③ tail-month 평균수익이 λ=0.1 대비 0.3%p 이상 악화 금지
+    "turnover_mult_max": 1.5,      # ④ 평균 Turnover <= 대칭 λ=0.3 × 1.5
+    "tail_quantile": 0.10,         # tail-month = 위험자산(069500) 하위 10% 손실월
+}
+
+# --- 비대칭 λ 후보 (보고서 E29, up/down) ---
+ASYM_CANDIDATES = [(0.1, 0.3), (0.1, 0.5), (0.2, 0.3)]  # (lam_up, lam_down)
+
+# --- Walk-forward 검증 (보고서 §3.9) ---
+WALK_FORWARD = {"train": 60, "test": 12, "step": 12}  # 개월
