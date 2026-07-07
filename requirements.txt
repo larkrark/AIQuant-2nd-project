@@ -1,13 +1,9 @@
-pandas
-numpy
-matplotlib
-pillow
-openpyxl
-scipy
-plotly
 streamlit==1.58.0
 pandas==3.0.3
 numpy==2.5.0
 matplotlib==3.11.0
+pillow
 openpyxl==3.1.5
+plotly==6.8.0
 scipy==1.18.0
+streamlit-mermaid==0.3.0
