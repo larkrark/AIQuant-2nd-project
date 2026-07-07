@@ -242,3 +242,50 @@ def run_from_files() -> pd.DataFrame:
 
 if __name__ == "__main__":
     print(run_from_files().head(20).to_string(index=False))
+
+
+# ------------------------------------------------------------
+# Adoption decision — 사전등록 비열등 4조건 (보고서 §13 표7)
+#   Score식(가중치 합산) 대신, OOS 10bp net 기준 4조건 AND 통과로 채택 판정.
+# ------------------------------------------------------------
+
+def adoption_decision(metrics, *, thresholds=None,
+                      sym_lambda_low="lambda_0.1", sym_lambda_high="lambda_0.3"):
+    """
+    비열등(non-inferiority) 판정.
+
+    metrics: DataFrame[strategy, Calmar_net, MDD_pct, tail_month_avg_pct, avg_turnover_pct]
+             (OOS 10bp 비용차감 기준)
+
+    참조값은 대칭 λ(0.1/0.3) 행에서 자동 도출:
+      ① Calmar_net        >= max(대칭 Calmar_net) × calmar_ratio_min(0.90)
+      ② MDD_pct           >= (λ=0.1 MDD_pct) − mdd_worsen_allow_pct(2.0)   # 덜 악화(MDD는 음수)
+      ③ tail_month_avg_pct>= (λ=0.1 tail)     − tail_worsen_allow_pct(0.3)
+      ④ avg_turnover_pct  <= (λ=0.3 turnover) × turnover_mult_max(1.5)
+
+    반환: metrics + cond1..4 + non_inferior(4조건 AND).
+    """
+    if thresholds is None:
+        from pipeline.config import ADOPTION as thresholds
+
+    m = metrics.set_index("strategy")
+    if sym_lambda_low not in m.index or sym_lambda_high not in m.index:
+        raise ValueError(f"대칭 λ 참조행({sym_lambda_low},{sym_lambda_high})이 metrics에 필요합니다.")
+    low, high = m.loc[sym_lambda_low], m.loc[sym_lambda_high]
+    sym_calmar_best = max(float(low["Calmar_net"]), float(high["Calmar_net"]))
+    mdd_ref = float(low["MDD_pct"])
+    tail_ref = float(low["tail_month_avg_pct"])
+    turn_ref = float(high["avg_turnover_pct"])
+
+    out = metrics.copy()
+    out["cond1_calmar"] = out["Calmar_net"] >= sym_calmar_best * thresholds["calmar_ratio_min"]
+    out["cond2_mdd"] = out["MDD_pct"] >= mdd_ref - thresholds["mdd_worsen_allow_pct"]
+    out["cond3_tail"] = out["tail_month_avg_pct"] >= tail_ref - thresholds["tail_worsen_allow_pct"]
+    out["cond4_turnover"] = out["avg_turnover_pct"] <= turn_ref * thresholds["turnover_mult_max"]
+    out["non_inferior"] = out[["cond1_calmar", "cond2_mdd", "cond3_tail", "cond4_turnover"]].all(axis=1)
+
+    out["ref_calmar_x0.9"] = round(sym_calmar_best * thresholds["calmar_ratio_min"], 4)
+    out["ref_mdd_floor"] = round(mdd_ref - thresholds["mdd_worsen_allow_pct"], 4)
+    out["ref_tail_floor"] = round(tail_ref - thresholds["tail_worsen_allow_pct"], 4)
+    out["ref_turnover_cap"] = round(turn_ref * thresholds["turnover_mult_max"], 4)
+    return out
