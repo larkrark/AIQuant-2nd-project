@@ -61,3 +61,4 @@ docs/**/*.pdf
 # Local render/check scratch folders
 _render_check*/
 _analysis_extract*/
+tmp/
