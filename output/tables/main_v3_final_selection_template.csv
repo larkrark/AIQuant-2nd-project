@@ -1,0 +1,2 @@
+candidate_id,signal_set,weight_rule_id,method,cagr_after_cost_0bp,cagr_after_cost_5bp,cagr_after_cost_10bp,cagr_after_cost_20bp,mdd,calmar,sharpe,avg_turnover,max_turnover,turnover_filter_pass,robustness_pass_count,rank_zscore_consistency,final_decision,decision_reason
+example_candidate,main_v3_baseline,grid_001,rank,,,,,,,,,,pending,0,pending,review,실험 결과 산출 후 비용 민감도와 Robustness 검증 결과를 입력

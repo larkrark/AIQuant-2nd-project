@@ -1,0 +1,6 @@
+stage_id,stage_name,input_table,filter_or_evaluation,output_table,decision_rule
+stage_001,1차 전체 Grid Search,main_v3_grid_search_full_results.csv,Turnover와 거래비용 적용 전 전체 후보 확인,main_v3_grid_search_full_results.csv,성과 상위 후보와 방어 지표 개선 후보를 넓게 유지
+stage_002,2차 Turnover 필터,main_v3_grid_search_full_results.csv,avg_turnover <= 0.05 and max_turnover <= 0.25,main_v3_turnover_filtered_candidates.csv,과도한 매매 후보 제거
+stage_003,거래비용 민감도,main_v3_turnover_filtered_candidates.csv,거래비용률 0.00%; 0.05%; 0.10%; 0.20% 반영,main_v3_transaction_cost_sensitivity.csv,0.10% 기준으로 우선 비교하고 0.20%에서 급격히 훼손되는 후보는 후순위
+stage_004,Robustness 검증,main_v3_transaction_cost_sensitivity.csv,기간 분할; 위기구간; 주변 파라미터; rank/zscore 일관성 확인,main_v3_robustness_summary.csv,특정 기간이나 특정 점수화 방식에만 의존한 후보는 후순위
+stage_005,최종 판단,main_v3_robustness_summary.csv,MDD; Calmar; Sharpe; Turnover; 비용 민감도; Robustness 종합,main_v3_final_candidate_decision.csv,keep/review/drop으로 분류하고 판단 사유 기록
