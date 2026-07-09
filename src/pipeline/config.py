@@ -114,3 +114,56 @@ ASYM_CANDIDATES = [(0.1, 0.3), (0.1, 0.5), (0.2, 0.3)]  # (lam_up, lam_down)
 
 # --- Walk-forward 검증 (보고서 §3.9) ---
 WALK_FORWARD = {"train": 60, "test": 12, "step": 12}  # 개월
+
+# --- HSI 신호 계산 (Stage B, 리포트 02~04 / legacy 10) ---
+HSI_PARAMS = {
+    # 원신호 계산 기간 (거래일)
+    "return_window": 20,
+    "ma_windows": [20, 60, 120],
+    "momentum_windows": [21, 63, 126],
+    "vol_window": 20,
+    "rs_window": 21,
+    # 표준화 방식: "rank"(기본) 또는 "zscore"(비교용)
+    "standardize": "rank",
+    "std_window": 252,
+    "std_min_periods": 60,
+    # -10~+10 점수 변환 기준
+    "clip_z": 2.5,       # zscore 방식 clip 범위
+    "rank_clip": 1.0,    # rank 방식 clip 범위 (-1~+1 그대로)
+    # buy/watch/caution 1차 신호 경계
+    "direction_threshold": 0.3,
+}
+
+# --- HSI 5상태 분류 컷오프 (Stage B, 리포트 04 / legacy 16) ---
+# direction: -1~+1 (양수=위험 악화), intensity: 0~1 (신호 강도)
+HSI_NEUTRAL_BAND = 0.15                  # |direction| <= 0.15 → 중립 밴드
+HSI_HIGH_INTENSITY_QUANTILE = 0.75       # intensity 상위 25%부터 '강한 신호'
+HSI_ACCIDENT_DIRECTION_QUANTILE = 0.85   # 양수 direction 상위 15%부터 accident 후보
+
+# --- HSI 상태별 baseline 목표비중 (리포트 05 / legacy 16) ---
+STATE5_ALLOCATION = {
+    "risk_relief": {
+        "069500": 1 / 3, "114260": 1 / 3, "153130": 1 / 3,
+        "state_name_kr": "위험 완화 우세", "action": "기본 동일비중 유지",
+    },
+    "neutral_watch": {
+        "069500": 1 / 3, "114260": 1 / 3, "153130": 1 / 3,
+        "state_name_kr": "관찰·중립", "action": "기본 동일비중 유지",
+    },
+    "conflict": {
+        "069500": 0.25, "114260": 0.375, "153130": 0.375,
+        "state_name_kr": "충돌 상태", "action": "소폭 방어",
+    },
+    "risk_warning": {
+        "069500": 0.20, "114260": 0.40, "153130": 0.40,
+        "state_name_kr": "위험 악화 우세", "action": "방어 강화",
+    },
+    "accident_zone": {
+        "069500": 0.10, "114260": 0.45, "153130": 0.45,
+        "state_name_kr": "강한 위험 악화", "action": "강한 방어전환",
+    },
+    "insufficient_data": {
+        "069500": 1 / 3, "114260": 1 / 3, "153130": 1 / 3,
+        "state_name_kr": "자료 부족", "action": "자료 부족 구간은 기본 동일비중",
+    },
+}

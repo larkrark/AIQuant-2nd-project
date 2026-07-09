@@ -80,8 +80,8 @@ def loading_matrix(loading_summary: pd.DataFrame) -> pd.DataFrame:
 
 
 def waterfall_values(attr_summary: pd.DataFrame) -> tuple[list, list, list]:
-    """기여도 요약 → 워터폴 (labels, values, measure)."""
-    order = ["saa", "timing", "lambda", "cost"]
+    """기여도 요약 → 워터폴 (labels, values, measure). effect 행 순서를 따라 v1/v2 모두 지원."""
+    order = [e for e in attr_summary["effect"].tolist() if e != "total_excess_vs_ew"]
     s = attr_summary.set_index("effect")["sum_contribution"]
     labels = order + ["total"]
     values = [float(s.get(e, 0.0)) for e in order] + [float(s.get("total_excess_vs_ew", 0.0))]
@@ -108,6 +108,8 @@ FACTOR_LABEL_KR = {
 EFFECT_LABEL_KR = {
     "saa": "정적 배분(SAA)",
     "timing": "상태 타이밍",
+    "exposure": "익스포저(평균 방어비중)",
+    "pure_timing": "순수 타이밍(공분산)",
     "lambda": "λ 부분조정",
     "cost": "거래비용",
     "total": "합계(EW 대비)",
@@ -185,6 +187,7 @@ def attribution_cumulative_fig(attr_cumulative: pd.DataFrame):
     fig = go.Figure()
     label = {
         "cum_saa_effect": "정적 배분(SAA)", "cum_timing_effect": "상태 타이밍",
+        "cum_exposure_effect": "익스포저(평균 방어비중)", "cum_pure_timing_effect": "순수 타이밍(공분산)",
         "cum_lambda_effect": "λ 부분조정", "cum_cost_effect": "거래비용",
         "cum_total_excess_vs_ew": "합계(EW 대비)",
     }

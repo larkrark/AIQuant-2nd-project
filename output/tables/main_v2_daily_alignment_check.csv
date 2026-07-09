@@ -1,0 +1,3 @@
+﻿method,trading_days,first_signal_date,last_signal_date,first_return_date,last_return_date,missing_return_cells,alignment_rule,alignment_flag
+rank,2999,2014-02-28,2026-05-31,2014-03-28,2026-06-19,0,월말 signal_date의 HSI 비중을 다음 달 모든 거래일의 일별 수익률에 적용,OK
+zscore,2999,2014-02-28,2026-05-31,2014-03-28,2026-06-19,0,월말 signal_date의 HSI 비중을 다음 달 모든 거래일의 일별 수익률에 적용,OK

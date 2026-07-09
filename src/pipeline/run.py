@@ -18,7 +18,7 @@ class Stage:
 
 STAGES = [
     Stage("stage_a_data", "00~01", "데이터 기준 정리", "스텁"),
-    Stage("stage_b_hsi", "02~05", "HSI 신호·5상태·baseline", "스텁"),
+    Stage("stage_b_hsi", "02~05", "HSI 신호·5상태·baseline", "구현"),
     Stage("stage_c_diagnostics", "06~09", "진단 보조 layer", "스텁"),
     Stage("stage_d_lambda", "10~11", "Lambda 부분조정 overlay", "구현"),
     Stage("stage_e_macro", "12~15", "Macro companion/soft overlay", "스텁"),

@@ -17,7 +17,7 @@ src/
 | 모듈 | 리포트 | 상태 |
 |---|---|---|
 | stage_a_data | 00~01 | 스텁 |
-| stage_b_hsi | 02~05 | 스텁 |
+| stage_b_hsi | 02~05 | 구현(HSI 신호·5상태 분류·baseline 비중, legacy 10·12·16 이식) |
 | stage_c_diagnostics | 06~09 | 스텁 |
 | stage_d_lambda | 10~11 | 구현(부분조정 + 거래비용) |
 | stage_e_macro | 12~15 | 스텁 |
