@@ -1,0 +1,8 @@
+﻿check_item,result,status,note
+hsi_state_table_shape,172 rows x 19 columns,OK,월별 HSI 상태표 생성 여부
+valid_state_months,168,OK,warm-up 이후 상태분류 가능 월 수
+insufficient_data_months,4,INFO,rolling 계산 초기 구간은 insufficient_data가 자연스러움
+first_valid_month,2012-07,OK,백테스트 연결 시 이 시점 이후 사용 권장
+last_valid_month,2026-06,OK,상태분류 마지막 월
+valid_state_types,"accident_zone, conflict, neutral_watch, risk_relief, risk_warning",OK,한 가지 상태만 나오면 기준 조정 필요
+alignment_preview_shape,171 rows x 13 columns,OK,월말 HSI 상태와 다음 달 수익률 연결 preview

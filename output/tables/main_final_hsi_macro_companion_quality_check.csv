@@ -1,0 +1,11 @@
+﻿check_item,result,status,note
+hsi_rows,172,OK,HSI 상태표 월 수
+macro_rows,171,OK,macro companion feature 월 수
+joined_rows,172,OK,HSI 월 기준으로 macro를 붙인 결과 row 수
+date_range,2012-03 ~ 2026-06,OK,진단 대상 기간
+macro_data_available_months,150,OK,금리·환율 기반 macro companion 계산 가능 월 수
+gdp_data_available_months,144,OK,GDP lagged 성장률 사용 가능 월 수
+hsi_risk_months,48,OK,HSI가 risk_warning 또는 accident_zone인 월 수
+macro_risk_months,74,OK,macro companion이 위험형 보조 신호를 낸 월 수
+both_hsi_and_macro_risk_months,26,OK,HSI 위험과 macro 위험이 동시에 나타난 월 수
+macro_support_ratio_within_hsi_risk,0.5417,OK,HSI 위험 월 중 macro 위험도 함께 나타난 비율

@@ -1,0 +1,890 @@
+--- 막내 왈
+1. 제가 먼저 복습할 코드 우선순위
+
+제일 먼저 볼 것은 datetime, resample, rolling, 이동평균 겹침 그래프입니다. 이건 HSI 프로젝트의 심장부입니다. 업로드한 노트북에도 stock_px_2.csv를 읽고, resample('B').ffill()로 영업일 기준 가격을 채운 뒤, close_px.AAPL.plot()과 rolling(250).mean()을 겹쳐 그리는 코드가 있습니다. 이 흐름은 HSI에서 일별 ETF 가격을 월말 가격, 월간 수익률, 이동평균 괴리율로 바꾸는 과정과 거의 직접 연결됩니다.
+
+close_all = pd.read_csv("stock_px_2.csv", parse_dates=True, index_col=0)
+
+close_px = close_all.resample("B").ffill()
+close_px = close_px[["AAPL", "MSFT", "XOM"]]
+
+close_px.AAPL.plot()
+close_px.AAPL.rolling(250).mean().plot()
+close_px.AAPL.rolling(5).mean().plot()
+
+이 코드는 프로젝트에서는 이렇게 바뀝니다.
+
+prices = prices.resample("B").ffill()
+monthly_prices = prices.resample("M").last()
+monthly_returns = monthly_prices.pct_change()
+ma_gap = prices / prices.rolling(60).mean() - 1
+
+즉, 수업 코드의 핵심은 “시간 인덱스를 가진 가격표를 만들고, 리샘플링하고, 이동평균을 겹쳐 시장 상태를 읽는 법”입니다.
+
+2. 두 번째로 볼 코드: 시계열 분해와 이동평균
+
+20260428 자료는 시계열 복습용으로 아주 좋습니다. 여기서는 EPS 데이터와 AirPassengers 데이터를 이용해 rolling(window=4).mean(), STL(period=4), seasonal_decompose, 수동 이동평균 분해를 실습합니다. 특히 AirPassengers 예제에서는 12개월 이동평균, 짝수 주기의 중앙 정렬, trend·seasonal·residual 분해를 직접 비교합니다.
+
+HSI 프로젝트에 직접 가져올 부분은 분해 모델 자체보다도 이 사고방식입니다.
+
+관측값
+→ 추세
+→ 계절성 또는 반복 패턴
+→ 잔차
+
+HSI에서는 이렇게 바꿔 생각할 수 있습니다.
+
+ETF 가격
+→ 중기 추세
+→ 단기 변동
+→ 위험 악화/완화 신호
+
+그래서 복습 그래프는 이걸 그리겠습니다.
+
+복습 그래프	학습 질문	HSI 연결
+원가격 + 이동평균선	가격이 추세 위/아래 어디에 있는가?	ma_gap
+추세 / 계절 / 잔차 분해	원자료를 어떤 성분으로 나눌 수 있는가?	HSI 신호 해석
+수동 분해 vs statsmodels 비교	내가 계산한 값이 라이브러리와 비슷한가?	직접 만든 HSI 검증
+
+보고서용으로는 이렇게 정리할 수 있습니다.
+
+시계열 자료는 단순히 현재 가격만 보는 것이 아니라, 시간에 따른 추세와 반복적 변동을 함께 확인해야 한다. 본 프로젝트의 HSI 입력 신호도 이러한 관점에서 구성되며, 가격이 이동평균 대비 어느 위치에 있는지, 최근 수익률과 변동성이 과거 대비 어느 정도인지 확인하여 시장상태를 분류한다.
+3. 세 번째로 볼 코드: ADF, 차분, ACF/PACF
+
+20260506_ADFuller 자료는 시계열 정상성, 차분, ACF/PACF, rolling forecast를 다룹니다. 자료에서는 widget sales 데이터를 대상으로 ADF 검정을 하고, 차분 후 다시 ADF를 수행하며, ACF/PACF를 통해 MA 또는 AR 구조를 확인합니다. 또한 rolling forecast로 mean, last value, MA(2)를 비교하고 MSE 막대그래프로 평가합니다.
+
+다만 HSI 프로젝트에서 ADF/ARIMA를 바로 예측모델로 쓰지는 않겠습니다. 이 자료 자체에도 “예측 모델을 만드는 것이 아닌 baseline 설계에는 도움 된다”는 취지의 메모가 있습니다.
+
+그래서 복습 목적은 이겁니다.
+가격 자체는 비정상 시계열일 가능성이 높다.
+수익률이나 차분 자료는 상대적으로 안정적인 분석 단위가 된다.
+따라서 HSI는 가격 자체보다 수익률, 이동평균 괴리, 변동성, 상대강도 같은 변환 신호를 사용한다.
+
+프로젝트 연결 문장은 이렇게 쓰면 좋습니다.
+본 프로젝트는 ETF 가격 수준 자체를 직접 예측하지 않고, 가격에서 파생한 수익률, 추세 괴리, 변동성, 상대강도 신호를 이용한다. 이는 가격 시계열이 추세를 포함할 수 있고, 단순 가격 수준보다 변환된 신호가 시장상태 판단에 더 적합하기 때문이다.
+
+4. 네 번째로 볼 코드: 분포, 이상치, 로그 변환, 결측 처리
+
+20260427 자료는 California house 데이터를 이용해 회귀, train/test split, R² 확인, target 분포 시각화, IQR 이상치 제거, 로그 변환, SimpleImputer 결측 대체를 다룹니다. 여기서 visualize_target()은 히스토그램, QQ plot, box plot을 한 번에 보여주고, rm_outlier()는 IQR 기준으로 이상치를 제거합니다. 로그 변환 후 R²가 개선되는 흐름도 확인됩니다.
+
+HSI 프로젝트에 가져올 핵심은 “모델 성능”이 아니라 데이터를 바로 믿지 말고 분포와 이상치를 먼저 본다는 습관입니다.
+
+복습 그래프는 이것입니다.
+
+그래프	HSI 프로젝트 연결
+수익률 히스토그램	ETF 월간 수익률의 꼬리위험 확인
+QQ plot	수익률이 정규분포와 얼마나 다른지 확인
+Box plot	극단 수익률, 위기월 확인
+결측치 heatmap 또는 missing summary	ETF별 데이터 품질 확인
+
+프로젝트 문장: HSI 입력 신호는 여러 ETF와 여러 지표를 함께 사용하므로, 결측치와 극단값을 사전에 확인해야 한다. 특히 월간 수익률, 변동성, 상대강도는 위기 구간에서 극단값이 발생할 수 있으므로, 이를 단순 오류로 제거하기보다 시장상태 변화의 신호인지 먼저 구분해야 한다.
+
+
+5. 다섯 번째로 볼 코드: 회귀, 과적합, 교차검증
+
+20260522 자료는 단일회귀, 다중회귀, RSS, MSE, RMSE, R², 경사하강법, 다항회귀, Pipeline, cross_val_score를 다룹니다. 특히 degree 1, 4, 15 다항회귀를 비교하면서 과소적합과 과대적합을 보여주는 부분이 중요합니다. degree 15에서 MSE와 회귀계수가 크게 튀는 결과는 “복잡한 모델이 항상 좋은 모델은 아니다”를 보여줍니다.
+
+HSI 프로젝트에서는 이게 θ 실험과 Grid Search 해석에 바로 연결됩니다.
+파라미터를 많이 돌려서 가장 성과가 좋은 조합을 고르면 과적합 위험이 커진다.
+따라서 Grid Search는 CAGR 1등 찾기가 아니라, MDD, Turnover, Sharpe, Calmar가 안정적인 구간을 찾는 실험이어야 한다.
+수업의 다항회귀 실습에서 확인했듯이, 모델 복잡도를 높이면 학습 데이터에만 과도하게 맞는 결과가 나타날 수 있다. 본 프로젝트의 θ 민감도 실험과 비중 규칙 Grid Search도 동일한 위험을 가진다. 따라서 본 프로젝트에서는 단일 성과지표가 가장 높은 조합을 최종 규칙으로 선택하지 않고, 여러 θ 후보와 비중 후보에서 MDD, Turnover, Sharpe, Calmar가 안정적으로 유지되는지를 함께 확인한다.
+
+6. 여섯 번째로 볼 코드: PCA
+
+20260526 자료는 iris 데이터를 4차원에서 2차원으로 줄이고, PCA 전후 산점도와 RandomForest 정확도 변화를 비교합니다. 원본 특성으로는 교차검증 정확도가 평균 0.96, PCA 2축으로 줄인 뒤에는 0.88로 낮아지는 결과가 나옵니다. 즉, 차원축소는 해석과 압축에는 유용하지만 정보 손실이 생길 수 있습니다.
+
+HSI 프로젝트에서 PCA는 “당장 필수”는 아닙니다. 하지만 추가 신호가 많아질 때는 중요해집니다.
+
+추가 신호 후보가 서로 비슷한 정보를 많이 담고 있다면,
+PCA로 신호를 압축하거나,
+상관관계 확인 후 일부 신호만 남기는 방식이 필요하다.
+
+특히 사용자의 과거 주식 심리 Proxy 프로젝트에서는 PCA를 사용한 경험이 있었으므로, HSI 확장 신호에서도 다음처럼 쓸 수 있습니다.
+
+기존 HSI 신호 + 추가 추세/변동성/낙폭 신호
+→ 상관관계 확인
+→ 중복 신호 제거
+→ 필요 시 PCA로 보조지표 생성
+
+다만 보고서에서는 이렇게 조심스럽게 써야 합니다. : PCA는 신호를 압축할 수 있지만, 각 축의 경제적 해석이 약해질 수 있다. 따라서 본 프로젝트에서는 기본 HSI 상태분류에는 해석 가능한 개별 신호를 우선 사용하고, PCA는 추가 신호가 많아지는 확장 실험에서 보조적으로 검토한다.
+
+7. 딥러닝 자료는 어떻게 볼 것인가
+
+20260512 자료는 sigmoid, ReLU, Xavier 초기값, He 초기값, 기울기 소실, Dropout, Batch Normalization 등을 다룹니다. 활성화값 히스토그램으로 기울기 소실과 표현력 제한 문제를 확인하고, MNIST에서 std=0.01, Xavier, He 초기값별 loss 감소를 비교합니다. He 초기값이 더 빠르게 loss를 낮추는 모습도 확인됩니다.
+
+이건 HSI 프로젝트의 핵심 코드는 아닙니다. HSI는 지금 딥러닝 모델이 아니라 규칙 기반 시장상태 분류 + 자산배분 overlay입니다.
+
+그래도 학습적으로 연결하면 의미가 있습니다.
+
+딥러닝 수업의 핵심:
+복잡한 모델은 초기값, 정규화, Dropout 같은 안정화 장치가 필요하다.
+
+HSI 프로젝트의 핵심:
+규칙 기반 전략도 θ, λ, Turnover 제한, 거래비용 반영 같은 안정화 장치가 필요하다.
+
+즉, 딥러닝 자료는 직접 코드 재사용보다는 “모델이 복잡해질수록 안정화 장치가 필요하다”는 철학으로 연결하겠습니다.
+
+8. 주식 이외 데이터.xlsx는 어떻게 쓸 것인가
+
+제가 확인한 엑셀 파일에는 다음 시트가 있습니다.
+
+2014년 이후 환율 데이터
+2014년 이후 금리 자료
+2014년 이후 금리 자료(RP)
+2014년 이후 매크로 데이터(GDP 성장률)
+2014년 이후 매크로 데이터(수입수출외환보유)
+2014년 이후 매크로 데이터(국채발행잔액)
+
+이 자료는 매우 유용하지만, 현재 HSI baseline에는 바로 넣지 않는 게 좋습니다.
+이유는 HSI 프로젝트의 현재 기준이 가격 기반 시장상태 분류이기 때문입니다.
+
+대신 이 자료는 세 단계로 활용합니다.
+
+1단계: 학습 복습용
+→ 날짜 처리, 월말 리샘플링, 결측 처리, 그래프 연습
+
+2단계: 해석 보조용
+→ 금리 상승기, 환율 급등기, 국채시장 변화 구간과 HSI 상태 비교
+
+3단계: 확장 실험용
+→ 후속 extended signal 후보로 넣을지 검토
+
+즉, 금리·환율·GDP 자료는 처음부터 HSI 입력으로 넣기보다, HSI 상태가 실제 매크로 환경 변화와 맞물렸는지 설명하는 보조 자료로 쓰는 것이 안전합니다.
+
+9. 제가 그릴 복습 그래프 목록
+
+막내 신참님이 실제로 복습한다면 그래프는 이 순서로 그립니다.
+
+| 순서 | 그래프                        | 복습 목적       | 프로젝트 연결            |
+| -: | -------------------------- | ----------- | ------------------ |
+|  1 | ETF 가격 + 20일/60일/250일 이동평균 | 추세 읽기       | `ma_gap`, momentum |
+|  2 | 일별 가격 → 월말 가격 점 표시         | 리샘플링 확인     | 월말 HSI 생성          |
+|  3 | 월간 수익률 히스토그램/Box plot      | 꼬리위험 확인     | MDD, 위기월 해석        |
+|  4 | rolling volatility         | 위험 악화 신호 확인 | HSI intensity      |
+|  5 | 위험자산 vs 방어자산 상대강도          | 위험 선호 변화 확인 | relative strength  |
+|  6 | HSI 상태별 색상 타임라인            | 상태분류 해석     | 5상태 보고서 그림         |
+|  7 | EW vs HSI 누적수익률            | 전략 비교       | 성과평가               |
+|  8 | Drawdown 비교                | 방어력 확인      | MDD 핵심 그림          |
+|  9 | Turnover 막대/시계열            | 과잉매매 확인     | λ 실험               |
+| 10 | θ별 MDD/Turnover/Calmar 비교  | 민감도 확인      | Robustness         |
+
+최종 판단
+
+막내님이 학습자료에서 바로 가져올 핵심은 딱 세 줄입니다.
+
+datetime/resample/rolling
+→ HSI 데이터 전처리의 핵심
+
+분포·회귀·과적합 검증
+→ HSI 실험 해석의 핵심
+
+PCA·ADF·시계열 분해
+→ 확장 실험과 보고서 논리의 보조 근거
+
+따라서 지금 올려주신 컴퓨팅 수업자료는 단순 복습용이 아니라, HSI 프로젝트의 데이터 전처리, 신호 생성, 백테스트 정합성, 과최적화 방지 논리를 설명하는 근거 자료로 사용할 수 있습니다.
+
+1. 첫 번째 화면: 인구수와 CCTV 산점도
+
+이 부분은 상관계수와 단순회귀선 복습에 아주 좋습니다.
+올려주신 결과에서 상관계수는 약 0.1294입니다.
+
+상관계수(설명: 두 변수가 같이 움직이는 정도입니다. 1에 가까우면 강한 양의 관계, -1에 가까우면 강한 음의 관계, 0에 가까우면 관계가 약합니다.)
+단순회귀선(설명: x가 변할 때 y가 평균적으로 어떻게 변하는지 직선으로 요약한 선입니다.)
+
+np.corrcoef(df6.f_total, df6.cctv_total)
+
+결과:
+
+0.12943668
+
+이 값은 약한 양의 상관관계입니다. 즉, 인구수가 많을수록 CCTV도 조금 많아지는 방향은 보이지만, 관계가 강하다고 말하기는 어렵습니다. 실제로 산점도에서도 점들이 회귀선 주변에 촘촘히 붙어 있지 않고 꽤 넓게 퍼져 있습니다.
+
+여기서 더 중요한 해석은 이것입니다.
+
+상관계수 0.129는 “인구수가 많으면 CCTV가 반드시 많다”는 뜻이 아니다.
+방향은 약하게 양수지만, 설명력은 낮다.
+
+R² = 상관계수²로 아주 거칠게 보면,
+
+0.12943668 ** 2
+
+대략 0.0168, 즉 약 1.7% 정도만 설명한다고 볼 수 있습니다. 그래서 이 그래프는 “회귀선을 그릴 수는 있지만, 회귀선만 보고 강한 관계라고 해석하면 안 된다”는 수업 복습용으로 좋습니다. 20260417 자료에서도 평균, 분산, IQR, z-score, 공분산, 상관계수, np.corrcoef, np.polyfit 흐름을 다루고 있어서 이 화면과 연결됩니다.
+
+2. 이 코드에서 꼭 기억할 부분
+fp1 = np.polyfit(df6.total, df6.cctv_total, 1)
+f1 = np.poly1d(fp1)
+
+fx = np.linspace(100000, 700000, 100)
+y = f1(fx)
+
+여기서 의미는 이렇습니다.
+
+np.polyfit(x, y, 1)
+→ x와 y 사이를 1차식으로 맞춘다.
+
+np.poly1d(fp1)
+→ 구한 계수를 실제 함수처럼 쓸 수 있게 만든다.
+
+np.linspace(100000, 700000, 100)
+→ 회귀선을 그릴 x축 값을 100개 만든다.
+
+f1(fx)
+→ 그 x값들에 대응하는 회귀선 y값을 만든다.
+
+올려주신 결과:
+
+poly1d([3.86915432e-03, 1.56985383e+03])
+
+이건 식으로 쓰면 대략 이렇게 됩니다.
+
+CCTV = 0.00387 × 인구수 + 1569.85
+
+다만 이 식은 강한 예측식이 아니라, 산점도 위에 평균적인 방향선을 그린 것으로만 보는 게 맞습니다.
+
+3. 복습용으로 조금 더 안전한 코드
+
+지금 화면에서는 df6.f_total, df6['total'], df6.total이 섞여 있습니다. 열 이름이 정확히 무엇인지에 따라 에러가 날 수 있으니, 복습할 때는 아래처럼 통일하는 게 좋습니다.
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = df6['total']
+y = df6['cctv_total']
+
+corr = np.corrcoef(x, y)[0, 1]
+
+coef = np.polyfit(x, y, 1)
+line = np.poly1d(coef)
+
+fx = np.linspace(x.min(), x.max(), 100)
+fy = line(fx)
+
+plt.figure(figsize=(4, 4))
+plt.scatter(x, y, s=20)
+plt.plot(fx, fy, 'g--', label=f'corr = {corr:.3f}')
+plt.xlabel('인구수')
+plt.ylabel('CCTV')
+plt.grid()
+plt.legend()
+plt.tight_layout()
+plt.show()
+
+print('상관계수:', corr)
+print('회귀식:', line)
+print('R² 근사:', corr ** 2)
+
+막내님 복습 포인트는 이겁니다.
+
+산점도 → 상관계수 → 회귀선 → R² 느낌 확인
+
+이 흐름은 20260522 회귀 수업의 LinearRegression, 잔차, RSS, MSE, RMSE, R² 계산과도 연결됩니다. 해당 자료에서는 회귀선, 잔차, RSS/MSE/RMSE, R²를 직접 계산하고 lr.score()로 확인하는 흐름이 나옵니다.
+
+4. 두 번째 화면: AAPL 가격과 250일 이동평균
+
+이 화면은 HSI 프로젝트와 직접 연결되는 핵심 복습입니다.
+
+close_px.AAPL.plot()
+close_px.AAPL.rolling(250).mean().plot()
+
+여기서 rolling(250).mean()은 대략 250거래일 이동평균선입니다. 주식시장에서 1년 거래일이 대략 250일 안팎이므로, 이 선은 “장기 추세선”처럼 해석할 수 있습니다.
+
+이동평균선(설명: 최근 일정 기간의 평균 가격입니다. 가격이 이동평균선 위에 있으면 추세가 강한 쪽, 아래에 있으면 약한 쪽으로 해석할 수 있습니다.)
+
+화면을 보면 AAPL 가격이 250일 이동평균선 위로 크게 올라가는 구간도 있고, 2008~2009년처럼 가격이 이동평균선 아래로 내려가거나 급락하는 구간도 보입니다. 이건 HSI의 ma_gap 신호와 거의 같은 사고방식입니다.
+
+ma_gap = close_px.AAPL / close_px.AAPL.rolling(250).mean() - 1
+
+해석은 이렇게 됩니다.
+
+ma_gap > 0
+→ 가격이 장기 이동평균보다 위에 있음
+→ 위험자산 추세가 상대적으로 양호
+
+ma_gap < 0
+→ 가격이 장기 이동평균보다 아래에 있음
+→ 위험 경계 또는 약세 신호
+5. HSI 프로젝트에 바로 연결하면
+
+수업에서는 AAPL, MSFT, XOM을 봤지만, 프로젝트에서는 이걸 ETF 3개로 바꾸면 됩니다.
+
+# 예시: HSI 프로젝트 ETF 가격표
+# columns = ['069500', '114260', '153130']
+
+price = monthly_or_daily_price.copy()
+
+ma250 = price.rolling(250).mean()
+ma_gap = price / ma250 - 1
+
+price['069500'].plot(figsize=(10, 4), label='069500')
+ma250['069500'].plot(label='250일 이동평균')
+
+plt.title('069500 가격과 250일 이동평균')
+plt.legend()
+plt.grid()
+plt.tight_layout()
+plt.show()
+
+HSI 프로젝트에서는 이렇게 정리할 수 있습니다. : 수업자료의 AAPL 이동평균 그래프는 본 프로젝트의 HSI 추세 신호와 직접 연결된다. 
+가격이 장기 이동평균 대비 어느 위치에 있는지를 확인하면, 위험자산의 추세가 강화되는 구간과 약화되는 구간을 구분할 수 있다. 
+본 프로젝트에서는 이를 ETF별 이동평균 괴리율(ma_gap)로 변환하여 HSI 상태분류의 입력 신호로 사용한다.
+
+6. 지금 화면에서 제가 고르는 복습 우선순위
+
+막내님이라면 이렇게 복습합니다.
+
+| 우선순위 | 화면                    | 복습 내용                      | 프로젝트 연결             |
+| ---: | --------------------- | -------------------------- | ------------------- |
+|    1 | AAPL + 250일 이동평균      | `rolling().mean()`         | HSI `ma_gap`, 추세 신호 |
+|    2 | AAPL/MSFT/XOM 이동평균 비교 | 여러 자산 추세 비교                | ETF별 위험/방어자산 비교     |
+|    3 | 인구수-CCTV 산점도          | `corrcoef`, `polyfit`, 회귀선 | 신호 간 상관 확인          |
+|    4 | 회귀선 해석                | 약한 상관과 낮은 설명력              | HSI 신호 과해석 방지       |
+|    5 | R², MSE, RMSE         | 모델 평가                      | Grid Search 과최적화 방지 |
+
+
+7. 프로젝트 보고서에 넣을 수 있는 정리 문장
+본 프로젝트는 수업에서 학습한 산점도, 상관계수, 회귀선, 이동평균 시각화 방법을 HSI 신호 점검에 활용한다. 산점도와 상관계수는 여러 입력 신호가 서로 얼마나 비슷한 정보를 담고 있는지 확인하는 데 사용하고, 이동평균선은 ETF 가격이 중장기 추세 대비 어느 위치에 있는지 확인하는 데 사용한다. 특히 AAPL 예제의 250일 이동평균 그래프는 본 프로젝트의 ETF 이동평균 괴리율(ma_gap) 신호와 직접 연결된다. 다만 상관계수나 회귀선은 관계의 방향을 요약할 뿐이며, 설명력이 낮은 경우에는 강한 예측 관계로 해석하지 않는다.
+정리하면, 지금 올려주신 화면 중 프로젝트에 가장 중요한 것은 AAPL 250일 이동평균 그래프입니다.
+그리고 인구수-CCTV 산점도는 HSI 신호 간 상관관계와 회귀선 해석을 연습하는 복습 자료로 쓰면 좋습니다.
+
+
+저는 “복습용 그래프”와 “프로젝트 제출용 그래프”를 연결해서 만들겠습니다.
+
+수업자료에서 바로 연결되는 축은 꽤 명확합니다. np.corrcoef, np.polyfit, 산점도는 상관·회귀선 복습에 좋고, 통계 기초 자료에서도 공분산·상관계수·np.polyfit 흐름을 다루었습니다. 회귀 수업에서는 회귀선, 잔차, RSS, MSE, RMSE, R²를 직접 계산하는 흐름이 있었고, 이는 HSI 신호와 다음 달 수익률의 관계를 과해석하지 않기 위한 근거로 쓸 수 있습니다. 또 ADF·차분·ACF 자료는 가격 자체보다 수익률·변동성·괴리율 같은 변환 신호를 쓰는 이유와 연결됩니다.
+
+1. 먼저 만들 그래프 목록
+| 번호 | 그래프                    | 수업 연결               | HSI 프로젝트 연결                 |
+| -: | ---------------------- | ------------------- | --------------------------- |
+|  1 | 가격 + 이동평균선             | rolling mean        | `ma_gap`, 추세 신호             |
+|  2 | 월간 수익률 히스토그램 / 박스플롯    | 분포, IQR, 이상치        | 꼬리위험, 위기월 확인                |
+|  3 | Rolling volatility     | 시계열 변동성             | `volatility`, HSI intensity |
+|  4 | 위험자산 vs 방어자산 상대강도      | 시계열 비교              | `relative_strength`         |
+|  5 | HSI 신호 vs 다음 달 수익률 산점도 | 상관계수, 회귀선           | HSI를 예측모델로 과해석하지 않기         |
+|  6 | HSI 상태분포 막대그래프         | 범주형 빈도              | 5상태 분류 결과 확인                |
+|  7 | EW vs HSI 누적수익률        | 성과 비교               | 전략 성과 흐름                    |
+|  8 | Drawdown 비교            | 위험 측정               | MDD 방어력 확인                  |
+|  9 | ETF 비중 변화 + Turnover   | 리밸런싱 확인             | 과잉매매 여부                     |
+| 10 | θ / λ 민감도 그래프          | Grid Search, 과적합 방지 | Robustness 검증               |
+Grid Search와 학습률별 RMSE 그래프는 수업에서 하이퍼파라미터 변화에 따른 성과 변화를 보는 방식으로 다뤘고, 이 사고방식은 HSI의 θ, λ, 비중 규칙 실험에 그대로 연결됩니다. 의사결정나무 수업의 feature importance와 GridSearchCV도 “어떤 변수가 중요했는가”, “파라미터 조합을 어떻게 비교할 것인가”를 보여주는 복습축으로 쓸 수 있습니다.
+
+
+2. 공통 준비 코드
+
+먼저 그래프 파일에서 반복해서 쓸 기본 설정입니다.
+
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# 한글 폰트 설정: Windows 기준
+plt.rcParams["font.family"] = "Malgun Gothic"
+plt.rcParams["axes.unicode_minus"] = False
+
+
+PROJECT_ROOT = Path.cwd()
+OUTPUT_DIR = PROJECT_ROOT / "output"
+FIGURE_DIR = OUTPUT_DIR / "figures"
+TABLE_DIR = OUTPUT_DIR / "tables"
+
+FIGURE_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def save_or_show(save_path=None):
+    plt.tight_layout()
+    if save_path is not None:
+        plt.savefig(save_path, dpi=150, bbox_inches="tight")
+        print(f"저장 완료: {save_path}")
+    plt.show()
+
+hsi_data_bundle.xlsx를 기준으로 읽는다면 이런 식으로 시작할 수 있습니다.
+
+BUNDLE_PATH = TABLE_DIR / "hsi_data_bundle.xlsx"
+
+
+def read_wide_sheet(sheet_name: str) -> pd.DataFrame:
+    """
+    엑셀 번들에서 wide 형태 시트를 읽는다.
+    첫 번째 열을 날짜 인덱스로 사용한다.
+    """
+    df = pd.read_excel(BUNDLE_PATH, sheet_name=sheet_name)
+
+    date_col = df.columns[0]
+    df = df.rename(columns={date_col: "date"})
+    df["date"] = pd.to_datetime(df["date"])
+    df = df.set_index("date")
+
+    # 티커가 숫자로 읽히는 것을 방지
+    df.columns = [str(col).zfill(6) for col in df.columns]
+
+    return df
+
+
+monthly_price = read_wide_sheet("monthly_price")
+
+# revised 버전이면 decimal 시트를 우선 사용
+monthly_return = read_wide_sheet("monthly_return_decimal")
+3. 그래프 1: ETF 가격 + 이동평균선
+
+수업의 AAPL + 250일 이동평균 그래프를 HSI ETF에 적용하는 코드입니다.
+
+def plot_price_with_ma(price_df, ticker="069500", windows=(3, 6, 12), save_path=None):
+    """
+    월말 가격 기준 이동평균 그래프.
+    월간 데이터라면 3, 6, 12개월 이동평균을 보는 것이 자연스럽다.
+    """
+    plt.figure(figsize=(10, 4))
+
+    price_df[ticker].plot(label=f"{ticker} 가격")
+
+    for window in windows:
+        ma = price_df[ticker].rolling(window).mean()
+        ma.plot(label=f"{window}개월 이동평균")
+
+    plt.title(f"{ticker} 가격과 이동평균선")
+    plt.xlabel("Date")
+    plt.ylabel("Price")
+    plt.grid(True)
+    plt.legend()
+
+    save_or_show(save_path)
+
+
+plot_price_with_ma(
+    monthly_price,
+    ticker="069500",
+    windows=(3, 6, 12),
+    save_path=FIGURE_DIR / "fig01_price_ma_069500.png",
+)
+
+보고서 해석:
+
+가격과 이동평균선의 관계는 HSI의 추세 신호와 연결된다.
+가격이 이동평균선 위에 있으면 추세가 상대적으로 양호하고,
+이동평균선 아래에 있으면 위험 경계 신호로 해석할 수 있다.
+4. 그래프 2: 월간 수익률 분포
+
+수업의 평균, 분산, IQR, 히스토그램, 박스플롯 복습을 ETF 월간 수익률에 적용합니다. 통계 기초 자료에서 평균·중앙값·분산·IQR·z-score·히스토그램·박스플롯을 다룬 흐름과 연결됩니다.
+
+def plot_return_distribution(return_df, ticker="069500", save_path=None):
+    r = return_df[ticker].dropna()
+
+    fig, axes = plt.subplots(1, 2, figsize=(10, 4))
+
+    axes[0].hist(r, bins=30)
+    axes[0].set_title(f"{ticker} 월간 수익률 분포")
+    axes[0].set_xlabel("Monthly return")
+    axes[0].set_ylabel("Count")
+    axes[0].grid(True)
+
+    axes[1].boxplot(r, labels=[ticker])
+    axes[1].set_title(f"{ticker} 월간 수익률 Box plot")
+    axes[1].set_ylabel("Monthly return")
+    axes[1].grid(True)
+
+    save_or_show(save_path)
+
+
+plot_return_distribution(
+    monthly_return,
+    ticker="069500",
+    save_path=FIGURE_DIR / "fig02_return_distribution_069500.png",
+)
+
+보고서 해석:월간 수익률 분포는 전략의 꼬리위험을 확인하기 위한 기초 그림이다.
+방어형 전략에서는 평균 수익률뿐 아니라 극단적인 손실월이 얼마나 발생하는지도 함께 확인해야 한다.
+
+
+5. 그래프 3: Rolling volatility
+
+HSI에서 변동성은 위험 악화 신호로 쓰일 수 있습니다.
+
+def plot_rolling_volatility(return_df, ticker="069500", window=12, save_path=None):
+    r = return_df[ticker].dropna()
+    rolling_vol = r.rolling(window).std()
+
+    plt.figure(figsize=(10, 4))
+    rolling_vol.plot(label=f"{window}개월 rolling volatility")
+
+    plt.title(f"{ticker} {window}개월 이동 변동성")
+    plt.xlabel("Date")
+    plt.ylabel("Volatility")
+    plt.grid(True)
+    plt.legend()
+
+    save_or_show(save_path)
+
+
+plot_rolling_volatility(
+    monthly_return,
+    ticker="069500",
+    window=12,
+    save_path=FIGURE_DIR / "fig03_rolling_vol_069500.png",
+)
+
+보고서 해석:
+
+Rolling volatility는 최근 위험이 얼마나 커졌는지 확인하는 지표이다.
+HSI에서는 변동성이 커질수록 위험 악화 방향의 신호로 해석할 수 있다.
+6. 그래프 4: 위험자산과 방어자산 상대강도
+
+069500을 위험자산, 153130을 현금성 방어자산으로 두고 상대강도를 볼 수 있습니다.
+
+def plot_relative_strength(price_df, risk_ticker="069500", defensive_ticker="153130", save_path=None):
+    risk_norm = price_df[risk_ticker] / price_df[risk_ticker].iloc[0]
+    def_norm = price_df[defensive_ticker] / price_df[defensive_ticker].iloc[0]
+
+    rel_strength = risk_norm / def_norm
+
+    plt.figure(figsize=(10, 4))
+    rel_strength.plot(label=f"{risk_ticker} / {defensive_ticker} 상대강도")
+
+    plt.axhline(1.0, linestyle="--", linewidth=1)
+    plt.title("위험자산 vs 현금성 방어자산 상대강도")
+    plt.xlabel("Date")
+    plt.ylabel("Relative strength")
+    plt.grid(True)
+    plt.legend()
+
+    save_or_show(save_path)
+
+
+plot_relative_strength(
+    monthly_price,
+    risk_ticker="069500",
+    defensive_ticker="153130",
+    save_path=FIGURE_DIR / "fig04_relative_strength_069500_153130.png",
+)
+
+보고서 해석:
+
+상대강도는 위험자산이 방어자산보다 강한지 약한지를 보는 지표이다.
+상대강도가 하락하면 위험자산 선호가 약해지는 구간으로 해석할 수 있다.
+7. 그래프 5: HSI 신호와 다음 달 수익률 산점도
+
+이건 올려주신 CCTV 산점도와 가장 비슷한 복습입니다.
+목적은 “HSI가 수익률을 강하게 예측한다”가 아니라, 관계가 강한지 약한지를 냉정하게 확인하는 것입니다.
+
+def plot_signal_vs_next_return(df, signal_col, return_col, save_path=None):
+    """
+    df에는 signal_col과 return_col이 같이 있어야 한다.
+    예: signal_col='hsi_direction', return_col='next_069500_return'
+    """
+    data = df[[signal_col, return_col]].dropna()
+
+    x = data[signal_col]
+    y = data[return_col]
+
+    corr = np.corrcoef(x, y)[0, 1]
+
+    coef = np.polyfit(x, y, 1)
+    line = np.poly1d(coef)
+
+    fx = np.linspace(x.min(), x.max(), 100)
+    fy = line(fx)
+
+    plt.figure(figsize=(5, 5))
+    plt.scatter(x, y, s=20)
+    plt.plot(fx, fy, "g--", label=f"corr = {corr:.3f}")
+
+    plt.title(f"{signal_col} vs {return_col}")
+    plt.xlabel(signal_col)
+    plt.ylabel(return_col)
+    plt.grid(True)
+    plt.legend()
+
+    save_or_show(save_path)
+
+    print("상관계수:", round(corr, 4))
+    print("R² 근사:", round(corr ** 2, 4))
+    print("회귀식:", line)
+
+예시 사용:
+
+# aligned_df 예시 컬럼:
+# hsi_direction, next_069500_return
+plot_signal_vs_next_return(
+    aligned_df,
+    signal_col="hsi_direction",
+    return_col="next_069500_return",
+    save_path=FIGURE_DIR / "fig05_hsi_direction_vs_next_return.png",
+)
+
+보고서 해석:HSI 방향 점수와 다음 달 수익률의 산점도는 HSI를 예측모델로 과해석하지 않기 위한 확인 그림이다.
+상관계수가 낮다면 HSI는 수익률 예측값이라기보다 시장상태 분류 보조지표로 해석하는 것이 더 적절하다.
+
+8. 그래프 6: HSI 5상태 분포
+
+상태분류가 너무 한쪽으로 몰리면 전략이 제대로 작동하기 어렵습니다.
+
+def plot_state_distribution(state_df, state_col="hsi_state", save_path=None):
+    counts = state_df[state_col].value_counts()
+
+    order = [
+        "risk_relief",
+        "neutral_watch",
+        "conflict",
+        "risk_warning",
+        "accident_zone",
+    ]
+
+    counts = counts.reindex(order).dropna()
+
+    plt.figure(figsize=(8, 4))
+    plt.bar(counts.index, counts.values)
+
+    plt.title("HSI 5상태 분포")
+    plt.xlabel("HSI state")
+    plt.ylabel("Month count")
+    plt.xticks(rotation=30)
+    plt.grid(axis="y")
+
+    save_or_show(save_path)
+
+
+plot_state_distribution(
+    hsi_state_df,
+    state_col="hsi_state",
+    save_path=FIGURE_DIR / "fig06_hsi_state_distribution.png",
+)
+
+보고서 해석:
+
+HSI 상태분포는 상태분류 기준이 지나치게 민감하거나 둔감하지 않은지 확인하기 위한 그림이다.
+특히 conflict가 과도하게 많으면 불필요한 리밸런싱이 발생할 수 있다.
+
+9. 그래프 7: 누적수익률 비교
+
+백테스트 결과에서 가장 기본이 되는 그림입니다.
+
+def plot_cumulative_returns(backtest_df, date_col="date", save_path=None):
+    df = backtest_df.copy()
+    df[date_col] = pd.to_datetime(df[date_col])
+    df = df.set_index(date_col)
+
+    plt.figure(figsize=(10, 4))
+
+    for col in df.columns:
+        if "cum" in col or "cumulative" in col:
+            df[col].plot(label=col)
+
+    plt.title("전략별 누적수익률 비교")
+    plt.xlabel("Date")
+    plt.ylabel("Cumulative return")
+    plt.grid(True)
+    plt.legend()
+
+    save_or_show(save_path)
+
+
+plot_cumulative_returns(
+    backtest_df,
+    date_col="date",
+    save_path=FIGURE_DIR / "fig07_cumulative_returns.png",
+)
+
+보고서 해석:누적수익률 그래프는 전략별 장기 성과 흐름을 비교하기 위한 그림이다.
+단, 방어형 전략에서는 누적수익률만으로 판단하지 않고 Drawdown과 Turnover를 함께 확인해야 한다.
+
+10. 그래프 8: Drawdown 비교
+
+HSI 프로젝트에서 가장 중요한 그림 중 하나입니다.
+
+def make_drawdown(cum_return_series):
+    running_max = cum_return_series.cummax()
+    drawdown = cum_return_series / running_max - 1
+    return drawdown
+
+
+def plot_drawdown(cumulative_df, save_path=None):
+    plt.figure(figsize=(10, 4))
+
+    for col in cumulative_df.columns:
+        dd = make_drawdown(cumulative_df[col])
+        dd.plot(label=col)
+
+    plt.title("전략별 Drawdown 비교")
+    plt.xlabel("Date")
+    plt.ylabel("Drawdown")
+    plt.grid(True)
+    plt.legend()
+
+    save_or_show(save_path)
+
+
+# cumulative_df 예시:
+# index=date, columns=['EW', 'HSI_overlay']
+plot_drawdown(
+    cumulative_df,
+    save_path=FIGURE_DIR / "fig08_drawdown_comparison.png",
+)
+
+보고서 해석:
+
+Drawdown은 고점 대비 손실폭을 보여준다.
+방어형 overlay 전략의 핵심 평가는 누적수익률보다 MDD가 개선되는지에 있다.
+11. 그래프 9: 비중 변화와 Turnover
+
+리밸런싱 규칙이 실제로 어떻게 행동했는지 보여주는 그림입니다.
+
+def plot_weights(weights_df, save_path=None):
+    plt.figure(figsize=(10, 4))
+
+    for col in weights_df.columns:
+        weights_df[col].plot(label=col)
+
+    plt.title("ETF 비중 변화")
+    plt.xlabel("Date")
+    plt.ylabel("Weight")
+    plt.grid(True)
+    plt.legend()
+
+    save_or_show(save_path)
+
+
+def plot_turnover(turnover_series, save_path=None):
+    plt.figure(figsize=(10, 3))
+
+    turnover_series.plot(kind="bar")
+
+    plt.title("월별 Turnover")
+    plt.xlabel("Date")
+    plt.ylabel("Turnover")
+    plt.grid(axis="y")
+
+    save_or_show(save_path)
+
+사용 예시:
+
+plot_weights(
+    weights_df,
+    save_path=FIGURE_DIR / "fig09_weights.png",
+)
+
+plot_turnover(
+    turnover_series,
+    save_path=FIGURE_DIR / "fig10_turnover.png",
+)
+
+보고서 해석:
+
+비중 변화 그래프는 HSI 상태가 실제 자산배분 행동으로 연결되었는지 보여준다.
+Turnover 그래프는 해당 행동이 과도한 매매를 유발했는지 확인하는 그림이다.
+12. 그래프 10: θ 민감도 실험
+
+θ 실험은 “최고 성과 하나 찾기”가 아니라 안정성을 보는 실험입니다.
+
+def plot_theta_sensitivity(theta_df, save_path=None):
+    """
+    theta_df 예시 컬럼:
+    theta, CAGR, MDD, Sharpe, Calmar, avg_turnover
+    """
+    fig, axes = plt.subplots(2, 2, figsize=(10, 7))
+
+    axes[0, 0].plot(theta_df["theta"], theta_df["MDD"], marker="o")
+    axes[0, 0].set_title("θ별 MDD")
+    axes[0, 0].set_xlabel("theta")
+    axes[0, 0].set_ylabel("MDD")
+    axes[0, 0].grid(True)
+
+    axes[0, 1].plot(theta_df["theta"], theta_df["Sharpe"], marker="o")
+    axes[0, 1].set_title("θ별 Sharpe")
+    axes[0, 1].set_xlabel("theta")
+    axes[0, 1].set_ylabel("Sharpe")
+    axes[0, 1].grid(True)
+
+    axes[1, 0].plot(theta_df["theta"], theta_df["Calmar"], marker="o")
+    axes[1, 0].set_title("θ별 Calmar")
+    axes[1, 0].set_xlabel("theta")
+    axes[1, 0].set_ylabel("Calmar")
+    axes[1, 0].grid(True)
+
+    axes[1, 1].plot(theta_df["theta"], theta_df["avg_turnover"], marker="o")
+    axes[1, 1].set_title("θ별 평균 Turnover")
+    axes[1, 1].set_xlabel("theta")
+    axes[1, 1].set_ylabel("Average turnover")
+    axes[1, 1].grid(True)
+
+    save_or_show(save_path)
+
+
+plot_theta_sensitivity(
+    theta_df,
+    save_path=FIGURE_DIR / "fig11_theta_sensitivity.png",
+)
+
+보고서 해석: θ 민감도 실험은 특정 θ에서만 성과가 좋아지는지, 아니면 주변 θ에서도 성과와 위험지표가 안정적으로 유지되는지 확인하기 위한 실험이다.
+
+
+13. 추가로 만들 수 있는 고급 그래프
+
+학습자료에서 PCA는 iris 4개 특성을 2개 주성분으로 줄이고, 원본 정확도와 PCA 이후 정확도 차이를 비교하는 흐름이었습니다. HSI 프로젝트에서는 추가 신호가 많아질 때 신호 중복을 점검하는 보조 그래프로 쓸 수 있습니다.
+
+def plot_pca_signal_space(signal_df, feature_cols, state_col=None, save_path=None):
+    from sklearn.preprocessing import StandardScaler
+    from sklearn.decomposition import PCA
+
+    X = signal_df[feature_cols].dropna()
+    X_scaled = StandardScaler().fit_transform(X)
+
+    pca = PCA(n_components=2)
+    X_pca = pca.fit_transform(X_scaled)
+
+    pca_df = pd.DataFrame(X_pca, columns=["PC1", "PC2"], index=X.index)
+
+    if state_col is not None:
+        pca_df[state_col] = signal_df.loc[X.index, state_col]
+
+    plt.figure(figsize=(6, 5))
+
+    if state_col is None:
+        plt.scatter(pca_df["PC1"], pca_df["PC2"], s=20)
+    else:
+        for state, sub in pca_df.groupby(state_col):
+            plt.scatter(sub["PC1"], sub["PC2"], s=20, label=state)
+        plt.legend()
+
+    plt.title("HSI 입력 신호 PCA 2차원 시각화")
+    plt.xlabel("PC1")
+    plt.ylabel("PC2")
+    plt.grid(True)
+
+    save_or_show(save_path)
+
+    print("설명분산비율:", pca.explained_variance_ratio_)
+    print("누적 설명분산:", pca.explained_variance_ratio_.sum())
+
+보고서 해석: PCA 그래프는 추가 신호 후보들이 서로 비슷한 정보를 담고 있는지 확인하기 위한 보조 시각화이다.
+다만 PCA 축은 경제적 해석이 약해질 수 있으므로, 기본 HSI 상태분류에는 해석 가능한 개별 신호를 우선 사용한다.
+
+14. 최종 구성 추천
+
+막내님이 실제 프로젝트 폴더에 넣는다면 파일을 이렇게 나누겠습니다.
+
+src/
+├─ 23_visualization_plan.py
+├─ 24_plot_price_ma.py
+├─ 25_plot_return_distribution.py
+├─ 26_plot_hsi_state_distribution.py
+├─ 27_plot_cumulative_return.py
+├─ 28_plot_drawdown.py
+├─ 29_plot_weights_turnover.py
+├─ 30_plot_theta_lambda_sensitivity.py
+└─ 31_plot_signal_diagnostics.py
+
+가장 먼저 만들 5개는 이것입니다.
+
+1. 가격 + 이동평균선
+2. 월간 수익률 분포
+3. HSI 5상태 분포
+4. 누적수익률 비교
+5. Drawdown 비교
+
+이 5개만 있어도 보고서 본문 흐름이 생깁니다.
+
+데이터가 어떻게 움직였는가
+→ HSI가 시장상태를 어떻게 나눴는가
+→ 그 상태가 전략 성과로 어떻게 이어졌는가
+→ 방어 효과가 있었는가
+
+한 문장으로 정리하면, 수업에서 배운 산점도·상관계수·회귀선·이동평균·분포·PCA·Grid Search 그래프를 HSI 프로젝트에서는 가격 추세, 신호 진단, 상태분포, 성과, 위험, Turnover, 민감도 검증 그래프로 바꾸어 쓰면 됩니다.

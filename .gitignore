@@ -1,4 +1,4 @@
-# Python caches and local environments
+﻿# Python caches and local environments
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -7,28 +7,8 @@ __pycache__/
 .venv/
 venv/
 
-# Jupyter and local notebooks checkpoints
+# Jupyter checkpoints
 .ipynb_checkpoints/
-
-# Large local raw datasets
-data/raw/AI퀀트분석데이터셋/
-
-# Generated practice outputs
-practice/output/
-review/
-
-# Regenerable HSI intermediate tables
-output/tables/daily_event_labels.csv
-output/tables/event_calendar_overlap_summary.csv
-output/tables/event_count_summary.csv
-output/tables/korea_etf_data_quality.csv
-output/tables/korea_etf_data_summary.csv
-output/tables/monthly_event_counts.csv
-output/tables/monthly_event_counts_design.csv
-output/tables/monthly_event_counts_validation.csv
-output/tables/monthly_hsi_state_labels.csv
-output/tables/monthly_hsi_state_labels_design.csv
-output/tables/monthly_hsi_state_labels_validation.csv
 
 # OS and editor noise
 .DS_Store
@@ -41,11 +21,5 @@ desktop.ini
 ~$*
 *.tmp
 
-# Local binary documents; keep lightweight Markdown extracts in docs/lightweight/
-docs/**/*.docx
-docs/**/*.pptx
-docs/**/*.pdf
-
-# Local render/check scratch folders
-_render_check*/
-_analysis_extract*/
+# nested old project copy
+AIQuant-2nd-project/

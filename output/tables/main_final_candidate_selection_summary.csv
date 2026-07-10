@@ -1,0 +1,11 @@
+﻿item,value,note
+total_candidate_rows_at_final_cost,23,대표 비용률 cost_10bp 기준 후보 행 수
+final_candidate_count,2,최종 후보 수
+reserve_candidate_count,0,보류 후보 수
+cost_rate_grid,"{'cost_0bp': 0.0, 'cost_5bp': 0.0005, 'cost_10bp': 0.001, 'cost_20bp': 0.002}",거래비용률 민감도 후보
+turnover_filter_strict,"avg <= 10.0%, max <= 40.0%",엄격 Turnover 후보 기준
+turnover_filter_flex,"avg <= 15.0%, max <= 50.0%",유연 Turnover 후보 기준
+decision_count_exclude_turnover,15,최종 판단 분포
+decision_count_benchmark,5,최종 판단 분포
+decision_count_final_candidate,2,최종 판단 분포
+decision_count_exclude_risk_metric,1,최종 판단 분포

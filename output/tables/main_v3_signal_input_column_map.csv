@@ -1,0 +1,16 @@
+﻿source_column,ticker,signal_name,is_basic_signal,is_extended_candidate,note
+069500_return,069500,return,True,False,
+114260_return,114260,return,True,False,
+153130_return,153130,return,True,False,
+069500_ma_pos,069500,ma_pos,True,False,
+114260_ma_pos,114260,ma_pos,True,False,
+153130_ma_pos,153130,ma_pos,True,False,
+069500_momentum,069500,momentum,True,False,
+114260_momentum,114260,momentum,True,False,
+153130_momentum,153130,momentum,True,False,
+069500_vol,069500,vol,True,False,
+114260_vol,114260,vol,True,False,
+153130_vol,153130,vol,True,False,
+069500_rs,069500,rs,True,False,benchmark 자기비교로 rs는 NaN 가능
+114260_rs,114260,rs,True,False,
+153130_rs,153130,rs,True,False,

@@ -1,0 +1,4 @@
+﻿ticker,name,rows_compared,max_abs_decimal,p95_abs_decimal,max_abs_diff_decimal_vs_pct_div_100,status,note
+069500,KODEX 200,171,0.349432,0.13381500000000002,5.551115123125783e-17,OK,pct/100과 decimal이 일치한다.
+114260,KODEX 국고채3년,171,0.019912,0.0122165,1.734723475976807e-18,OK,pct/100과 decimal이 일치한다.
+153130,KODEX 단기채권PLUS,171,0.004901,0.0031395,4.336808689942018e-19,OK,pct/100과 decimal이 일치한다.

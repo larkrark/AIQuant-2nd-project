@@ -1,0 +1,16 @@
+﻿item,status,detail
+파일 존재: decimal_return,PASS,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\main_final_monthly_return_decimal.csv
+파일 존재: pct_return_check,PASS,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\main_final_monthly_return_pct.csv
+파일 존재: alignment_check,PASS,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\main_final_monthly_signal_return_alignment_preview.csv
+파일 존재: macro_features,PASS,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\main_final_macro_companion_features_monthly.csv
+decimal 수익률 필요 열,PASS,missing=[]
+수익률 단위 decimal 확인,PASS,max_abs_return=0.34943200
+pct/decimal 관계 확인,PASS,max_abs((pct/100)-decimal)=0.000000000000
+t월 신호 → t+1월 수익률 규칙,PASS,rules=['signal_month_t_to_return_month_t_plus_1']
+MacroRisk 구성용 최소 열,PASS,missing=[]
+macro flag 0/1 여부,PASS,"rate_up_flag=[0.0, 1.0]; fx_up_flag=[0.0, 1.0]"
+MacroRisk 0/1/2 단순 점수,PASS,"MacroRisk unique=[0.0, 1.0, 2.0]"
+GDP 변수 1차 E24 제외,PASS,"파일 내 GDP 관련 열은 있으나 preview factor에는 사용하지 않음: ['gdp_level_billion_krw', 'gdp_growth_decimal', 'gdp_growth_decimal_lagged', 'gdp_growth_pct_lagged', 'gdp_unit_detected', 'gdp_growth_band', 'gdp_below_2_flag', 'gdp_stable_2_3_flag', 'gdp_data_available', 'gdp_availability_status']"
+Annualized Volatility 생성,PASS,"range=0.06209470~0.57193953, formula=rolling_std_12m*sqrt(12)"
+factor preview 유효 표본,PASS,"before_dropna=171, after_dropna=150, period=2014-01-31 00:00:00~2026-06-30 00:00:00"
+HSI-macro joined 파일 용도,PASS,"factor input이 아니라 해석·보고서용: ['hsi_state', 'macro_risk_flag', 'hsi_macro_overlap_type', 'hsi_macro_risk_agreement_flag', 'hsi_macro_disagreement_flag']"

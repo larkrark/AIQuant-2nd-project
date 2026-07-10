@@ -1,0 +1,7 @@
+﻿strategy_name,theta_id,theta_common,months,avg_turnover_pct,max_turnover_pct,total_turnover_pct,nonzero_turnover_months
+EW,EW,,172,0.0,0.0,0.0,0
+theta_0.10,theta_0.10,0.1,172,23.139534883720927,70.0,3979.9999999999995,94
+theta_0.15,theta_0.15,0.15,172,22.093023255813954,70.0,3800.0,94
+theta_0.20,theta_0.20,0.2,172,22.38372093023256,70.0,3850.0,106
+theta_0.25,theta_0.25,0.25,172,20.261627906976738,70.0,3484.9999999999995,106
+theta_0.30,theta_0.30,0.3,172,16.918604651162788,70.0,2910.0,91

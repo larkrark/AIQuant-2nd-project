@@ -1,0 +1,31 @@
+﻿combo_id,combo_name,hsi_state,state_kr,months,total_months,ratio
+combo_00_core5,기본 5개 HSI 점수,accident_zone,강한 위험 구간,34,172,0.19767441860465115
+combo_00_core5,기본 5개 HSI 점수,conflict,신호 충돌,4,172,0.023255813953488372
+combo_00_core5,기본 5개 HSI 점수,insufficient_data,자료 부족,4,172,0.023255813953488372
+combo_00_core5,기본 5개 HSI 점수,neutral_watch,중립 관찰,35,172,0.20348837209302326
+combo_00_core5,기본 5개 HSI 점수,risk_relief,위험 완화 우세,81,172,0.47093023255813954
+combo_00_core5,기본 5개 HSI 점수,risk_warning,위험 악화 우세,14,172,0.08139534883720931
+combo_01_core4_no_rs,기본 4개 HSI 점수,accident_zone,강한 위험 구간,34,172,0.19767441860465115
+combo_01_core4_no_rs,기본 4개 HSI 점수,conflict,신호 충돌,4,172,0.023255813953488372
+combo_01_core4_no_rs,기본 4개 HSI 점수,insufficient_data,자료 부족,4,172,0.023255813953488372
+combo_01_core4_no_rs,기본 4개 HSI 점수,neutral_watch,중립 관찰,35,172,0.20348837209302326
+combo_01_core4_no_rs,기본 4개 HSI 점수,risk_relief,위험 완화 우세,81,172,0.47093023255813954
+combo_01_core4_no_rs,기본 4개 HSI 점수,risk_warning,위험 악화 우세,14,172,0.08139534883720931
+combo_02_trend_only,추세 중심 신호,accident_zone,강한 위험 구간,32,172,0.18604651162790697
+combo_02_trend_only,추세 중심 신호,conflict,신호 충돌,2,172,0.011627906976744186
+combo_02_trend_only,추세 중심 신호,insufficient_data,자료 부족,4,172,0.023255813953488372
+combo_02_trend_only,추세 중심 신호,neutral_watch,중립 관찰,32,172,0.18604651162790697
+combo_02_trend_only,추세 중심 신호,risk_relief,위험 완화 우세,79,172,0.45930232558139533
+combo_02_trend_only,추세 중심 신호,risk_warning,위험 악화 우세,23,172,0.13372093023255813
+combo_03_risk_damage_focus,추세+위험훼손 신호,accident_zone,강한 위험 구간,28,172,0.16279069767441862
+combo_03_risk_damage_focus,추세+위험훼손 신호,conflict,신호 충돌,3,172,0.01744186046511628
+combo_03_risk_damage_focus,추세+위험훼손 신호,insufficient_data,자료 부족,4,172,0.023255813953488372
+combo_03_risk_damage_focus,추세+위험훼손 신호,neutral_watch,중립 관찰,34,172,0.19767441860465115
+combo_03_risk_damage_focus,추세+위험훼손 신호,risk_relief,위험 완화 우세,77,172,0.4476744186046512
+combo_03_risk_damage_focus,추세+위험훼손 신호,risk_warning,위험 악화 우세,26,172,0.1511627906976744
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,accident_zone,강한 위험 구간,19,172,0.11046511627906977
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,conflict,신호 충돌,2,172,0.011627906976744186
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,insufficient_data,자료 부족,4,172,0.023255813953488372
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,neutral_watch,중립 관찰,55,172,0.31976744186046513
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,risk_relief,위험 완화 우세,65,172,0.37790697674418605
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,risk_warning,위험 악화 우세,27,172,0.1569767441860465

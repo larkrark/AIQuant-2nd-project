@@ -1,0 +1,4 @@
+﻿ticker,name,total_rows,missing_count,missing_pct,ffill_applied
+069500,KODEX 200,3486,0,0.0%,적용됨 (load_price_data 내부)
+114260,KODEX 국고채3년,3486,0,0.0%,적용됨 (load_price_data 내부)
+153130,KODEX 단기채권PLUS,3486,0,0.0%,적용됨 (load_price_data 내부)

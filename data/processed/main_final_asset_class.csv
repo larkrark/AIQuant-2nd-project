@@ -1,0 +1,4 @@
+﻿ticker,name,asset_class,asset_class_kr,underlying_asset,risk_group,risk_group_kr,risk_level,role,listing_date,data_start,coverage_count,hsi_na_signals,note,discussion_note
+69500,KODEX 200,equity,국내주식,주식형,high,고위험,3,위험자산,2002-10-14,2012-03-07,5/5,없음,국내 주식시장 대표 지수. 상대강도 계산 시 기준(benchmark)으로 사용.,
+114260,KODEX 국고채3년,bond,국내채권,채권형,low,저위험,2,안전자산,2009-07-29,2012-03-07,5/5,없음,국고채 3년물 추종. 변동성이 작아 vol 지표는 자산군 내 상대 비교 권장.,
+153130,KODEX 단기채권PLUS,money_market,단기채권/현금성,채권형,very_low,초저위험,1,현금성자산,2012-03-07,2012-03-07,3/5,"ma_pos, momentum",단기 채권 ETF. 가격이 단조증가하여 ma_pos·momentum 적용 제한.,"기초자산은 국채·통안채 등 단기채권(채권형)이나, 가격 단조증가·낮은 변동성으로 HSI 분류상 현금성자산(money_market)으로 배치. 5개 추종 자산 분류(주식형/채권형/금/달러/원자재) 중 채권형에 해당하나 실질 특성은 현금성에 가까워 asset_class와 underlying_asset이 불일치. HSI 설계 파트에서 슬롯 배치 시 이 점을 감안 요망."

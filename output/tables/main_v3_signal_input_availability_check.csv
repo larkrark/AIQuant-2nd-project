@@ -1,0 +1,31 @@
+﻿ticker,signal_name,total_months,non_null_count,missing_count,missing_ratio,status,note
+069500,return,172,168,4,0.0233,OK,월말 신호 생성됨
+069500,ma_pos,172,169,3,0.0174,OK,월말 신호 생성됨
+069500,momentum,172,168,4,0.0233,OK,월말 신호 생성됨
+069500,vol,172,168,4,0.0233,OK,월말 신호 생성됨
+069500,rs,172,0,172,1.0,OK_BENCHMARK_NA_ALLOWED,069500은 benchmark 자기비교이므로 rs NaN 허용
+069500,ma20_gap,172,0,172,1.0,NOT_AVAILABLE_YET,main_v3 확장 후보이나 현재 기본 파이프라인에는 없음
+069500,ma60_gap,172,0,172,1.0,NOT_AVAILABLE_YET,main_v3 확장 후보이나 현재 기본 파이프라인에는 없음
+069500,vol20,172,0,172,1.0,NOT_AVAILABLE_YET,main_v3 확장 후보이나 현재 기본 파이프라인에는 없음
+069500,drawdown_60,172,0,172,1.0,NOT_AVAILABLE_YET,main_v3 확장 후보이나 현재 기본 파이프라인에는 없음
+069500,risk_vs_cash_ret20,172,0,172,1.0,NOT_AVAILABLE_YET,main_v3 확장 후보이나 현재 기본 파이프라인에는 없음
+114260,return,172,168,4,0.0233,OK,월말 신호 생성됨
+114260,ma_pos,172,169,3,0.0174,OK,월말 신호 생성됨
+114260,momentum,172,168,4,0.0233,OK,월말 신호 생성됨
+114260,vol,172,168,4,0.0233,OK,월말 신호 생성됨
+114260,rs,172,168,4,0.0233,OK,월말 신호 생성됨
+114260,ma20_gap,172,0,172,1.0,NOT_AVAILABLE_YET,main_v3 확장 후보이나 현재 기본 파이프라인에는 없음
+114260,ma60_gap,172,0,172,1.0,NOT_AVAILABLE_YET,main_v3 확장 후보이나 현재 기본 파이프라인에는 없음
+114260,vol20,172,0,172,1.0,NOT_AVAILABLE_YET,main_v3 확장 후보이나 현재 기본 파이프라인에는 없음
+114260,drawdown_60,172,0,172,1.0,NOT_AVAILABLE_YET,main_v3 확장 후보이나 현재 기본 파이프라인에는 없음
+114260,risk_vs_cash_ret20,172,0,172,1.0,NOT_AVAILABLE_YET,main_v3 확장 후보이나 현재 기본 파이프라인에는 없음
+153130,return,172,168,4,0.0233,OK,월말 신호 생성됨
+153130,ma_pos,172,169,3,0.0174,OK,월말 신호 생성됨
+153130,momentum,172,168,4,0.0233,OK,월말 신호 생성됨
+153130,vol,172,168,4,0.0233,OK,월말 신호 생성됨
+153130,rs,172,168,4,0.0233,OK,월말 신호 생성됨
+153130,ma20_gap,172,0,172,1.0,NOT_AVAILABLE_YET,main_v3 확장 후보이나 현재 기본 파이프라인에는 없음
+153130,ma60_gap,172,0,172,1.0,NOT_AVAILABLE_YET,main_v3 확장 후보이나 현재 기본 파이프라인에는 없음
+153130,vol20,172,0,172,1.0,NOT_AVAILABLE_YET,main_v3 확장 후보이나 현재 기본 파이프라인에는 없음
+153130,drawdown_60,172,0,172,1.0,NOT_AVAILABLE_YET,main_v3 확장 후보이나 현재 기본 파이프라인에는 없음
+153130,risk_vs_cash_ret20,172,0,172,1.0,NOT_AVAILABLE_YET,main_v3 확장 후보이나 현재 기본 파이프라인에는 없음

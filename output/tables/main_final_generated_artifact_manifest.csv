@@ -1,0 +1,73 @@
+﻿artifact_type,filename,recommended_folder,report_group,exists_in_download_workspace,size_bytes,note
+report_md,00_05_Project_foundation_and_HSI_baseline.md,docs,최종 사용,True,16788,00~05 초반 데이터·HSI baseline 구조
+report_md,06_09_Signal_combo_and_event_balance_diagnostic.md,docs,최종 사용,True,19416,06~09 신호조합·event balance 보조진단
+report_md,10_Inertia_lambda_experiment.md,docs,최종 사용,True,17097,10 Lambda 부분조정 실험
+report_md,11_Theta_sensitivity_experiment.md,docs,최종 사용,True,20683,11 Theta 민감도 실험
+report_md,12_13_Macro_companion_diagnostic.md,docs,최종 사용,True,19200,12~13 Macro companion 진단
+report_md,14_Macro_companion_overlay.md,docs,최종 사용,True,17518,14 Macro soft overlay 실험
+report_md,15_Lambda_macro_overlay_sensitivity.md,docs,최종 사용,True,18387,15 Lambda+macro 민감도
+report_md,16_Regime_robustness_with_fixed_bm.md,docs,최종 사용: 기존 16번 대신 우선,True,13200,"16 Robustness 보완판, Fixed BM 포함"
+report_md,17_Benchmark_alignment.md,docs,최종 사용,True,17230,17 Benchmark alignment
+report_md,20_23_Final_candidate_selection_with_fixed_bm.md,docs,최종 사용: 기존 20~23번 대신 우선,True,6910,"20~23 최종 후보 선정, Fixed BM 포함"
+note_md,main_final_hsi_macro_companion_diagnostic_note.md,docs,보조 note,True,955,12~13 macro companion 짧은 요약 노트
+note_md,main_final_candidate_selection_note.md,docs,보조 note,True,1167,20~23 최종 후보 선정 짧은 요약 노트
+table_csv,main_final_foundation_asset_universe_summary.csv,output/tables,00~05,True,662,
+table_csv,main_final_foundation_monthly_return_summary.csv,output/tables,00~05,True,350,
+table_csv,main_final_foundation_signal_availability_summary.csv,output/tables,00~05,True,883,
+table_csv,main_final_foundation_hsi_state_distribution.csv,output/tables,00~05,True,389,
+table_csv,main_final_foundation_baseline_and_bm_summary.csv,output/tables,00~05,True,919,
+table_csv,main_final_foundation_key_input_structure.csv,output/tables,00~05,True,2475,
+table_csv,main_final_foundation_key_output_structure.csv,output/tables,00~05,True,3014,
+table_csv,main_final_06_09_signal_combo_comparison_summary.csv,output/tables,06~09,True,3243,
+table_csv,main_final_06_09_event_balance_filter_comparison_summary.csv,output/tables,06~09,True,3226,
+table_csv,main_final_06_09_event_balance_timeseries_subset.csv,output/tables,06~09,True,112883,
+table_csv,main_final_06_09_diagnostic_role_summary.csv,output/tables,06~09,True,816,
+table_csv,main_final_hsi_macro_overlap_summary.csv,output/tables,12~13,True,389,
+table_csv,main_final_hsi_macro_overlap_type_summary.csv,output/tables,12~13,True,797,
+table_csv,main_final_hsi_state_macro_risk_summary.csv,output/tables,12~13,True,1025,
+table_csv,main_final_macro_companion_regime_summary.csv,output/tables,12~13,True,869,
+table_csv,main_final_macro_companion_signal_summary_extended.csv,output/tables,12~13,True,1008,
+table_csv,main_final_regime_robustness_summary_with_fixed_bm.csv,output/tables,16 fixed BM,True,1651,
+table_csv,main_final_regime_robustness_by_period_with_fixed_bm.csv,output/tables,16 fixed BM,True,5723,
+table_csv,main_final_regime_robustness_by_hsi_state_with_fixed_bm.csv,output/tables,16 fixed BM,True,7424,
+table_csv,main_final_regime_robustness_tail_event_summary_with_fixed_bm.csv,output/tables,16 fixed BM,True,912,
+table_csv,main_final_regime_robustness_decision_note_with_fixed_bm.csv,output/tables,16 fixed BM,True,742,
+table_csv,main_final_report_candidate_shortlist_with_fixed_bm.csv,output/tables,20~23 fixed BM,True,1235,
+table_csv,main_final_report_candidate_cost_pivot_with_fixed_bm.csv,output/tables,20~23 fixed BM,True,546,
+processed_csv,main_final_report_candidate_timeseries_with_fixed_bm.csv,data/processed,20~23 fixed BM,True,365618,Fixed BM 포함 후보 월별 시계열. 보고서 그림 재생성에 사용 가능
+figure_png,main_final_foundation_asset_risk_level.png,output/figures,00~05,True,25293,
+figure_png,main_final_foundation_monthly_return_box.png,output/figures,00~05,True,37041,
+figure_png,main_final_foundation_hsi_state_distribution.png,output/figures,00~05,True,55883,
+figure_png,main_final_foundation_baseline_cumulative_return.png,output/figures,00~05,True,93163,
+figure_png,main_final_foundation_baseline_drawdown.png,output/figures,00~05,True,162653,
+figure_png,main_final_06_09_signal_combo_metric_comparison.png,output/figures,06~09,True,86489,
+figure_png,main_final_06_09_event_balance_filter_metric_comparison.png,output/figures,06~09,True,61805,
+figure_png,main_final_06_09_event_balance_filter_cumulative_return.png,output/figures,06~09,True,106746,
+figure_png,main_final_06_09_event_balance_filter_drawdown.png,output/figures,06~09,True,154585,
+figure_png,main_final_06_09_diagnostic_role_map.png,output/figures,06~09,True,39543,
+figure_png,main_final_lambda_cumulative_return_selected.png,output/figures,10,True,104965,
+figure_png,main_final_lambda_drawdown_selected.png,output/figures,10,True,173629,
+figure_png,main_final_theta_family_comparison.png,output/figures,11,True,32265,
+figure_png,main_final_theta_cumulative_return_selected.png,output/figures,11,True,115120,
+figure_png,main_final_theta_drawdown_selected.png,output/figures,11,True,174639,
+figure_png,main_final_theta_state_distribution.png,output/figures,11,True,42743,
+figure_png,main_final_hsi_macro_overlap_type_counts.png,output/figures,12~13,True,65579,
+figure_png,main_final_hsi_state_macro_risk_ratio.png,output/figures,12~13,True,62815,
+figure_png,main_final_macro_companion_regime_counts.png,output/figures,12~13,True,80547,
+figure_png,main_final_hsi_macro_risk_timeline.png,output/figures,12~13,True,216762,
+figure_png,main_final_macro_rate_fx_z_scatter.png,output/figures,12~13,True,62228,
+figure_png,main_final_macro_overlay_cumulative_return.png,output/figures,14,True,77767,
+figure_png,main_final_macro_overlay_adjustment_by_overlap.png,output/figures,14,True,75375,
+figure_png,main_final_macro_overlay_adjustment_by_state.png,output/figures,14,True,57981,
+figure_png,main_final_lambda_macro_sensitivity_tradeoff.png,output/figures,15,True,155253,
+figure_png,main_final_regime_robustness_period_cagr_with_fixed_bm.png,output/figures,16 fixed BM,True,54240,
+figure_png,main_final_regime_robustness_period_mdd_with_fixed_bm.png,output/figures,16 fixed BM,True,51271,
+figure_png,main_final_regime_robustness_state_avg_return_heatmap_with_fixed_bm.png,output/figures,16 fixed BM,True,94758,
+figure_png,main_final_regime_robustness_tail_event_with_fixed_bm.png,output/figures,16 fixed BM,True,60201,
+figure_png,main_final_benchmark_alignment_period_cagr.png,output/figures,17,True,52789,
+figure_png,main_final_benchmark_alignment_period_mdd.png,output/figures,17,True,48717,
+figure_png,main_final_benchmark_alignment_state_avg_return_heatmap.png,output/figures,17,True,104060,
+figure_png,main_final_candidate_cumulative_return_selected_with_fixed_bm.png,output/figures,20~23 fixed BM,True,113240,
+figure_png,main_final_candidate_drawdown_selected_with_fixed_bm.png,output/figures,20~23 fixed BM,True,209176,
+figure_png,main_final_candidate_metric_comparison_with_fixed_bm.png,output/figures,20~23 fixed BM,True,59850,
+figure_png,main_final_candidate_cost_sensitivity_with_fixed_bm.png,output/figures,20~23 fixed BM,True,50937,

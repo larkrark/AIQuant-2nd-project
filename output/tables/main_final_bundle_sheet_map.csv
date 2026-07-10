@@ -1,0 +1,19 @@
+﻿sheet_name,rows,columns,status,note
+meta,12,2,OK,읽기 성공
+input_structure,12,8,OK,읽기 성공
+output_structure,14,8,OK,읽기 성공
+etf_info,3,8,OK,읽기 성공
+asset_class,3,15,OK,읽기 성공
+monthly_price,172,4,OK,읽기 성공
+monthly_return_pct,171,4,OK,읽기 성공
+monthly_return_decimal,171,4,OK,읽기 성공
+signal_inputs,10461,13,OK,읽기 성공
+hsi_scaled_scores,3487,16,OK,읽기 성공
+hsi_direction,3487,4,OK,읽기 성공
+hsi_signal,3487,4,OK,읽기 성공
+signal_direction_map,5,4,OK,읽기 성공
+snapshot,3,11,OK,읽기 성공
+data_period,3,8,OK,읽기 성공
+missing_summary,3,6,OK,읽기 성공
+liquidity_check,3,11,OK,읽기 성공
+exclusions,4,3,OK,읽기 성공

@@ -1,0 +1,6 @@
+﻿topic,finding,value
+overall_calmar,전체 기간 Calmar 기준 우위 후보는 Lambda 0.3입니다.,0.601032476875829
+overall_turnover,전체 기간 평균 Turnover가 낮은 Lambda 후보는 Lambda 0.1입니다.,2.455393807086774
+overall_cagr,전체 기간 CAGR이 높은 Lambda 후보는 Lambda 0.3입니다.,9.147540799541854
+period_mdd_count,기간별 abs MDD 기준 Lambda 우위 횟수: Lambda 0.1=4,
+tail_event_avg_return,069500 하위 10% 손실월 평균 수익률이 가장 나은 Lambda 후보는 Lambda 0.1입니다.,-3.684708021142782

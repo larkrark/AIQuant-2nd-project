@@ -1,0 +1,5 @@
+﻿param,baseline_value,grid_min,grid_max,stable_min,stable_max,n_stable_of_total,full_grid_stable
+THETA_COMMON,0.15,0.1,0.2,,,0/5,False
+ACCIDENT_EXTRA,0.2,0.1,0.3,,,0/5,False
+DIRECTION_MARGIN,0.05,0.0,0.1,,,0/5,False
+CONFLICT_DIRECTION_BAND,0.2,0.1,0.3,,,0/5,False

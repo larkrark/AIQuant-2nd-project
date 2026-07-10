@@ -1,0 +1,7 @@
+﻿strategy_name,combo_id,combo_name,months,avg_turnover_pct,max_turnover_pct,total_turnover_pct,nonzero_turnover_months
+EW,EW,Equal Weight,172,0.0,0.0,0.0,0
+combo_00_core5,combo_00_core5,기본 5개 HSI 점수,172,22.093023255813954,70.0,3800.0,94
+combo_01_core4_no_rs,combo_01_core4_no_rs,기본 4개 HSI 점수,172,22.093023255813954,70.0,3800.0,94
+combo_02_trend_only,combo_02_trend_only,추세 중심 신호,172,20.668604651162788,70.0,3554.9999999999995,90
+combo_03_risk_damage_focus,combo_03_risk_damage_focus,추세+위험훼손 신호,172,25.523255813953483,70.0,4389.999999999999,109
+combo_04_core5_plus_relative_speed,combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,172,21.017441860465116,70.0,3615.0,104

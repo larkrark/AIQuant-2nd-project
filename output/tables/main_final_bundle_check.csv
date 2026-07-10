@@ -1,0 +1,31 @@
+﻿check_group,item,status,note
+required_sheet,meta,OK,hsi_data_bundle.xlsx 필수 시트
+required_sheet,input_structure,OK,hsi_data_bundle.xlsx 필수 시트
+required_sheet,output_structure,OK,hsi_data_bundle.xlsx 필수 시트
+required_sheet,etf_info,OK,hsi_data_bundle.xlsx 필수 시트
+required_sheet,asset_class,OK,hsi_data_bundle.xlsx 필수 시트
+required_sheet,monthly_price,OK,hsi_data_bundle.xlsx 필수 시트
+required_sheet,monthly_return_pct,OK,hsi_data_bundle.xlsx 필수 시트
+required_sheet,monthly_return_decimal,OK,hsi_data_bundle.xlsx 필수 시트
+required_sheet,signal_inputs,OK,hsi_data_bundle.xlsx 필수 시트
+required_sheet,hsi_scaled_scores,OK,hsi_data_bundle.xlsx 필수 시트
+required_sheet,hsi_direction,OK,hsi_data_bundle.xlsx 필수 시트
+required_sheet,hsi_signal,OK,hsi_data_bundle.xlsx 필수 시트
+required_sheet,signal_direction_map,OK,hsi_data_bundle.xlsx 필수 시트
+required_sheet,snapshot,OK,hsi_data_bundle.xlsx 필수 시트
+required_sheet,data_period,OK,hsi_data_bundle.xlsx 필수 시트
+required_sheet,missing_summary,OK,hsi_data_bundle.xlsx 필수 시트
+required_sheet,liquidity_check,OK,hsi_data_bundle.xlsx 필수 시트
+required_sheet,exclusions,OK,hsi_data_bundle.xlsx 필수 시트
+core_experiment_sheet,asset_class,OK,후속 실험에서 직접 사용하는 핵심 시트
+core_experiment_sheet,monthly_price,OK,후속 실험에서 직접 사용하는 핵심 시트
+core_experiment_sheet,monthly_return_decimal,OK,후속 실험에서 직접 사용하는 핵심 시트
+core_experiment_sheet,monthly_return_pct,OK,후속 실험에서 직접 사용하는 핵심 시트
+core_experiment_sheet,signal_inputs,OK,후속 실험에서 직접 사용하는 핵심 시트
+core_experiment_sheet,hsi_scaled_scores,OK,후속 실험에서 직접 사용하는 핵심 시트
+core_experiment_sheet,hsi_direction,OK,후속 실험에서 직접 사용하는 핵심 시트
+core_experiment_sheet,signal_direction_map,OK,후속 실험에서 직접 사용하는 핵심 시트
+bundle_path,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\output\tables\hsi_data_bundle.xlsx,OK,후속 실험 기준 입력 번들
+data_pipeline,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\src\HSI_data_pipeline_0629_5.py,OK,데이터 담당 최종 모듈
+market_event_calendar,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\shock_calendar.py,OK,외부 사건 달력 초안. 전략 입력 아님.
+market_event_calendar,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\src\market_event_calendar.py,OK,최종 권장 외부 사건 달력 파일명. 50번대에서 정리 예정.

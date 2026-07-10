@@ -1,0 +1,14 @@
+﻿item,value,status,note
+input_file,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\main_final_signal_inputs.csv,OK,01번에서 생성한 HSI 원신호 입력표
+signal_columns,"ret_1m, ret_3m, ma_gap, momentum, volatility, relative_strength, ret_6m, ret_12m, drawdown, shock_count, defensive_rs",OK,사건균형지표 계산에 사용한 신호
+quantile_rule,"q20=0.2, q80=0.8",OK,"q80 이상 위험 사건, q20 이하 완화 사건"
+rolling_window,252,OK,과거 분위수 계산 기준 길이
+min_periods,60,OK,분위수 계산 최소 관측치
+time_weights,"{'1m': 0.4, '3m': 0.3, '6m': 0.2, '12m': 0.1}",OK,13612W 시간가중 구조
+flag_rows,10461,OK,ETF·날짜별 사건 플래그 행 수
+daily_rows,3487,OK,일별 사건균형지표 행 수
+monthly_rows,172,OK,월말 사건균형지표 행 수
+first_valid_daily_13612w,2012-10-02 00:00:00,OK,13612W 지표가 처음 유효해진 일자
+first_valid_monthly_13612w,2012-10,OK,13612W 월말 지표가 처음 유효해진 월
+event_balance_mean,0.02567,OK,월말 사건균형 13612W 평균
+event_intensity_mean,0.532981,OK,월말 사건강도 13612W 평균

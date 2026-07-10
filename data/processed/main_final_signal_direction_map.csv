@@ -1,0 +1,6 @@
+﻿signal_name,raw_direction,hsi_sign,interpretation
+return,높을수록 양호,반전(-),수익률↑ → 위험 완화
+ma_pos,MA 위=양호,반전(-),이동평균 상회 → 위험 완화
+momentum,높을수록 양호,반전(-),모멘텀↑ → 위험 완화
+vol,높을수록 위험,유지(+),변동성↑ → 위험 악화
+rs,기준 대비 강함=양호,반전(-),상대강도↑ → 위험 완화

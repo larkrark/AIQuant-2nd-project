@@ -1,0 +1,12 @@
+﻿signal_name,signal_family,direction_sign,direction_rule,hsi_direction_interpretation,note
+ret_1m,return,-1,raw_high_is_risk_relief_then_flip,"positive = risk worsening, negative = risk relief",원신호가 클수록 위험 완화 방향이므로 -1을 곱해 위험 방향으로 통일한다.
+ret_3m,return,-1,raw_high_is_risk_relief_then_flip,"positive = risk worsening, negative = risk relief",원신호가 클수록 위험 완화 방향이므로 -1을 곱해 위험 방향으로 통일한다.
+ma_gap,trend,-1,raw_high_is_risk_relief_then_flip,"positive = risk worsening, negative = risk relief",원신호가 클수록 위험 완화 방향이므로 -1을 곱해 위험 방향으로 통일한다.
+momentum,trend,-1,raw_high_is_risk_relief_then_flip,"positive = risk worsening, negative = risk relief",원신호가 클수록 위험 완화 방향이므로 -1을 곱해 위험 방향으로 통일한다.
+volatility,risk_damage,1,raw_high_is_risk_worsening,"positive = risk worsening, negative = risk relief",원신호가 클수록 위험 악화 방향으로 해석한다.
+relative_strength,relative_strength,-1,raw_high_is_risk_relief_then_flip,"positive = risk worsening, negative = risk relief",원신호가 클수록 위험 완화 방향이므로 -1을 곱해 위험 방향으로 통일한다.
+ret_6m,return,-1,raw_high_is_risk_relief_then_flip,"positive = risk worsening, negative = risk relief",원신호가 클수록 위험 완화 방향이므로 -1을 곱해 위험 방향으로 통일한다.
+ret_12m,return,-1,raw_high_is_risk_relief_then_flip,"positive = risk worsening, negative = risk relief",원신호가 클수록 위험 완화 방향이므로 -1을 곱해 위험 방향으로 통일한다.
+drawdown,risk_damage,-1,raw_high_is_risk_relief_then_flip,"positive = risk worsening, negative = risk relief",원신호가 클수록 위험 완화 방향이므로 -1을 곱해 위험 방향으로 통일한다.
+shock_count,risk_damage,1,raw_high_is_risk_worsening,"positive = risk worsening, negative = risk relief",원신호가 클수록 위험 악화 방향으로 해석한다.
+defensive_rs,relative_strength,-1,raw_high_is_risk_relief_then_flip,"positive = risk worsening, negative = risk relief",원신호가 클수록 위험 완화 방향이므로 -1을 곱해 위험 방향으로 통일한다.

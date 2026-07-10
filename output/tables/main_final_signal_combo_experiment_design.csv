@@ -1,0 +1,6 @@
+﻿combo_id,combo_name,score_cols,theta_common,accident_extra,conflict_direction_band,allocation_rule_name,note
+combo_00_core5,기본 5개 HSI 점수,"score_return, score_ma_pos, score_momentum, score_vol, score_rs",0.15,0.2,0.2,final_baseline_state_target_weights_v1,기본 HSI 점수 5개를 모두 사용한다.
+combo_01_core4_no_rs,기본 4개 HSI 점수,"score_return, score_ma_pos, score_momentum, score_vol",0.15,0.2,0.2,final_baseline_state_target_weights_v1,벤치마크 자기비교 성격이 있는 score_rs를 제외한다.
+combo_02_trend_only,추세 중심 신호,"score_return, score_ma_pos, score_momentum",0.15,0.2,0.2,final_baseline_state_target_weights_v1,수익률·이동평균 위치·모멘텀 중심으로 상태를 분류한다.
+combo_03_risk_damage_focus,추세+위험훼손 신호,"score_return, score_ma_pos, score_vol",0.15,0.2,0.2,final_baseline_state_target_weights_v1,수익률·이동평균 위치·변동성으로 위험 훼손을 본다.
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,"score_return, score_ma_pos, score_momentum, score_vol, score_rs, score_relative_speed",0.15,0.2,0.2,final_baseline_state_target_weights_v1,기본 HSI 점수에 상대속도 진단 점수를 보조 신호로 추가한다.

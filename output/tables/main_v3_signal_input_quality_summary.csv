@@ -1,0 +1,7 @@
+﻿check_item,result,status,note
+monthly_signal_wide_shape,172 rows x 15 columns,OK,일별 HSI 원점수의 월말 변환 결과
+monthly_signal_long_shape,516 rows x 18 columns,OK,월별·ETF별 long format 변환 결과
+monthly_returns_shape,171 rows x 3 columns,OK,다음 단계에서 월말 신호와 연결할 수익률표
+basic_signal_available_count,15,OK,3개 ETF × 5개 기본 신호 중 benchmark rs는 NaN 허용
+extended_signal_available_count,0,INFO,확장 후보 신호는 현재 파일에 없을 수 있음. 후속 파일 또는 추가 계산 필요.
+score_method_source,zscore_from_data_pipeline,INFO,"우리 프로젝트 최종 실험에서는 rank 기본, zscore 보조 비교로 유지"

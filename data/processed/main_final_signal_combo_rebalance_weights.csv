@@ -1,0 +1,1033 @@
+﻿combo_id,combo_name,year_month,return_year_month,hsi_state,state_kr,allocation_rule_name,turnover,weight_069500,weight_114260,weight_153130
+EW,Equal Weight,2012-03,2012-04,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2012-04,2012-05,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2012-05,2012-06,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2012-06,2012-07,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2012-07,2012-08,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2012-08,2012-09,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2012-09,2012-10,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2012-10,2012-11,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2012-11,2012-12,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2012-12,2013-01,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2013-01,2013-02,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2013-02,2013-03,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2013-03,2013-04,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2013-04,2013-05,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2013-05,2013-06,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2013-06,2013-07,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2013-07,2013-08,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2013-08,2013-09,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2013-09,2013-10,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2013-10,2013-11,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2013-11,2013-12,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2013-12,2014-01,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2014-01,2014-02,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2014-02,2014-03,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2014-03,2014-04,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2014-04,2014-05,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2014-05,2014-06,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2014-06,2014-07,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2014-07,2014-08,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2014-08,2014-09,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2014-09,2014-10,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2014-10,2014-11,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2014-11,2014-12,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2014-12,2015-01,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2015-01,2015-02,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2015-02,2015-03,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2015-03,2015-04,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2015-04,2015-05,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2015-05,2015-06,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2015-06,2015-07,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2015-07,2015-08,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2015-08,2015-09,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2015-09,2015-10,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2015-10,2015-11,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2015-11,2015-12,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2015-12,2016-01,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2016-01,2016-02,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2016-02,2016-03,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2016-03,2016-04,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2016-04,2016-05,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2016-05,2016-06,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2016-06,2016-07,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2016-07,2016-08,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2016-08,2016-09,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2016-09,2016-10,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2016-10,2016-11,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2016-11,2016-12,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2016-12,2017-01,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2017-01,2017-02,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2017-02,2017-03,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2017-03,2017-04,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2017-04,2017-05,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2017-05,2017-06,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2017-06,2017-07,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2017-07,2017-08,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2017-08,2017-09,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2017-09,2017-10,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2017-10,2017-11,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2017-11,2017-12,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2017-12,2018-01,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2018-01,2018-02,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2018-02,2018-03,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2018-03,2018-04,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2018-04,2018-05,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2018-05,2018-06,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2018-06,2018-07,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2018-07,2018-08,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2018-08,2018-09,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2018-09,2018-10,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2018-10,2018-11,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2018-11,2018-12,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2018-12,2019-01,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2019-01,2019-02,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2019-02,2019-03,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2019-03,2019-04,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2019-04,2019-05,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2019-05,2019-06,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2019-06,2019-07,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2019-07,2019-08,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2019-08,2019-09,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2019-09,2019-10,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2019-10,2019-11,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2019-11,2019-12,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2019-12,2020-01,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2020-01,2020-02,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2020-02,2020-03,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2020-03,2020-04,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2020-04,2020-05,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2020-05,2020-06,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2020-06,2020-07,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2020-07,2020-08,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2020-08,2020-09,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2020-09,2020-10,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2020-10,2020-11,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2020-11,2020-12,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2020-12,2021-01,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2021-01,2021-02,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2021-02,2021-03,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2021-03,2021-04,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2021-04,2021-05,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2021-05,2021-06,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2021-06,2021-07,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2021-07,2021-08,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2021-08,2021-09,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2021-09,2021-10,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2021-10,2021-11,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2021-11,2021-12,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2021-12,2022-01,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2022-01,2022-02,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2022-02,2022-03,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2022-03,2022-04,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2022-04,2022-05,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2022-05,2022-06,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2022-06,2022-07,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2022-07,2022-08,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2022-08,2022-09,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2022-09,2022-10,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2022-10,2022-11,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2022-11,2022-12,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2022-12,2023-01,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2023-01,2023-02,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2023-02,2023-03,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2023-03,2023-04,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2023-04,2023-05,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2023-05,2023-06,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2023-06,2023-07,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2023-07,2023-08,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2023-08,2023-09,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2023-09,2023-10,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2023-10,2023-11,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2023-11,2023-12,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2023-12,2024-01,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2024-01,2024-02,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2024-02,2024-03,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2024-03,2024-04,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2024-04,2024-05,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2024-05,2024-06,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2024-06,2024-07,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2024-07,2024-08,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2024-08,2024-09,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2024-09,2024-10,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2024-10,2024-11,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2024-11,2024-12,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2024-12,2025-01,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2025-01,2025-02,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2025-02,2025-03,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2025-03,2025-04,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2025-04,2025-05,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2025-05,2025-06,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2025-06,2025-07,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2025-07,2025-08,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2025-08,2025-09,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2025-09,2025-10,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2025-10,2025-11,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2025-11,2025-12,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2025-12,2026-01,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2026-01,2026-02,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2026-02,2026-03,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2026-03,2026-04,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2026-04,2026-05,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2026-05,2026-06,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+EW,Equal Weight,2026-06,2026-07,EW,동일가중,equal_weight,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+combo_00_core5,기본 5개 HSI 점수,2012-03,2012-04,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2012-04,2012-05,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2012-05,2012-06,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2012-06,2012-07,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2012-07,2012-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2012-08,2012-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2012-09,2012-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2012-10,2012-11,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2012-11,2012-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2012-12,2013-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2013-01,2013-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2013-02,2013-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2013-03,2013-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2013-04,2013-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2013-05,2013-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2013-06,2013-07,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2013-07,2013-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2013-08,2013-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2013-09,2013-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2013-10,2013-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2013-11,2013-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2013-12,2014-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2014-01,2014-02,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_00_core5,기본 5개 HSI 점수,2014-02,2014-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2014-03,2014-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2014-04,2014-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2014-05,2014-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2014-06,2014-07,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2014-07,2014-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2014-08,2014-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2014-09,2014-10,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2014-10,2014-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2014-11,2014-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2014-12,2015-01,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_00_core5,기본 5개 HSI 점수,2015-01,2015-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2015-02,2015-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2015-03,2015-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2015-04,2015-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2015-05,2015-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_00_core5,기본 5개 HSI 점수,2015-06,2015-07,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2015-07,2015-08,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2015-08,2015-09,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2015-09,2015-10,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_00_core5,기본 5개 HSI 점수,2015-10,2015-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2015-11,2015-12,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_00_core5,기본 5개 HSI 점수,2015-12,2016-01,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2016-01,2016-02,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2016-02,2016-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2016-03,2016-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2016-04,2016-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2016-05,2016-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2016-06,2016-07,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2016-07,2016-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2016-08,2016-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2016-09,2016-10,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2016-10,2016-11,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2016-11,2016-12,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2016-12,2017-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2017-01,2017-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2017-02,2017-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2017-03,2017-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2017-04,2017-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2017-05,2017-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2017-06,2017-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2017-07,2017-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2017-08,2017-09,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2017-09,2017-10,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2017-10,2017-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2017-11,2017-12,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2017-12,2018-01,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2018-01,2018-02,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_00_core5,기본 5개 HSI 점수,2018-02,2018-03,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2018-03,2018-04,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2018-04,2018-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2018-05,2018-06,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2018-06,2018-07,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2018-07,2018-08,conflict,신호 충돌,final_baseline_state_target_weights_v1,0.44999999999999996,0.35,0.4,0.25
+combo_00_core5,기본 5개 HSI 점수,2018-08,2018-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.35000000000000003,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2018-09,2018-10,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2018-10,2018-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2018-11,2018-12,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2018-12,2019-01,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_00_core5,기본 5개 HSI 점수,2019-01,2019-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2019-02,2019-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2019-03,2019-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2019-04,2019-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2019-05,2019-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_00_core5,기본 5개 HSI 점수,2019-06,2019-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2019-07,2019-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2019-08,2019-09,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_00_core5,기본 5개 HSI 점수,2019-09,2019-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2019-10,2019-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2019-11,2019-12,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2019-12,2020-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2020-01,2020-02,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2020-02,2020-03,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2020-03,2020-04,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2020-04,2020-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2020-05,2020-06,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2020-06,2020-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2020-07,2020-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2020-08,2020-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2020-09,2020-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2020-10,2020-11,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2020-11,2020-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2020-12,2021-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2021-01,2021-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2021-02,2021-03,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2021-03,2021-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2021-04,2021-05,conflict,신호 충돌,final_baseline_state_target_weights_v1,0.15000000000000002,0.35,0.4,0.25
+combo_00_core5,기본 5개 HSI 점수,2021-05,2021-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.14999999999999997,0.2,0.45,0.35
+combo_00_core5,기본 5개 HSI 점수,2021-06,2021-07,conflict,신호 충돌,final_baseline_state_target_weights_v1,0.14999999999999997,0.35,0.4,0.25
+combo_00_core5,기본 5개 HSI 점수,2021-07,2021-08,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.44999999999999996,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2021-08,2021-09,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2021-09,2021-10,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2021-10,2021-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2021-11,2021-12,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2021-12,2022-01,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2022-01,2022-02,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2022-02,2022-03,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2022-03,2022-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2022-04,2022-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2022-05,2022-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2022-06,2022-07,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2022-07,2022-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2022-08,2022-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2022-09,2022-10,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2022-10,2022-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2022-11,2022-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2022-12,2023-01,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2023-01,2023-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2023-02,2023-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2023-03,2023-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2023-04,2023-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2023-05,2023-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2023-06,2023-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2023-07,2023-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2023-08,2023-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2023-09,2023-10,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_00_core5,기본 5개 HSI 점수,2023-10,2023-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2023-11,2023-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2023-12,2024-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2024-01,2024-02,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_00_core5,기본 5개 HSI 점수,2024-02,2024-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2024-03,2024-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2024-04,2024-05,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_00_core5,기본 5개 HSI 점수,2024-05,2024-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_00_core5,기본 5개 HSI 점수,2024-06,2024-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2024-07,2024-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2024-08,2024-09,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2024-09,2024-10,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2024-10,2024-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2024-11,2024-12,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2024-12,2025-01,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2025-01,2025-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2025-02,2025-03,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2025-03,2025-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2025-04,2025-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_00_core5,기본 5개 HSI 점수,2025-05,2025-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2025-06,2025-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2025-07,2025-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2025-08,2025-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2025-09,2025-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2025-10,2025-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2025-11,2025-12,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2025-12,2026-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2026-01,2026-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2026-02,2026-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2026-03,2026-04,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_00_core5,기본 5개 HSI 점수,2026-04,2026-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2026-05,2026-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_00_core5,기본 5개 HSI 점수,2026-06,2026-07,conflict,신호 충돌,final_baseline_state_target_weights_v1,0.35000000000000003,0.35,0.4,0.25
+combo_01_core4_no_rs,기본 4개 HSI 점수,2012-03,2012-04,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2012-04,2012-05,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2012-05,2012-06,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2012-06,2012-07,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2012-07,2012-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2012-08,2012-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2012-09,2012-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2012-10,2012-11,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2012-11,2012-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2012-12,2013-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2013-01,2013-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2013-02,2013-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2013-03,2013-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2013-04,2013-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2013-05,2013-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2013-06,2013-07,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2013-07,2013-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2013-08,2013-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2013-09,2013-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2013-10,2013-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2013-11,2013-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2013-12,2014-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2014-01,2014-02,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_01_core4_no_rs,기본 4개 HSI 점수,2014-02,2014-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2014-03,2014-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2014-04,2014-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2014-05,2014-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2014-06,2014-07,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2014-07,2014-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2014-08,2014-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2014-09,2014-10,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2014-10,2014-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2014-11,2014-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2014-12,2015-01,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_01_core4_no_rs,기본 4개 HSI 점수,2015-01,2015-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2015-02,2015-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2015-03,2015-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2015-04,2015-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2015-05,2015-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_01_core4_no_rs,기본 4개 HSI 점수,2015-06,2015-07,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2015-07,2015-08,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2015-08,2015-09,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2015-09,2015-10,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_01_core4_no_rs,기본 4개 HSI 점수,2015-10,2015-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2015-11,2015-12,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_01_core4_no_rs,기본 4개 HSI 점수,2015-12,2016-01,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2016-01,2016-02,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2016-02,2016-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2016-03,2016-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2016-04,2016-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2016-05,2016-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2016-06,2016-07,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2016-07,2016-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2016-08,2016-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2016-09,2016-10,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2016-10,2016-11,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2016-11,2016-12,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2016-12,2017-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2017-01,2017-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2017-02,2017-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2017-03,2017-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2017-04,2017-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2017-05,2017-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2017-06,2017-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2017-07,2017-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2017-08,2017-09,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2017-09,2017-10,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2017-10,2017-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2017-11,2017-12,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2017-12,2018-01,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2018-01,2018-02,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_01_core4_no_rs,기본 4개 HSI 점수,2018-02,2018-03,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2018-03,2018-04,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2018-04,2018-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2018-05,2018-06,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2018-06,2018-07,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2018-07,2018-08,conflict,신호 충돌,final_baseline_state_target_weights_v1,0.44999999999999996,0.35,0.4,0.25
+combo_01_core4_no_rs,기본 4개 HSI 점수,2018-08,2018-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.35000000000000003,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2018-09,2018-10,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2018-10,2018-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2018-11,2018-12,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2018-12,2019-01,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_01_core4_no_rs,기본 4개 HSI 점수,2019-01,2019-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2019-02,2019-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2019-03,2019-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2019-04,2019-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2019-05,2019-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_01_core4_no_rs,기본 4개 HSI 점수,2019-06,2019-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2019-07,2019-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2019-08,2019-09,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_01_core4_no_rs,기본 4개 HSI 점수,2019-09,2019-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2019-10,2019-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2019-11,2019-12,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2019-12,2020-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2020-01,2020-02,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2020-02,2020-03,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2020-03,2020-04,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2020-04,2020-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2020-05,2020-06,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2020-06,2020-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2020-07,2020-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2020-08,2020-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2020-09,2020-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2020-10,2020-11,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2020-11,2020-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2020-12,2021-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2021-01,2021-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2021-02,2021-03,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2021-03,2021-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2021-04,2021-05,conflict,신호 충돌,final_baseline_state_target_weights_v1,0.15000000000000002,0.35,0.4,0.25
+combo_01_core4_no_rs,기본 4개 HSI 점수,2021-05,2021-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.14999999999999997,0.2,0.45,0.35
+combo_01_core4_no_rs,기본 4개 HSI 점수,2021-06,2021-07,conflict,신호 충돌,final_baseline_state_target_weights_v1,0.14999999999999997,0.35,0.4,0.25
+combo_01_core4_no_rs,기본 4개 HSI 점수,2021-07,2021-08,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.44999999999999996,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2021-08,2021-09,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2021-09,2021-10,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2021-10,2021-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2021-11,2021-12,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2021-12,2022-01,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2022-01,2022-02,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2022-02,2022-03,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2022-03,2022-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2022-04,2022-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2022-05,2022-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2022-06,2022-07,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2022-07,2022-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2022-08,2022-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2022-09,2022-10,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2022-10,2022-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2022-11,2022-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2022-12,2023-01,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2023-01,2023-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2023-02,2023-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2023-03,2023-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2023-04,2023-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2023-05,2023-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2023-06,2023-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2023-07,2023-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2023-08,2023-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2023-09,2023-10,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_01_core4_no_rs,기본 4개 HSI 점수,2023-10,2023-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2023-11,2023-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2023-12,2024-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2024-01,2024-02,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_01_core4_no_rs,기본 4개 HSI 점수,2024-02,2024-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2024-03,2024-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2024-04,2024-05,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_01_core4_no_rs,기본 4개 HSI 점수,2024-05,2024-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_01_core4_no_rs,기본 4개 HSI 점수,2024-06,2024-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2024-07,2024-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2024-08,2024-09,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2024-09,2024-10,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2024-10,2024-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2024-11,2024-12,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2024-12,2025-01,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2025-01,2025-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2025-02,2025-03,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2025-03,2025-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2025-04,2025-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_01_core4_no_rs,기본 4개 HSI 점수,2025-05,2025-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2025-06,2025-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2025-07,2025-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2025-08,2025-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2025-09,2025-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2025-10,2025-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2025-11,2025-12,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2025-12,2026-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2026-01,2026-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2026-02,2026-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2026-03,2026-04,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_01_core4_no_rs,기본 4개 HSI 점수,2026-04,2026-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2026-05,2026-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_01_core4_no_rs,기본 4개 HSI 점수,2026-06,2026-07,conflict,신호 충돌,final_baseline_state_target_weights_v1,0.35000000000000003,0.35,0.4,0.25
+combo_02_trend_only,추세 중심 신호,2012-03,2012-04,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2012-04,2012-05,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2012-05,2012-06,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2012-06,2012-07,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2012-07,2012-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2012-08,2012-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2012-09,2012-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2012-10,2012-11,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2012-11,2012-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2012-12,2013-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2013-01,2013-02,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2013-02,2013-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2013-03,2013-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2013-04,2013-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2013-05,2013-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2013-06,2013-07,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2013-07,2013-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2013-08,2013-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2013-09,2013-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2013-10,2013-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2013-11,2013-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2013-12,2014-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2014-01,2014-02,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2014-02,2014-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2014-03,2014-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2014-04,2014-05,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2014-05,2014-06,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2014-06,2014-07,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2014-07,2014-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2014-08,2014-09,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2014-09,2014-10,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2014-10,2014-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2014-11,2014-12,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2014-12,2015-01,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2015-01,2015-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2015-02,2015-03,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2015-03,2015-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2015-04,2015-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2015-05,2015-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2015-06,2015-07,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2015-07,2015-08,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2015-08,2015-09,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2015-09,2015-10,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2015-10,2015-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2015-11,2015-12,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2015-12,2016-01,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2016-01,2016-02,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2016-02,2016-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2016-03,2016-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2016-04,2016-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2016-05,2016-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2016-06,2016-07,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2016-07,2016-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2016-08,2016-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2016-09,2016-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2016-10,2016-11,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2016-11,2016-12,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2016-12,2017-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2017-01,2017-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2017-02,2017-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2017-03,2017-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2017-04,2017-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2017-05,2017-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2017-06,2017-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2017-07,2017-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2017-08,2017-09,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2017-09,2017-10,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2017-10,2017-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2017-11,2017-12,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2017-12,2018-01,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2018-01,2018-02,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2018-02,2018-03,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2018-03,2018-04,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2018-04,2018-05,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2018-05,2018-06,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2018-06,2018-07,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2018-07,2018-08,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2018-08,2018-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2018-09,2018-10,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2018-10,2018-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2018-11,2018-12,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2018-12,2019-01,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2019-01,2019-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2019-02,2019-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2019-03,2019-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2019-04,2019-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2019-05,2019-06,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2019-06,2019-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2019-07,2019-08,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2019-08,2019-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2019-09,2019-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2019-10,2019-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2019-11,2019-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2019-12,2020-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2020-01,2020-02,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2020-02,2020-03,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2020-03,2020-04,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2020-04,2020-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2020-05,2020-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2020-06,2020-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2020-07,2020-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2020-08,2020-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2020-09,2020-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2020-10,2020-11,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2020-11,2020-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2020-12,2021-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2021-01,2021-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2021-02,2021-03,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2021-03,2021-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2021-04,2021-05,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2021-05,2021-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2021-06,2021-07,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2021-07,2021-08,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2021-08,2021-09,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2021-09,2021-10,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2021-10,2021-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2021-11,2021-12,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2021-12,2022-01,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2022-01,2022-02,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2022-02,2022-03,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2022-03,2022-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2022-04,2022-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2022-05,2022-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2022-06,2022-07,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2022-07,2022-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2022-08,2022-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2022-09,2022-10,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2022-10,2022-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2022-11,2022-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2022-12,2023-01,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2023-01,2023-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2023-02,2023-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2023-03,2023-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2023-04,2023-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2023-05,2023-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2023-06,2023-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2023-07,2023-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2023-08,2023-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2023-09,2023-10,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2023-10,2023-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2023-11,2023-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2023-12,2024-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2024-01,2024-02,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2024-02,2024-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2024-03,2024-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2024-04,2024-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2024-05,2024-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_02_trend_only,추세 중심 신호,2024-06,2024-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2024-07,2024-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2024-08,2024-09,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2024-09,2024-10,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2024-10,2024-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2024-11,2024-12,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2024-12,2025-01,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2025-01,2025-02,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2025-02,2025-03,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2025-03,2025-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_02_trend_only,추세 중심 신호,2025-04,2025-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2025-05,2025-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2025-06,2025-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2025-07,2025-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2025-08,2025-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2025-09,2025-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2025-10,2025-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2025-11,2025-12,conflict,신호 충돌,final_baseline_state_target_weights_v1,0.35000000000000003,0.35,0.4,0.25
+combo_02_trend_only,추세 중심 신호,2025-12,2026-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.35000000000000003,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2026-01,2026-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2026-02,2026-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2026-03,2026-04,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_02_trend_only,추세 중심 신호,2026-04,2026-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2026-05,2026-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_02_trend_only,추세 중심 신호,2026-06,2026-07,conflict,신호 충돌,final_baseline_state_target_weights_v1,0.35000000000000003,0.35,0.4,0.25
+combo_03_risk_damage_focus,추세+위험훼손 신호,2012-03,2012-04,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2012-04,2012-05,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2012-05,2012-06,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2012-06,2012-07,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2012-07,2012-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2012-08,2012-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2012-09,2012-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2012-10,2012-11,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2012-11,2012-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2012-12,2013-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2013-01,2013-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2013-02,2013-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2013-03,2013-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2013-04,2013-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2013-05,2013-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2013-06,2013-07,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2013-07,2013-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2013-08,2013-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2013-09,2013-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2013-10,2013-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2013-11,2013-12,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2013-12,2014-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2014-01,2014-02,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2014-02,2014-03,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2014-03,2014-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2014-04,2014-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2014-05,2014-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2014-06,2014-07,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2014-07,2014-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2014-08,2014-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2014-09,2014-10,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2014-10,2014-11,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2014-11,2014-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2014-12,2015-01,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2015-01,2015-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2015-02,2015-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2015-03,2015-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2015-04,2015-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2015-05,2015-06,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2015-06,2015-07,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2015-07,2015-08,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2015-08,2015-09,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2015-09,2015-10,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2015-10,2015-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2015-11,2015-12,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2015-12,2016-01,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2016-01,2016-02,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2016-02,2016-03,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2016-03,2016-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2016-04,2016-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2016-05,2016-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2016-06,2016-07,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2016-07,2016-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2016-08,2016-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2016-09,2016-10,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2016-10,2016-11,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2016-11,2016-12,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2016-12,2017-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2017-01,2017-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2017-02,2017-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2017-03,2017-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2017-04,2017-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2017-05,2017-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2017-06,2017-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2017-07,2017-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2017-08,2017-09,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2017-09,2017-10,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2017-10,2017-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2017-11,2017-12,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2017-12,2018-01,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2018-01,2018-02,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2018-02,2018-03,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2018-03,2018-04,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2018-04,2018-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2018-05,2018-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2018-06,2018-07,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2018-07,2018-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2018-08,2018-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2018-09,2018-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2018-10,2018-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2018-11,2018-12,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2018-12,2019-01,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2019-01,2019-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2019-02,2019-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2019-03,2019-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2019-04,2019-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2019-05,2019-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2019-06,2019-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2019-07,2019-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2019-08,2019-09,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2019-09,2019-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2019-10,2019-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2019-11,2019-12,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2019-12,2020-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2020-01,2020-02,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2020-02,2020-03,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2020-03,2020-04,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2020-04,2020-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2020-05,2020-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2020-06,2020-07,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2020-07,2020-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2020-08,2020-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2020-09,2020-10,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2020-10,2020-11,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2020-11,2020-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2020-12,2021-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2021-01,2021-02,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2021-02,2021-03,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2021-03,2021-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2021-04,2021-05,conflict,신호 충돌,final_baseline_state_target_weights_v1,0.15000000000000002,0.35,0.4,0.25
+combo_03_risk_damage_focus,추세+위험훼손 신호,2021-05,2021-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.14999999999999997,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2021-06,2021-07,conflict,신호 충돌,final_baseline_state_target_weights_v1,0.14999999999999997,0.35,0.4,0.25
+combo_03_risk_damage_focus,추세+위험훼손 신호,2021-07,2021-08,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.14999999999999997,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2021-08,2021-09,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2021-09,2021-10,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2021-10,2021-11,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2021-11,2021-12,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2021-12,2022-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2022-01,2022-02,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2022-02,2022-03,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2022-03,2022-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2022-04,2022-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2022-05,2022-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2022-06,2022-07,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2022-07,2022-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2022-08,2022-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2022-09,2022-10,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2022-10,2022-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2022-11,2022-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2022-12,2023-01,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2023-01,2023-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2023-02,2023-03,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2023-03,2023-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2023-04,2023-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2023-05,2023-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2023-06,2023-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2023-07,2023-08,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2023-08,2023-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2023-09,2023-10,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2023-10,2023-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2023-11,2023-12,conflict,신호 충돌,final_baseline_state_target_weights_v1,0.44999999999999996,0.35,0.4,0.25
+combo_03_risk_damage_focus,추세+위험훼손 신호,2023-12,2024-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.35000000000000003,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2024-01,2024-02,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2024-02,2024-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2024-03,2024-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2024-04,2024-05,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2024-05,2024-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2024-06,2024-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2024-07,2024-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2024-08,2024-09,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2024-09,2024-10,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2024-10,2024-11,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2024-11,2024-12,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2024-12,2025-01,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2025-01,2025-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2025-02,2025-03,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2025-03,2025-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2025-04,2025-05,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_03_risk_damage_focus,추세+위험훼손 신호,2025-05,2025-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2025-06,2025-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2025-07,2025-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2025-08,2025-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_03_risk_damage_focus,추세+위험훼손 신호,2025-09,2025-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2025-10,2025-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2025-11,2025-12,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2025-12,2026-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2026-01,2026-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2026-02,2026-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2026-03,2026-04,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_03_risk_damage_focus,추세+위험훼손 신호,2026-04,2026-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2026-05,2026-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_03_risk_damage_focus,추세+위험훼손 신호,2026-06,2026-07,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2012-03,2012-04,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2012-04,2012-05,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2012-05,2012-06,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2012-06,2012-07,insufficient_data,자료 부족,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2012-07,2012-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2012-08,2012-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2012-09,2012-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2012-10,2012-11,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2012-11,2012-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2012-12,2013-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2013-01,2013-02,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2013-02,2013-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2013-03,2013-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2013-04,2013-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2013-05,2013-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2013-06,2013-07,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2013-07,2013-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2013-08,2013-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2013-09,2013-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2013-10,2013-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2013-11,2013-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2013-12,2014-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2014-01,2014-02,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2014-02,2014-03,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2014-03,2014-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2014-04,2014-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2014-05,2014-06,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2014-06,2014-07,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2014-07,2014-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2014-08,2014-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2014-09,2014-10,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2014-10,2014-11,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2014-11,2014-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2014-12,2015-01,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2015-01,2015-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2015-02,2015-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2015-03,2015-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2015-04,2015-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2015-05,2015-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2015-06,2015-07,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2015-07,2015-08,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2015-08,2015-09,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2015-09,2015-10,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2015-10,2015-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2015-11,2015-12,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2015-12,2016-01,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2016-01,2016-02,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2016-02,2016-03,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2016-03,2016-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2016-04,2016-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2016-05,2016-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2016-06,2016-07,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2016-07,2016-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2016-08,2016-09,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2016-09,2016-10,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2016-10,2016-11,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2016-11,2016-12,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2016-12,2017-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2017-01,2017-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2017-02,2017-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2017-03,2017-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2017-04,2017-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2017-05,2017-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2017-06,2017-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2017-07,2017-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2017-08,2017-09,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2017-09,2017-10,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2017-10,2017-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2017-11,2017-12,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2017-12,2018-01,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2018-01,2018-02,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2018-02,2018-03,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2018-03,2018-04,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2018-04,2018-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2018-05,2018-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2018-06,2018-07,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2018-07,2018-08,conflict,신호 충돌,final_baseline_state_target_weights_v1,0.44999999999999996,0.35,0.4,0.25
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2018-08,2018-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.15000000000000002,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2018-09,2018-10,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2018-10,2018-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2018-11,2018-12,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2018-12,2019-01,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2019-01,2019-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2019-02,2019-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2019-03,2019-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2019-04,2019-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2019-05,2019-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2019-06,2019-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2019-07,2019-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2019-08,2019-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2019-09,2019-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2019-10,2019-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2019-11,2019-12,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2019-12,2020-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2020-01,2020-02,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2020-02,2020-03,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2020-03,2020-04,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2020-04,2020-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.55,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2020-05,2020-06,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2020-06,2020-07,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2020-07,2020-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2020-08,2020-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2020-09,2020-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2020-10,2020-11,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2020-11,2020-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2020-12,2021-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2021-01,2021-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2021-02,2021-03,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2021-03,2021-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2021-04,2021-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2021-05,2021-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.3,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2021-06,2021-07,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2021-07,2021-08,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2021-08,2021-09,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2021-09,2021-10,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2021-10,2021-11,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2021-11,2021-12,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2021-12,2022-01,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2022-01,2022-02,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2022-02,2022-03,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2022-03,2022-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2022-04,2022-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2022-05,2022-06,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2022-06,2022-07,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2022-07,2022-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2022-08,2022-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2022-09,2022-10,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2022-10,2022-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2022-11,2022-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2022-12,2023-01,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2023-01,2023-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2023-02,2023-03,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2023-03,2023-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2023-04,2023-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2023-05,2023-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2023-06,2023-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2023-07,2023-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2023-08,2023-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2023-09,2023-10,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2023-10,2023-11,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2023-11,2023-12,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2023-12,2024-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2024-01,2024-02,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2024-02,2024-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2024-03,2024-04,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2024-04,2024-05,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2024-05,2024-06,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.0,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2024-06,2024-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2024-07,2024-08,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2024-08,2024-09,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.55,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2024-09,2024-10,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.0,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2024-10,2024-11,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2024-11,2024-12,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.35,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2024-12,2025-01,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.35,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2025-01,2025-02,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.3,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2025-02,2025-03,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2025-03,2025-04,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2025-04,2025-05,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.0,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2025-05,2025-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2025-06,2025-07,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2025-07,2025-08,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2025-08,2025-09,neutral_watch,중립 관찰,final_baseline_state_target_weights_v1,0.19999999999999996,0.5,0.35,0.15
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2025-09,2025-10,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.19999999999999996,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2025-10,2025-11,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2025-11,2025-12,risk_warning,위험 악화 우세,final_baseline_state_target_weights_v1,0.5,0.2,0.45,0.35
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2025-12,2026-01,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.5,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2026-01,2026-02,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2026-02,2026-03,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2026-03,2026-04,accident_zone,강한 위험 구간,final_baseline_state_target_weights_v1,0.7,0.0,0.3,0.7
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2026-04,2026-05,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.7,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2026-05,2026-06,risk_relief,위험 완화 우세,final_baseline_state_target_weights_v1,0.0,0.7,0.2,0.1
+combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,2026-06,2026-07,conflict,신호 충돌,final_baseline_state_target_weights_v1,0.35000000000000003,0.35,0.4,0.25

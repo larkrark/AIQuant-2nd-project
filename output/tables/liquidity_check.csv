@@ -1,0 +1,4 @@
+﻿ticker,name,underlying_asset,volume_available,avg_daily_volume,avg_daily_turnover_krw,meets_volume_criterion,meets_turnover_criterion,criterion_applicable,overall_pass,status
+069500,KODEX 200,주식형,True,21330477,2489592713010,True,True,True,True,기준 충족
+114260,KODEX 국고채3년,채권형,True,49208,3025783305,True,True,True,True,기준 충족
+153130,KODEX 단기채권PLUS,채권형,True,39859,4504422450,True,True,True,True,기준 충족

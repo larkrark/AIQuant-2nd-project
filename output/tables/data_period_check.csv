@@ -1,0 +1,4 @@
+﻿ticker,name,listing_date,data_start_actual,data_end,trading_days,data_years_actual,status
+069500,KODEX 200,2002-10-14,2012-03-07,2026-06-29,3486,13.8,시작 9년 이상 지연
+114260,KODEX 국고채3년,2009-07-29,2012-03-07,2026-06-29,3486,13.8,시작 2년 이상 지연
+153130,KODEX 단기채권PLUS,2012-03-07,2012-03-07,2026-06-29,3486,13.8,정상

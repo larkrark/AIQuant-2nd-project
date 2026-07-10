@@ -1,0 +1,7 @@
+﻿strategy_name,theta_common,CAGR_change_vs_theta015_pct,MDD_change_vs_theta015_pct,avg_turnover_change_vs_theta015_pct,decision,reason
+EW,,,,,benchmark,동일가중 비교 기준
+theta_0.10,0.1,-0.2298690674943149,1.7396100383071378,1.0465116279069733,review_turnover,상태 전환이 잦아 Turnover 확인 필요
+theta_0.15,0.15,0.0,0.0,0.0,baseline_theta,기준 θ
+theta_0.20,0.2,-0.01699513281669951,3.2165745179209004,0.29069767441860606,review_turnover,상태 전환이 잦아 Turnover 확인 필요
+theta_0.25,0.25,-0.2899982593985939,2.6361708941961552,-1.8313953488372157,review_turnover,상태 전환이 잦아 Turnover 확인 필요
+theta_0.30,0.3,0.0044695254820315,2.6361708941961766,-5.174418604651166,review_turnover,상태 전환이 잦아 Turnover 확인 필요

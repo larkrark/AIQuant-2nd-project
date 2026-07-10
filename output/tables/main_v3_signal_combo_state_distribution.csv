@@ -1,0 +1,31 @@
+﻿experiment_id,experiment_name,hsi_state,state_valid,month_count,share_all_months,share_valid_months
+combo_00_baseline_core,기본 HSI 핵심 신호,accident_zone,True,31,0.18023255813953487,0.18452380952380953
+combo_00_baseline_core,기본 HSI 핵심 신호,conflict,True,48,0.27906976744186046,0.2857142857142857
+combo_00_baseline_core,기본 HSI 핵심 신호,insufficient_data,False,4,0.023255813953488372,
+combo_00_baseline_core,기본 HSI 핵심 신호,neutral_watch,True,10,0.05813953488372093,0.05952380952380952
+combo_00_baseline_core,기본 HSI 핵심 신호,risk_relief,True,66,0.38372093023255816,0.39285714285714285
+combo_00_baseline_core,기본 HSI 핵심 신호,risk_warning,True,13,0.0755813953488372,0.07738095238095238
+combo_01_trend_speed,단기-중기 추세 보강,accident_zone,True,18,0.10465116279069768,0.10714285714285714
+combo_01_trend_speed,단기-중기 추세 보강,conflict,True,10,0.05813953488372093,0.05952380952380952
+combo_01_trend_speed,단기-중기 추세 보강,insufficient_data,False,4,0.023255813953488372,
+combo_01_trend_speed,단기-중기 추세 보강,neutral_watch,True,64,0.37209302325581395,0.38095238095238093
+combo_01_trend_speed,단기-중기 추세 보강,risk_relief,True,54,0.313953488372093,0.32142857142857145
+combo_01_trend_speed,단기-중기 추세 보강,risk_warning,True,22,0.12790697674418605,0.13095238095238096
+combo_02_risk_damage,위험강도·누적손상 보강,accident_zone,True,17,0.09883720930232558,0.10119047619047619
+combo_02_risk_damage,위험강도·누적손상 보강,conflict,True,16,0.09302325581395349,0.09523809523809523
+combo_02_risk_damage,위험강도·누적손상 보강,insufficient_data,False,4,0.023255813953488372,
+combo_02_risk_damage,위험강도·누적손상 보강,neutral_watch,True,55,0.31976744186046513,0.3273809523809524
+combo_02_risk_damage,위험강도·누적손상 보강,risk_relief,True,56,0.32558139534883723,0.3333333333333333
+combo_02_risk_damage,위험강도·누적손상 보강,risk_warning,True,24,0.13953488372093023,0.14285714285714285
+combo_03_relative_strength,현금성 자산 대비 상대강도 보강,accident_zone,True,20,0.11627906976744186,0.11904761904761904
+combo_03_relative_strength,현금성 자산 대비 상대강도 보강,conflict,True,9,0.05232558139534884,0.05357142857142857
+combo_03_relative_strength,현금성 자산 대비 상대강도 보강,insufficient_data,False,4,0.023255813953488372,
+combo_03_relative_strength,현금성 자산 대비 상대강도 보강,neutral_watch,True,59,0.3430232558139535,0.35119047619047616
+combo_03_relative_strength,현금성 자산 대비 상대강도 보강,risk_relief,True,58,0.3372093023255814,0.34523809523809523
+combo_03_relative_strength,현금성 자산 대비 상대강도 보강,risk_warning,True,22,0.12790697674418605,0.13095238095238096
+combo_04_speed_alignment_all,단기-중기 신호 정렬 통합,accident_zone,True,11,0.06395348837209303,0.06547619047619048
+combo_04_speed_alignment_all,단기-중기 신호 정렬 통합,conflict,True,2,0.011627906976744186,0.011904761904761904
+combo_04_speed_alignment_all,단기-중기 신호 정렬 통합,insufficient_data,False,4,0.023255813953488372,
+combo_04_speed_alignment_all,단기-중기 신호 정렬 통합,neutral_watch,True,79,0.45930232558139533,0.47023809523809523
+combo_04_speed_alignment_all,단기-중기 신호 정렬 통합,risk_relief,True,49,0.28488372093023256,0.2916666666666667
+combo_04_speed_alignment_all,단기-중기 신호 정렬 통합,risk_warning,True,27,0.1569767441860465,0.16071428571428573

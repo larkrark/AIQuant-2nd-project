@@ -1,0 +1,6 @@
+﻿item,value,status,note
+signal_months,172,OK,HSI 상태가 존재하는 월 수
+return_months,171,OK,월간 수익률 decimal 월 수
+backtest_months_hsi,172,OK,HSI overlay 백테스트에 실제 사용된 월 수
+alignment_rule,signal_month_t_to_return_month_t_plus_1,OK,월말 신호 t를 다음 달 수익률 t+1에 적용
+return_columns_used,"069500, 114260, 153130",OK,백테스트 수익률 컬럼

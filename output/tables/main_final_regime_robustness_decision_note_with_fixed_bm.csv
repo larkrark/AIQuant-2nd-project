@@ -1,0 +1,6 @@
+﻿topic,finding,value
+fixed_bm_role,Fixed 70/20/10 BM은 전체 CAGR이 가장 높지만 MDD가 가장 큽니다. 메인 BM으로 유지하되 최종 후보로 분류하지 않습니다.,11.054539101047611
+lambda_vs_fixed_mdd,"Lambda 0.1은 Fixed BM 대비 MDD를 10.930%p 완화하고, Lambda 0.3은 10.455%p 완화합니다.",10.930043606093545
+lambda_low_turnover,Lambda 후보 중 평균 Turnover가 낮은 후보는 Lambda 0.1입니다.,2.455393807086774
+lambda_calmar,Lambda 후보 중 Calmar가 높은 후보는 Lambda 0.3입니다.,0.601032476875829
+ew_role,EW Benchmark는 MDD와 Sharpe가 강한 보조 BM입니다. Lambda 후보가 모든 안정성 지표에서 EW를 압도한다고 해석하지 않습니다.,0.8343349130182095

@@ -1,0 +1,15 @@
+﻿번호,역할 그룹,출력 구분,주요 컬럼,의미,생성 함수,합본 시트,상태
+1,①ETF·자산군,ETF 기본정보표,"ticker, name, asset_class, risk_group, listing_date, data_years, note",실험 대상 ETF 후보·자산군·위험그룹 기본 정보.,make_etf_info_table(),etf_info,산출
+2,①ETF·자산군,자산군 분류표,"ticker, asset_class_kr, underlying_asset, role, risk_level, coverage_count, discussion_note",자산군·추종자산·위험등급 분류와 분류 논의 항목.,make_asset_class_table(),asset_class,산출
+3,②가격·수익률,월말 가격표,"year_month, ticker, month_end_price",리밸런싱 기준 월말 종가.,make_monthly_price_table(),monthly_price,산출
+4,②가격·수익률,월간 수익률표(pct/decimal),"year_month, ticker, monthly_return_pct / monthly_return_decimal","pct 단위는 검수·보고용, decimal 단위는 백테스트 연결용으로 사용한다.",make_monthly_return_table_pct() / make_monthly_return_table_decimal(),monthly_return_pct / monthly_return_decimal,산출
+5,③HSI 입력신호,HSI 입력 신호표(원신호),"ret_1m, ret_3m, ma_gap, momentum, volatility, relative_strength (+확장: ret_6m, ret_12m, drawdown, shock_count, defensive_rs)",HSI 계산 직전 단계의 원신호(부호 반전 전 실제값).,make_hsi_signal_inputs(),signal_inputs,산출
+6,④점수화 중간,지표 점수표(hsi_scaled_scores),"date, ticker, score_return/ma_pos/momentum/vol/rs (-10~+10)",원자료가 아니라 표준화·부호 통일·스케일링이 끝난 지표별 HSI 점수.,make_hsi_signal_table()['raw_scores'],hsi_scaled_scores,산출
+7,④점수화 중간,HSI 방향 점수표,"date, ticker, direction (-1~+1)",위험 악화/완화 방향성 점수.,make_hsi_signal_table()['hsi_direction'],hsi_direction,산출
+8,④점수화 중간,HSI 상태 분류표,"date, ticker, signal (buy/watch/caution)",방향 임계 기준 상태 라벨(3단계).,make_hsi_signal_table()['hsi_signal'],hsi_signal,부분
+9,④점수화 중간,신호 방향 정의표,"signal_name, raw_direction, hsi_sign, interpretation",각 신호의 위험 악화/완화 방향 정의(부호 반전 근거).,make_signal_direction_table(),signal_direction_map,산출
+10,⑤snapshot,HSI 최신 snapshot,"ticker, date, direction, intensity, signal, score_*",기준일 HSI 점수·상태 요약(빠른 확인용).,make_hsi_signal_table()['snapshot'],snapshot,산출
+11,⑥품질 점검,데이터 기간 점검표,"ticker, listing_date, data_start_actual, data_end, trading_days, status",상장일 대비 실제 사용 가능 기간 확인.,check_data_period(),data_period,산출
+12,⑥품질 점검,결측치 점검표,"ticker, total_rows, missing_count, missing_pct, ffill_applied",ETF별 결측치 현황·처리 방법.,check_missing_values(),missing_summary,산출
+13,⑥품질 점검,유동성 점검표,"ticker, avg_daily_volume, avg_daily_turnover_krw, overall_pass, status",거래량·거래대금 기준 유동성 점검.,check_liquidity(),liquidity_check,산출
+14,⑥품질 점검,제외 사유표,"ticker, name, reason",후보 미선정·제외 사유 기록.,PreprocessingLog.exclusions,exclusions,산출

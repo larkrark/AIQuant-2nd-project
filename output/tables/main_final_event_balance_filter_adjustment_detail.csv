@@ -1,0 +1,7 @@
+﻿adjustment_label,months,avg_adjustment,min_adjustment,max_adjustment,avg_event_balance,avg_event_intensity
+large_cash_to_risk_adjustment,31,-0.1,-0.1,-0.1,-0.329446331636927,0.5359749071012246
+large_risk_to_cash_adjustment,33,0.1,0.1,0.1,0.3095708755028471,0.6279572621624219
+no_adjustment_missing_event_balance,7,0.0,0.0,0.0,,
+no_adjustment_mixed_or_neutral,46,0.0,0.0,0.0,0.012340823170198405,0.4674992167420329
+small_cash_to_risk_adjustment,14,-0.05,-0.05,-0.05,-0.15903848136895088,0.48522581590867814
+small_risk_to_cash_adjustment,41,0.05000000000000001,0.05,0.05,0.1436926963202637,0.5440463915005544

@@ -1,0 +1,9 @@
+﻿item,value,status,note
+relative_speed_rows,2580,OK,상대속도 long 전체 행 수
+valid_relative_velocity_rows,2341,OK,relative_velocity 유효 행 수
+ticker_count,3,OK,상대속도 계산 대상 ETF 수
+signal_count,5,OK,상대속도 계산 대상 신호 수
+first_valid_month,2012-07,OK,상대속도 첫 유효 월
+last_valid_month,2026-06,OK,상대속도 마지막 유효 월
+rank_table_rows,669,OK,069500 기준 월별 상대속도 상위 신호표 행 수
+state_summary_rows,25,OK,HSI 상태별 상대속도 요약표 행 수

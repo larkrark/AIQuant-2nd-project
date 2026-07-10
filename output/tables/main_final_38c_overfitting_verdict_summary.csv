@@ -1,0 +1,9 @@
+﻿chi2_p_value,batch_homogeneity_pass,split_half_p_value,split_half_pass,max_late_convergence_gap_pct_points,convergence_pass,overall_no_overfitting_evidence,metric,display_name,period
+0.9950791318248449,True,0.700370034623421,True,0.49999999999998934,True,True,net10_cagr_pct,Net10bp CAGR,OOS
+0.1487710587770139,True,1.0,True,0.2666666666666706,True,True,net10_mdd_pct,Net10bp MDD,OOS
+0.05147808744920328,True,0.3084398998784921,True,0.9333333333333416,True,True,net10_calmar,Net10bp Calmar,OOS
+0.30067413873873555,True,0.8300096564226611,True,1.6000000000000014,True,True,net10_sharpe,Net10bp Sharpe,OOS
+0.43325387742378374,True,0.38697034848730594,True,2.0000000000000018,True,True,net10_tail_strategy_avg_pct,Net10bp tail-month 평균수익,OOS
+0.8059634335790997,True,0.7615906111003943,True,0.6500000000000006,True,True,net10_ann_vol_pct,Net10bp 연환산 변동성,OOS
+0.9126577090660853,True,0.4338617131267912,True,4.133333333333333,True,True,avg_annual_turnover_pct,평균 연환산 Turnover,OOS
+0.8119574458753992,True,0.567497089306757,True,1.966666666666661,True,True,net10_win_rate_pct,Net10bp 월 승률,OOS

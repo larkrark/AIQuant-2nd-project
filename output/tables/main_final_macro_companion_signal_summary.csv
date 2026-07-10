@@ -1,0 +1,16 @@
+﻿signal,count_1,ratio_1
+macro_data_available,150,0.8771929824561403
+gdp_data_available,144,0.8421052631578947
+rate_up_flag,72,0.42105263157894735
+fx_up_flag,81,0.47368421052631576
+gdp_below_2_flag,72,0.42105263157894735
+gdp_stable_2_3_flag,3,0.017543859649122806
+rate_fx_risk_departure_flag,38,0.2222222222222222
+rate_fx_relief_departure_flag,28,0.16374269005847952
+policy_growth_pressure_flag,36,0.21052631578947367
+regime_neutral,66,0.38596491228070173
+regime_rate_fx_relief_departure,28,0.16374269005847952
+regime_macro_data_unavailable,21,0.12280701754385964
+regime_rate_fx_risk_departure,20,0.11695906432748537
+regime_policy_growth_pressure,18,0.10526315789473684
+regime_risk_departure_plus_growth_pressure,18,0.10526315789473684

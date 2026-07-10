@@ -1,0 +1,13 @@
+﻿번호,입력 구분,파일명/객체,필수 컬럼,설명,다음 단계,공급원,상태
+1,ETF 후보 정보,etf_info.csv,"ticker, name, asset_class, risk_group, listing_date, note",실험 대상 ETF의 기본 정보 표. 후보 선정의 출발점.,ETF 유니버스 선정,make_etf_info_table() / ETF_UNIVERSE,제공
+2,ETF 선정 기준,selection_criteria,"min_data_years, reference_year, exclude_leverage, exclude_inverse, required_asset_classes",ETF 포함/제외 기준. 최소 사용기간·레버리지/인버스 제외 등.,최종 ETF 유니버스 확정,SELECTION_CRITERIA,제공
+3,원천 가격 데이터,korea_etf.csv / 개별 가격 파일,"Date, Open, High, Low, Close, Volume",ETF별 일별 가격. 월말 가격·월간 수익률·HSI 원신호의 기초.,전처리 및 리샘플링,load_price_data() / load_volume_data(),제공
+4,전처리 가격 데이터,monthly_prices.csv,"Date, ETF별 월말 가격 컬럼",일별 데이터를 월말 기준으로 정리한 가격표.,월간 수익률 계산,make_monthly_price_table(),제공
+5,월간 수익률 데이터,monthly_returns.csv,"Date, ETF별 월간 수익률 컬럼",백테스트 성과 계산에 쓰는 월간 수익률 데이터.,신호 계산 / 성과 계산,make_monthly_return_table(),제공
+6,기준 자산 정보,benchmark_info / 변수,benchmark_ticker,상대강도 계산 기준이 되는 ETF/시장지수 정보.,상대강도 계산,BENCHMARK_TICKER,제공
+7,HSI 기본 파라미터,DEFAULT_PARAMS,"ret_window, ma_window, momentum_window, vol_window, rs_window",HSI 5지표 계산에 필요한 기간 설정(기본형 기준값).,입력 신호 계산,DEFAULT_PARAMS,제공
+8,확장 파라미터,EXTENDED_PARAMS,"ret_6m, ret_12m, ma_short_window, ma_mid_window, vol_short_window, drawdown_window, rs_short_window, shock_threshold",확장 컬럼(ret_6m·ret_12m·drawdown·shock_count·defensive_rs) 계산 조건.,확장 실험,EXTENDED_PARAMS / make_hsi_signal_inputs(include_extended=True),제공
+9,데이터 품질 점검 기준,quality_rules,"결측치 허용 기준, 최소 관측기간, 거래량/거래대금 기준",데이터 사용 가능 여부 판단 기준(결측·기간·유동성).,유니버스 정제,QUALITY_RULES,제공
+10,자산군 분류 기준,asset_class_rules,주식형 / 채권형 / 금 / 달러 / 원자재 / 대체자산 등,ETF를 자산군으로 묶는 기준(위험·방어 자산 구분).,비중 조절 규칙 설계,ASSET_CLASS_META / UNDERLYING_ASSET_META,제공
+11,신호 방향 정의,signal_direction_map.csv,"signal_name, raw_direction, hsi_sign, interpretation",각 입력 신호의 위험 악화/완화 방향 정의(부호 통일 근거).,HSI 점수화 / direction 계산,SIGNAL_DIRECTION_MAP,제공
+12,점수화 방식 설정,scaling_config,"method, window, score_range, note",원신호를 HSI 점수로 변환하는 방식(rank/z-score 비교).,HSI 점수화 비교,SCALING_CONFIG,제공

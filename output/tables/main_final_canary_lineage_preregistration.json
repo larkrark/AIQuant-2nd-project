@@ -1,0 +1,32 @@
+{
+  "experiment_id": "18_canary_lineage_benchmark",
+  "experiment_name": "HSI vs canary-style DAA/VAA/BAA proxy benchmark",
+  "version": "v1_pre_registered",
+  "equity": "069500",
+  "bond": "114260",
+  "cash_like": "153130",
+  "cost_bp": 10.0,
+  "periods_per_year": 12,
+  "momentum_windows": [
+    1,
+    3,
+    6,
+    12
+  ],
+  "oos_start": "2021-01-31",
+  "hsi_weight_file_candidates": [
+    "output/tables/main_final_final_ra_weights.csv",
+    "output/tables/main_final_dynamic_v1_weights.csv",
+    "data/processed/main_final_dynamic_v1_weights.csv",
+    "data/processed/main_final_ra_weights.csv",
+    "data/processed/main_final_all_strategy_weights.csv"
+  ],
+  "return_file_candidates": [
+    "data/processed/main_final_monthly_return_decimal.csv",
+    "data/processed/monthly_return_decimal.csv",
+    "output/tables/main_final_monthly_return_decimal.csv"
+  ],
+  "out_table_dir": "output/tables",
+  "out_figure_dir": "output/figures",
+  "out_doc_dir": "docs"
+}

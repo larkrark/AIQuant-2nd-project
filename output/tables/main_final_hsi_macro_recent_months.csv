@@ -1,0 +1,25 @@
+﻿year_month,hsi_state,state_kr,macro_data_available,gdp_data_available,macro_companion_regime_filled,hsi_risk_flag,macro_risk_flag,hsi_macro_overlap_type,macro_defense_addon,rate_level,usdkrw,gdp_growth_pct_lagged
+2024-07,neutral_watch,중립 관찰,1,1,rate_fx_relief_departure,0,0,no_risk_overlap,0.0,3.004,1384.6,4.1945921864203495
+2024-08,accident_zone,강한 위험 구간,1,1,rate_fx_relief_departure,1,0,hsi_risk_only,0.0,2.953,1335.3,4.1945921864203495
+2024-09,accident_zone,강한 위험 구간,1,1,rate_fx_relief_departure,1,0,hsi_risk_only,0.0,2.811,1319.6,4.1945921864203495
+2024-10,accident_zone,강한 위험 구간,1,1,risk_departure_plus_growth_pressure,1,1,both_hsi_and_macro_risk,0.025,2.936,1383.3,-0.18116226342448
+2024-11,accident_zone,강한 위험 구간,1,1,neutral,1,1,both_hsi_and_macro_risk,0.005,2.607,1394.7,-0.18116226342448
+2024-12,accident_zone,강한 위험 구간,1,1,neutral,1,1,both_hsi_and_macro_risk,0.005,2.597,1474.1,-0.18116226342448
+2025-01,risk_relief,위험 완화 우세,1,1,rate_fx_relief_departure,0,0,both_relief,0.0,2.573,1433.3,4.10728114727363
+2025-02,neutral_watch,중립 관찰,1,1,neutral,0,0,no_risk_overlap,0.0,2.566,1439.6,4.10728114727363
+2025-03,neutral_watch,중립 관찰,1,1,rate_fx_risk_departure,0,1,macro_risk_only,0.01,2.569,1466.5,4.10728114727363
+2025-04,neutral_watch,중립 관찰,1,1,rate_fx_relief_departure,0,0,no_risk_overlap,0.0,2.267,1438.5,-7.66921280137463
+2025-05,risk_relief,위험 완화 우세,1,1,policy_growth_pressure,0,1,macro_risk_only,0.01,2.347,1381.4,-7.66921280137463
+2025-06,risk_relief,위험 완화 우세,1,1,policy_growth_pressure,0,1,macro_risk_only,0.01,2.452,1356.4,-7.66921280137463
+2025-07,risk_relief,위험 완화 우세,1,1,rate_fx_risk_departure,0,1,macro_risk_only,0.01,2.46,1382.9,4.82739656915878
+2025-08,risk_relief,위험 완화 우세,1,1,neutral,0,0,no_risk_overlap,0.0,2.426,1388.6,4.82739656915878
+2025-09,risk_relief,위험 완화 우세,1,1,rate_fx_risk_departure,0,1,macro_risk_only,0.01,2.582,1402.2,4.82739656915878
+2025-10,risk_relief,위험 완화 우세,1,1,risk_departure_plus_growth_pressure,0,1,macro_risk_only,0.025,2.716,1423.2,1.06089813994347
+2025-11,accident_zone,강한 위험 구간,1,1,risk_departure_plus_growth_pressure,1,1,both_hsi_and_macro_risk,0.025,2.991,1464.8,1.06089813994347
+2025-12,risk_relief,위험 완화 우세,1,1,rate_fx_relief_departure,0,0,both_relief,0.0,2.952,1433.9,1.06089813994347
+2026-01,risk_relief,위험 완화 우세,1,1,neutral,0,0,no_risk_overlap,0.0,3.138,1427.0,3.84820389303044
+2026-02,risk_relief,위험 완화 우세,1,1,rate_fx_relief_departure,0,0,both_relief,0.0,3.041,1424.5,3.84820389303044
+2026-03,accident_zone,강한 위험 구간,1,1,rate_fx_risk_departure,1,1,both_hsi_and_macro_risk,0.01,3.552,1513.4,3.84820389303044
+2026-04,risk_relief,위험 완화 우세,1,0,neutral,0,0,no_risk_overlap,0.0,3.595,1476.1,
+2026-05,risk_relief,위험 완화 우세,1,0,rate_fx_risk_departure,0,1,macro_risk_only,0.01,3.731,1505.8,
+2026-06,conflict,신호 충돌,1,0,rate_fx_risk_departure,0,1,macro_risk_only,0.01,3.882,1528.6,

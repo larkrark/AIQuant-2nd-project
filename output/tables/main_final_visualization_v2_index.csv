@@ -1,0 +1,6 @@
+﻿file,path,purpose,recommended_use
+main_final_experiment_flow_diagram_v2.png,output\figures\main_final_experiment_flow_diagram_v2.png,교차 화살표를 줄이고 00~17을 기반 구축→모델 개선→최종 검증으로 재구성한 발표용 흐름도,presentation_main
+main_final_hsi_macro_overlap_timeline_v2.png,output\figures\main_final_hsi_macro_overlap_timeline_v2.png,HSI risk와 Macro risk를 0/1 선그래프 대신 overlap 상태 띠로 요약한 그림,presentation_main
+main_final_benchmark_alignment_period_cagr_heatmap_v2.png,output\figures\main_final_benchmark_alignment_period_cagr_heatmap_v2.png,Fixed 70/20/10 BM을 메인 BM으로 포함한 기간별 CAGR heatmap,presentation_main
+main_final_hsi_state_yearly_share_v2.png,output\figures\main_final_hsi_state_yearly_share_v2.png,월별 HSI 상태를 연도별 상태 점유율로 요약한 stacked bar,presentation_main
+main_final_lambda_macro_sensitivity_small_multiples_v2.png,output\figures\main_final_lambda_macro_sensitivity_small_multiples_v2.png,"15번 Lambda+macro sensitivity 결과를 CAGR, MDD, Calmar, Turnover 미니 추세 그래프로 표현",presentation_main

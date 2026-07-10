@@ -1,0 +1,2 @@
+﻿comparison,CAGR_change_pct,MDD_change_pct,avg_turnover_change_pct,decision,reason
+HSI_event_balance_filter_overlay vs HSI_final_baseline_overlay,-0.5950917037388592,0.4238453548934267,-0.17441860465116577,candidate,baseline 대비 MDD가 개선되고 평균 Turnover가 증가하지 않음

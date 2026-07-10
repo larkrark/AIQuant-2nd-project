@@ -1,0 +1,7 @@
+﻿strategy_name,combo_id,combo_name,CAGR_gap_vs_EW_pct,MDD_change_vs_EW_pct,avg_turnover_pct,max_turnover_pct,decision,reason
+EW,EW,Equal Weight,0.0,0.0,0.0,0.0,benchmark,동일가중 비교 기준
+combo_00_core5,combo_00_core5,기본 5개 HSI 점수,1.2222596383169915,-9.888274700221455,22.093023255813954,70.0,revise_or_exclude,Turnover 기준 또는 위험관리 기준 재검토 필요
+combo_01_core4_no_rs,combo_01_core4_no_rs,기본 4개 HSI 점수,1.2222596383169915,-9.888274700221455,22.093023255813954,70.0,revise_or_exclude,Turnover 기준 또는 위험관리 기준 재검토 필요
+combo_02_trend_only,combo_02_trend_only,추세 중심 신호,2.035044066476699,-7.32985004940495,20.668604651162788,70.0,revise_or_exclude,Turnover 기준 또는 위험관리 기준 재검토 필요
+combo_03_risk_damage_focus,combo_03_risk_damage_focus,추세+위험훼손 신호,0.0114432557070554,-13.153107692634347,25.523255813953483,70.0,revise_or_exclude,Turnover 기준 또는 위험관리 기준 재검토 필요
+combo_04_core5_plus_relative_speed,combo_04_core5_plus_relative_speed,기본 5개 + 상대속도,1.1886188460372482,-6.293353693726324,21.017441860465116,70.0,revise_or_exclude,Turnover 기준 또는 위험관리 기준 재검토 필요

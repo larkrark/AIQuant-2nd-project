@@ -1,0 +1,8 @@
+﻿item,value,status,note
+state_table_rows,172,OK,월말 HSI 5상태표 행 수
+valid_state_months,168,OK,insufficient_data 제외 유효 상태 월 수
+first_valid_month,2012-07,OK,첫 유효 상태 월
+last_valid_month,2026-06,OK,마지막 유효 상태 월
+state_type_count,5,OK,유효 상태 종류 수
+alignment_preview_rows,172,OK,signal_month t → return_month t+1 정렬 미리보기 행 수
+alignment_missing_return_cells,3,OK,마지막 월은 다음 달 수익률이 없어 정상 결측 가능

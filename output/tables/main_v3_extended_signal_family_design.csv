@@ -1,0 +1,6 @@
+﻿signal_name,signal_family,speed_group,raw_definition,hsi_direction_rule,expected_role,caution
+ma20_gap,trend,fast,price / MA20 - 1,높을수록 위험 완화 → 부호 반전,단기 추세 개선 또는 악화 감지,단기 잡음에 민감할 수 있음
+ma60_gap,trend,slow,price / MA60 - 1,높을수록 위험 완화 → 부호 반전,중기 추세 구조 확인,반응이 늦을 수 있음
+vol20,risk_damage,fast,20-day realized volatility,높을수록 위험 악화,단기 변동성 확대 감지,급등락 이후 일시적으로 높게 유지될 수 있음
+drawdown_60,risk_damage,slow,price / rolling 60-day max - 1,값이 낮을수록 위험 악화 → 부호 반전,누적 손상 정도 확인,회복 초기에 후행할 수 있음
+risk_vs_cash_ret20,relative_strength,fast,20-day return of asset - 20-day return of cash-like ETF,높을수록 위험 완화 → 부호 반전,위험자산이 현금성 자산 대비 강한지 확인,현금성 ETF와 비교하므로 시장 국면에 따라 해석 필요

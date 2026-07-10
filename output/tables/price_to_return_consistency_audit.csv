@@ -1,0 +1,10 @@
+﻿item,status,detail
+price_file,INFO,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\main_final_monthly_price.csv
+return_file,INFO,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\main_final_monthly_return_decimal.csv
+price_period,INFO,"2012-03-31 → 2026-06-30, rows=172"
+return_period,INFO,"2012-04-30 → 2026-06-30, rows=171"
+common_period,PASS,"2012-04-30 → 2026-06-30, rows=171"
+max_abs_diff,PASS,0.000000499609
+mean_abs_diff,INFO,0.000000251061
+strict_match_1e-10,WARN,max_abs_diff <= 1e-10
+loose_match_1e-6,PASS,max_abs_diff <= 1e-06

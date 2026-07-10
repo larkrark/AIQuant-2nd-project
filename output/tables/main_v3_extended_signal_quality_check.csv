@@ -1,0 +1,11 @@
+﻿check_item,result,status,note
+base_monthly_long_shape,516 rows x 18 columns,OK,32번 월말 신호 입력표
+monthly_extended_wide_shape,172 rows x 15 columns,OK,추가 지표 월말 wide table
+extended_long_shape,516 rows x 20 columns,OK,기존 월말 long table에 추가 지표 병합
+ma20_gap_availability,"non_null=504, missing=12, missing_ratio=0.0233",OK,rolling 계산 초기 구간에는 결측이 자연스럽게 발생
+ma60_gap_availability,"non_null=501, missing=15, missing_ratio=0.0291",OK,rolling 계산 초기 구간에는 결측이 자연스럽게 발생
+vol20_availability,"non_null=504, missing=12, missing_ratio=0.0233",OK,rolling 계산 초기 구간에는 결측이 자연스럽게 발생
+drawdown_60_availability,"non_null=501, missing=15, missing_ratio=0.0291",OK,rolling 계산 초기 구간에는 결측이 자연스럽게 발생
+risk_vs_cash_ret20_availability,"non_null=336, missing=180, missing_ratio=0.3488",OK,rolling 계산 초기 구간에는 결측이 자연스럽게 발생
+score_direction_rule,"positive=risk_worsening, negative=risk_relief",OK,기존 HSI 방향 기준과 동일하게 통일
+use_in_strategy,not_yet,INFO,이번 파일은 추가 지표 입력표 생성 단계이며 백테스트는 다음 단계에서 수행

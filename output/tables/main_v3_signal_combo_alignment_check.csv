@@ -1,0 +1,6 @@
+﻿experiment_id,valid_state_months,signal_months_used,return_months_used,first_valid_state_month,last_valid_state_month,alignment_rule,status,note
+combo_00_baseline_core,168,167,167,2012-07,2026-06,signal_month_t_to_return_month_t_plus_1,OK,월말 HSI 상태를 다음 달 수익률에 적용
+combo_01_trend_speed,168,167,167,2012-07,2026-06,signal_month_t_to_return_month_t_plus_1,OK,월말 HSI 상태를 다음 달 수익률에 적용
+combo_02_risk_damage,168,167,167,2012-07,2026-06,signal_month_t_to_return_month_t_plus_1,OK,월말 HSI 상태를 다음 달 수익률에 적용
+combo_03_relative_strength,168,167,167,2012-07,2026-06,signal_month_t_to_return_month_t_plus_1,OK,월말 HSI 상태를 다음 달 수익률에 적용
+combo_04_speed_alignment_all,168,167,167,2012-07,2026-06,signal_month_t_to_return_month_t_plus_1,OK,월말 HSI 상태를 다음 달 수익률에 적용

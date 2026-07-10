@@ -1,0 +1,16 @@
+﻿pipeline_layer,step_no,file_name,role
+final_reproducible_pipeline,0,00_final_project_config_check.py,최종 기준 파일·번들·시트·단위·역할 확인
+final_reproducible_pipeline,1,01_load_bundle_and_make_structure_tables.py,hsi_data_bundle.xlsx 로드 및 입력·출력 구조표 생성
+final_reproducible_pipeline,2,02_build_hsi_event_balance_indicator.py,20/80 분위수 기반 사건균형·위험누적지표 생성
+final_reproducible_pipeline,3,03_prepare_monthly_signal_inputs.py,일별 HSI 신호를 월말 기준으로 정리
+final_reproducible_pipeline,4,04_build_hsi_state5_baseline.py,HSI 5상태 기준선 생성
+final_reproducible_pipeline,5,05_backtest_baseline_allocation_rule.py,최종 상태별 목표 비중표 기준 baseline 백테스트
+final_reproducible_pipeline,6,06_build_relative_speed_diagnostics.py,빠른 신호·느린 신호·상대속도 진단
+final_reproducible_pipeline,7,07_run_signal_combo_backtests.py,기본 신호·확장 신호·상대속도 보조 조합 비교
+final_reproducible_pipeline,8,08_event_balance_state_diagnostic.py,HSI 5상태와 사건균형지표 정합성 확인
+final_reproducible_pipeline,9,09_event_balance_filter_backtest.py,사건균형지표를 보조 필터로 넣은 전략 실험
+final_reproducible_pipeline,10,10_inertia_lambda_experiment.py,λ 기반 부분 조정·Turnover·거래비용 실험
+final_reproducible_pipeline,11,11_theta_sensitivity_experiment.py,θ 민감도 검증
+market_event_calendar_layer,50,50_build_market_event_calendar_table.py,외부 사건 달력을 표준 CSV로 변환
+market_event_calendar_layer,51,51_align_hsi_state_with_market_events.py,HSI 상태와 시장 사건 구간을 사후 대조
+market_event_calendar_layer,52,52_plot_event_annotated_hsi_timeline.py,사건 주석 HSI 타임라인 생성

@@ -1,0 +1,6 @@
+﻿source_file,source_type,rows,strategies,status,note
+main_final_baseline_backtest_timeseries.csv,baseline,344,"EW, HSI_final_baseline_overlay",OK,최종 후보 선정 입력으로 사용
+main_final_event_balance_filter_backtest_timeseries.csv,event_balance_filter,516,"EW, HSI_event_balance_filter_overlay, HSI_final_baseline_overlay",OK,최종 후보 선정 입력으로 사용
+main_final_lambda_backtest_timeseries.csv,lambda,1032,"EW, lambda_0.1, lambda_0.3, lambda_0.5, lambda_0.7, lambda_1.0",OK,최종 후보 선정 입력으로 사용
+main_final_signal_combo_backtest_timeseries.csv,signal_combo,1032,"EW, combo_00_core5, combo_01_core4_no_rs, combo_02_trend_only, combo_03_risk_damage_focus, combo_04_core5_plus_relative_speed",OK,최종 후보 선정 입력으로 사용
+main_final_theta_backtest_timeseries.csv,theta,1032,"EW, theta_0.10, theta_0.15, theta_0.20, theta_0.25, theta_0.30",OK,최종 후보 선정 입력으로 사용

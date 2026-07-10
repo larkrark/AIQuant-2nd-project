@@ -1,0 +1,6 @@
+﻿allocation_rule_name,hsi_state,state_kr,069500,114260,153130,risk_weight_pct,bond_weight_pct,cash_weight_pct,rule_note
+final_baseline_state_target_weights_v1,risk_relief,위험 완화 우세,0.7,0.2,0.1,70.0,20.0,10.0,위험 완화 우세. 위험자산 비중을 높이고 방어자산 비중을 낮춘다.
+final_baseline_state_target_weights_v1,neutral_watch,중립 관찰,0.5,0.35,0.15,50.0,35.0,15.0,중립 관찰. 위험자산과 방어자산을 균형 있게 배분한다.
+final_baseline_state_target_weights_v1,conflict,신호 충돌,0.35,0.4,0.25,35.0,40.0,25.0,위험 완화와 위험 악화 신호가 충돌하는 상태로 보고 중간 방어 비중을 적용한다.
+final_baseline_state_target_weights_v1,risk_warning,위험 악화 우세,0.2,0.45,0.35,20.0,45.0,35.0,위험 악화 우세. 위험자산 비중을 줄이고 채권·현금성 방어자산을 확대한다.
+final_baseline_state_target_weights_v1,accident_zone,강한 위험 구간,0.0,0.3,0.7,0.0,30.0,70.0,강한 위험 구간. 위험자산 비중을 제거하고 현금성 방어자산 중심으로 대기한다.

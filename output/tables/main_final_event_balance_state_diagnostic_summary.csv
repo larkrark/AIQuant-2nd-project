@@ -1,0 +1,5 @@
+﻿diagnostic_item,value,months,interpretation,status
+risk_state_positive_balance_ratio,0.7083333333333334,48,risk_warning/accident_zone에서 사건균형이 위험 우세인지 확인,OK
+relief_state_negative_balance_ratio,0.4358974358974359,78,risk_relief에서 사건균형이 완화 우세인지 확인,OK
+conflict_medium_or_high_intensity_ratio,1.0,4,conflict에서 극단 신호가 많이 누적되는지 확인,OK
+valid_months,165.0,165,사건균형지표와 HSI 상태가 모두 유효한 월 수,OK

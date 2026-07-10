@@ -1,0 +1,10 @@
+﻿check_item,result,status,note
+selected_etf_count,3,OK,최종 ETF 3종 구성 여부
+required_asset_classes,"bond, equity, money_market",OK,equity / bond / money_market 포함 여부
+monthly_prices_shape,172 rows x 3 columns,OK,월말 가격표 생성 여부
+monthly_returns_shape,171 rows x 3 columns,OK,월간 수익률표 생성 여부
+total_missing_after_load,0,OK,load_price_data 내부 ffill 이후 결측치
+liquidity_pass_count,3,OK,거래량/거래대금 기준 통과 ETF 수
+hsi_snapshot_rows,3,OK,최근일 HSI 스냅샷 생성 여부
+hsi_raw_scores_shape,3486 rows x 15 columns,OK,HSI 원점수 테이블 생성 여부
+benchmark_rs_snapshot,"score_rs=nan, rs_note=",OK,069500은 benchmark 자기비교이므로 NaN 또는 benchmark 표기가 자연스러움

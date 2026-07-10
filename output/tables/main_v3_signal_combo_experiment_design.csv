@@ -1,0 +1,6 @@
+﻿experiment_id,experiment_name,signal_set_type,signal_columns,signal_count,min_valid_signals,theta_common,conflict_direction_band,allocation_rule,main_question
+combo_00_baseline_core,기본 HSI 핵심 신호,baseline,score_return|score_ma_pos|score_momentum|score_vol,4,3,0.15,0.2,main_v2b_fixed,기본 HSI 신호만으로 EW 대비 방어 효과가 있는가?
+combo_01_trend_speed,단기-중기 추세 보강,trend_speed,score_return|score_ma_pos|score_momentum|score_vol|score_ma20_gap|score_ma60_gap,6,4,0.15,0.2,main_v2b_fixed,단기·중기 추세 보강이 상태분류와 성과를 개선하는가?
+combo_02_risk_damage,위험강도·누적손상 보강,risk_damage,score_return|score_ma_pos|score_momentum|score_vol|score_vol20|score_drawdown_60,6,4,0.15,0.2,main_v2b_fixed,변동성 확대와 누적 손상 신호가 방어 효과를 개선하는가?
+combo_03_relative_strength,현금성 자산 대비 상대강도 보강,relative_strength,score_return|score_ma_pos|score_momentum|score_vol|score_risk_vs_cash_ret20,5,3,0.15,0.2,main_v2b_fixed,위험자산이 현금성 자산 대비 약해지는 구간을 더 잘 포착하는가?
+combo_04_speed_alignment_all,단기-중기 신호 정렬 통합,speed_alignment_all,score_return|score_ma_pos|score_momentum|score_vol|score_ma20_gap|score_ma60_gap|score_vol20|score_drawdown_60|score_risk_vs_cash_ret20,9,6,0.15,0.2,main_v2b_fixed,추세·위험손상·상대강도 신호를 함께 쓰면 방어형 overlay 성과가 개선되는가?

@@ -1,0 +1,4 @@
+﻿ticker,name,date,direction,intensity,signal,score_return,score_ma_pos,score_momentum,score_vol,score_rs
+069500,KODEX 200,2026-06-29,0.0636,0.4148,watch,3.787,-1.39,-7.389,8.172,
+114260,KODEX 국고채3년,2026-06-29,-0.2689,0.3002,watch,-4.338,-3.708,-3.349,0.781,-2.832
+153130,KODEX 단기채권PLUS,2026-06-29,-0.0229,0.2004,watch,-2.302,-0.707,0.365,4.073,-2.571

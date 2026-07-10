@@ -1,0 +1,10 @@
+﻿item,value,status,note
+monthly_scores_wide_rows,172,OK,월말 HSI score wide 행 수
+monthly_signal_long_rows,516,OK,월말 HSI signal long 행 수
+monthly_signal_wide_rows,172,OK,월말 HSI signal wide 행 수
+ticker_count_in_long,3,OK,long table 내 ETF 수
+first_signal_month,2012-03,OK,월말 신호 첫 월
+last_signal_month,2026-06,OK,월말 신호 마지막 월
+alignment_preview_rows,172,OK,signal_month t → return_month t+1 정렬 행 수
+alignment_missing_return_cells,3,OK,마지막 월은 다음 달 수익률이 없어 정상 결측 가능
+event_balance_columns_merged,"event_balance_raw, event_intensity_raw, event_balance_13612w, event_intensity_13612w, event_balance_13612w_label, event_intensity_13612w_label",OK,02번 결과가 있으면 월말 신호표에 병합

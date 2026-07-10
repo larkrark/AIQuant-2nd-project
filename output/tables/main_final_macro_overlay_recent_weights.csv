@@ -1,0 +1,13 @@
+﻿year_month,return_year_month,hsi_state,state_kr,macro_data_available,macro_risk_flag,macro_defense_addon,macro_hsi_overlap_type,overlay_strength,macro_overlay_delta,macro_companion_regime,base_weight_069500,weight_069500,base_weight_114260,weight_114260,base_weight_153130,weight_153130
+2025-07,2025-08,risk_relief,위험 완화 우세,1,1,0.01,macro_risk_only,0.25,0.0025,rate_fx_risk_departure,0.7,0.6975,0.2,0.20075,0.1,0.10175000000000001
+2025-08,2025-09,risk_relief,위험 완화 우세,1,0,0.0,both_relief_or_neutral,0.0,0.0,neutral,0.7,0.7000000000000001,0.2,0.20000000000000004,0.1,0.10000000000000002
+2025-09,2025-10,risk_relief,위험 완화 우세,1,1,0.01,macro_risk_only,0.25,0.0025,rate_fx_risk_departure,0.7,0.6975,0.2,0.20075,0.1,0.10175000000000001
+2025-10,2025-11,risk_relief,위험 완화 우세,1,1,0.025,macro_risk_only,0.25,0.00625,risk_departure_plus_growth_pressure,0.7,0.69375,0.2,0.201875,0.1,0.10437500000000001
+2025-11,2025-12,accident_zone,강한 위험 구간,1,1,0.025,both_hsi_and_macro_risk,1.0,0.0,risk_departure_plus_growth_pressure,0.0,0.0,0.3,0.3,0.7,0.7
+2025-12,2026-01,risk_relief,위험 완화 우세,1,0,0.0,both_relief_or_neutral,0.0,0.0,rate_fx_relief_departure,0.7,0.7000000000000001,0.2,0.20000000000000004,0.1,0.10000000000000002
+2026-01,2026-02,risk_relief,위험 완화 우세,1,0,0.0,both_relief_or_neutral,0.0,0.0,neutral,0.7,0.7000000000000001,0.2,0.20000000000000004,0.1,0.10000000000000002
+2026-02,2026-03,risk_relief,위험 완화 우세,1,0,0.0,both_relief_or_neutral,0.0,0.0,rate_fx_relief_departure,0.7,0.7000000000000001,0.2,0.20000000000000004,0.1,0.10000000000000002
+2026-03,2026-04,accident_zone,강한 위험 구간,1,1,0.01,both_hsi_and_macro_risk,1.0,0.0,rate_fx_risk_departure,0.0,0.0,0.3,0.3,0.7,0.7
+2026-04,2026-05,risk_relief,위험 완화 우세,1,0,0.0,both_relief_or_neutral,0.0,0.0,neutral,0.7,0.7000000000000001,0.2,0.20000000000000004,0.1,0.10000000000000002
+2026-05,2026-06,risk_relief,위험 완화 우세,1,1,0.01,macro_risk_only,0.25,0.0025,rate_fx_risk_departure,0.7,0.6975,0.2,0.20075,0.1,0.10175000000000001
+2026-06,2026-07,conflict,신호 충돌,1,1,0.01,macro_risk_only,0.5,0.005,rate_fx_risk_departure,0.35,0.345,0.4,0.4015,0.25,0.2535

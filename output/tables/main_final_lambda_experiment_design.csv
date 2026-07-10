@@ -1,0 +1,6 @@
+﻿lambda_id,lambda_value,adjustment_formula,allocation_rule_name,purpose
+lambda_1.0,1.0,actual_weight_t = previous_weight + lambda * (target_weight_t - previous_weight),final_baseline_state_target_weights_v1,Turnover와 방어 성과 사이의 균형 확인
+lambda_0.7,0.7,actual_weight_t = previous_weight + lambda * (target_weight_t - previous_weight),final_baseline_state_target_weights_v1,Turnover와 방어 성과 사이의 균형 확인
+lambda_0.5,0.5,actual_weight_t = previous_weight + lambda * (target_weight_t - previous_weight),final_baseline_state_target_weights_v1,Turnover와 방어 성과 사이의 균형 확인
+lambda_0.3,0.3,actual_weight_t = previous_weight + lambda * (target_weight_t - previous_weight),final_baseline_state_target_weights_v1,Turnover와 방어 성과 사이의 균형 확인
+lambda_0.1,0.1,actual_weight_t = previous_weight + lambda * (target_weight_t - previous_weight),final_baseline_state_target_weights_v1,Turnover와 방어 성과 사이의 균형 확인

@@ -1,0 +1,7 @@
+﻿param,baseline_value,grid_min,grid_max,stable_min,stable_max,n_stable_of_total,full_grid_stable
+volatility_z_high,1.0,0.5,2.0,0.5,2.0,6/6,True
+drawdown_low,-0.1,-0.2,-0.05,-0.15,-0.05,5/6,False
+relief_persist_months,3.0,1.0,6.0,1.0,6.0,6/6,True
+volatility_z_calm,0.0,-0.5,0.5,-0.5,0.5,5/5,True
+momentum_z_positive,0.0,-0.5,0.5,-0.5,0.5,5/5,True
+macro_risk_high,2.0,1.0,3.0,1.0,3.0,3/3,True

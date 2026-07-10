@@ -1,0 +1,2 @@
+﻿input_file,detected_unit,decimal_output,percent_backup_output,max_abs_input,p95_abs_input,note
+C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\monthly_returns_pct.csv,percent,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\monthly_returns.csv,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\monthly_returns_pct.csv,34.9432,7.0404599999999995,monthly_returns.csv는 백테스트용 decimal 단위로 저장했습니다.

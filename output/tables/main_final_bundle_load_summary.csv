@@ -1,0 +1,11 @@
+﻿item,rows,columns,output_path,status,note
+asset_class,3,15,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\main_final_asset_class.csv,OK,번들 시트 로드 후 CSV 저장
+monthly_price,172,4,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\main_final_monthly_price.csv,OK,번들 시트 로드 후 CSV 저장
+monthly_return_decimal,171,4,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\main_final_monthly_return_decimal.csv,OK,번들 시트 로드 후 CSV 저장
+monthly_return_pct,171,4,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\main_final_monthly_return_pct.csv,OK,번들 시트 로드 후 CSV 저장
+signal_inputs,10461,13,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\main_final_signal_inputs.csv,OK,번들 시트 로드 후 CSV 저장
+hsi_scaled_scores,3487,16,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\main_final_hsi_scaled_scores.csv,OK,번들 시트 로드 후 CSV 저장
+hsi_direction,3487,4,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\main_final_hsi_direction.csv,OK,번들 시트 로드 후 CSV 저장
+hsi_signal,3487,4,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\main_final_hsi_signal_raw3.csv,OK,번들 시트 로드 후 CSV 저장
+signal_direction_map,5,4,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\data\processed\main_final_signal_direction_map.csv,OK,번들 시트 로드 후 CSV 저장
+return_unit_check,3,8,C:\quant_lec\quant_model\day5\day5_hsi_dynamic_allocation_project\AIQuant-2nd-project\output\tables\main_final_bundle_return_unit_check.csv,OK,monthly_return_pct와 monthly_return_decimal 단위 일관성 확인

@@ -1,0 +1,8 @@
+﻿check_item,result,status,note
+valid_state_months,168,OK,33번 HSI 상태표에서 state_valid=True인 월 수
+signal_months_used,167,OK,다음 달 수익률이 존재해 실제 백테스트에 사용된 신호 월 수
+return_months_used,167,OK,실제 백테스트 수익률 월 수
+first_valid_state_month,2012-07,OK,첫 유효 HSI 상태 월
+last_valid_state_month,2026-06,OK,마지막 유효 HSI 상태 월. 마지막 월은 다음 달 수익률이 없으면 백테스트에서 제외될 수 있음.
+alignment_rule,signal_month_t_to_return_month_t_plus_1,OK,월말 HSI 상태를 다음 달 수익률에 적용하여 look-ahead bias를 피함
+monthly_return_unit,input_percent_converted_to_decimal,OK,monthly_returns.csv의 % 수익률을 백테스트 내부에서 decimal로 변환

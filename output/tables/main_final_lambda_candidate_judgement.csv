@@ -1,0 +1,7 @@
+﻿strategy_name,lambda_value,CAGR_change_vs_lambda1_pct,MDD_change_vs_lambda1_pct,avg_turnover_change_vs_lambda1_pct,decision,reason
+EW,,,,,benchmark,동일가중 비교 기준
+lambda_0.1,0.1,0.9227930398352235,8.71525979864457,-19.57801504503737,candidate,Turnover가 감소하고 MDD 악화가 제한적
+lambda_0.3,0.3,1.3528499361213466,8.239706937211421,-15.143342268905423,candidate,Turnover가 감소하고 MDD 악화가 제한적
+lambda_0.5,0.5,0.8450147546078313,5.940140621514278,-10.95519240930243,candidate,Turnover가 감소하고 MDD 악화가 제한적
+lambda_0.7,0.7,0.33232828942664305,3.494828360761293,-6.6869204800285775,candidate,Turnover가 감소하고 MDD 악화가 제한적
+lambda_1.0,1.0,0.0,0.0,0.0,baseline_lambda,목표 비중 즉시 이동 기준

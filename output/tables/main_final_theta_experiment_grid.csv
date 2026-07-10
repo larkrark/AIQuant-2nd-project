@@ -1,0 +1,6 @@
+﻿theta_id,theta_common,accident_extra,conflict_direction_band,score_cols,allocation_rule_name,purpose
+theta_0.10,0.1,0.2,0.2,"score_return, score_ma_pos, score_momentum, score_vol, score_rs",final_baseline_state_target_weights_v1,HSI 상태분류 민감도 검증
+theta_0.15,0.15,0.2,0.2,"score_return, score_ma_pos, score_momentum, score_vol, score_rs",final_baseline_state_target_weights_v1,HSI 상태분류 민감도 검증
+theta_0.20,0.2,0.2,0.2,"score_return, score_ma_pos, score_momentum, score_vol, score_rs",final_baseline_state_target_weights_v1,HSI 상태분류 민감도 검증
+theta_0.25,0.25,0.2,0.2,"score_return, score_ma_pos, score_momentum, score_vol, score_rs",final_baseline_state_target_weights_v1,HSI 상태분류 민감도 검증
+theta_0.30,0.3,0.2,0.2,"score_return, score_ma_pos, score_momentum, score_vol, score_rs",final_baseline_state_target_weights_v1,HSI 상태분류 민감도 검증

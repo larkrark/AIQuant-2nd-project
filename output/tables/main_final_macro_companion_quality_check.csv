@@ -1,0 +1,13 @@
+﻿check_item,result,status,note
+row_count,171,OK,main_final 월 기준으로 정렬된 macro companion row 수
+date_range,2012-04 ~ 2026-06,OK,macro companion feature coverage
+missing_count_rate_level,21,OK,rate_level 결측치 수
+missing_count_rate_change_1m,22,OK,rate_change_1m 결측치 수
+missing_count_usdkrw,21,OK,usdkrw 결측치 수
+missing_count_usdkrw_return_1m,22,OK,usdkrw_return_1m 결측치 수
+missing_count_gdp_growth_decimal_lagged,27,OK,gdp_growth_decimal_lagged 결측치 수
+missing_count_gdp_growth_pct_lagged,27,OK,gdp_growth_pct_lagged 결측치 수
+missing_count_rate_fx_departure,21,OK,rate_fx_departure 결측치 수
+missing_count_macro_defense_addon,21,OK,macro_defense_addon 결측치 수
+rate_fx_departure_range,0.0000 ~ 1.0000,OK,이탈률은 0~1 범위여야 합니다.
+macro_defense_addon_max,0.0250,OK,방어 보조값은 최대 0.03으로 제한합니다.
