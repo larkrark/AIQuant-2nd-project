@@ -1,0 +1,7 @@
+﻿variant,selected_lambda,count
+train60_test12,0.1,3
+train60_test12,0.3,6
+train72_test12_colab,0.1,3
+train72_test12_colab,0.3,5
+train72_test24,0.1,2
+train72_test24,0.3,2

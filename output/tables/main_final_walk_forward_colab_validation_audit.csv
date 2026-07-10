@@ -1,0 +1,5 @@
+﻿check,status,evidence
+return_unit_decimal,PASS,max_abs_return=0.349432
+hsi_state_loaded,PASS,"state_mode=applied, source=main_final_portfolio_composition_dynamic_v1.csv, non_null_states=171"
+weight_sum_1,PASS,max_abs_sum_error=0.000000000000
+parameter_lock,PASS,"{""equity"": ""069500"", ""bond"": ""114260"", ""cash_like"": ""153130"", ""cost_bp"": 10.0, ""periods_per_year"": 12, ""lambda_candidates"": [0.1, 0.3, 0.5, 0.7, 1.0], ""turnover_cap_ann"": 0.2, ""target_risk_relief"": [0.7, 0.2, 0.1], ""target_neutral_watch"": [0.5, 0.35, 0.15], ""target_conflict"": [0.35, 0.4, 0.25], ""target_risk_warning"": [0.2, 0.45, 0.35], ""target_accident_zone"": [0.0, 0.3, 0.7]}"
