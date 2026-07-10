@@ -1,0 +1,8 @@
+﻿항목,자동판정
+시점 정합(t신호→t+1적용),통과
+rolling 계산 미래값 금지,"코드 규약(30번·30-M: rolling만 사용, 전구간 z 금지) — 수동 확인 병행"
+grid 사전고정,config.py 고정 — 변경 이력 주석 확인
+MacroRisk 조건 반영,30-M에서 factor_inputs_monthly.csv의 MacroRisk 열을 읽어 macro_risk_score>=2 조건으로 사용
+OOS 격리(후보선정에 미사용),CANDIDATES 선정 근거가 IS·full-grid인지 수동 확인
+비용 민감도 확인,E28/E29 cagr_net_*bp 열 존재 — 통과
+다지표 판단(CAGR 단독 금지),MDD·Calmar·Turnover 동시 산출 — 통과

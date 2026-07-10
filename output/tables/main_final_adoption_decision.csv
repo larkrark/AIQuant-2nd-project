@@ -1,0 +1,6 @@
+﻿strategy,segment,calmar_net,mdd_pct,tail_avg_pct,avg_turnover_pct,①calmar≥0.9×sym,②mdd_worsen≤2pp,③tail_worsen≤0.3pp,④turnover≤1.5×sym0.3,non_inferior,판정
+asym_up0.1_down0.3,OOS(net10bp),1.2671339924776677,-9.048832255332462,-3.2529794230780373,4.809068164981848,True,True,True,True,True,채택 후보(시변 기본 layer) — 8게이트 통과 조건부
+asym_up0.1_down0.5,OOS(net10bp),1.2789267689067756,-7.154169922603481,-2.646085899802968,5.781739948213695,True,True,True,True,True,채택 후보(시변 기본 layer) — 8게이트 통과 조건부
+asym_up0.2_down0.3,OOS(net10bp),1.1763457925249858,-12.718641216613014,-4.567728046106813,6.541429184670925,True,True,True,True,True,채택 후보(시변 기본 layer) — 8게이트 통과 조건부
+dynamic_v1,OOS(net10bp),1.470995842466373,-12.630488487971592,-4.710169716139915,4.835315985880047,True,True,True,True,True,채택 후보(시변 기본 layer) — 8게이트 통과 조건부
+dynamic_v1_macro,OOS(net10bp),1.417976317659076,-12.816385860304724,-4.853248165501252,4.11586639940063,True,True,True,True,True,채택 후보(시변 기본 layer) — 8게이트 통과 조건부
