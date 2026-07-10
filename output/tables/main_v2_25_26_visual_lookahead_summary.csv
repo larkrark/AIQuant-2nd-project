@@ -1,0 +1,9 @@
+﻿assumption,method,strategy,rows_checked,min_lag_days,median_lag_days,lookahead_fail_count,result
+25_daily_rebalance,rank,EW,2999,1,16.0,0,PASS
+25_daily_rebalance,rank,HSI_state5_overlay,2999,1,16.0,0,PASS
+25_daily_rebalance,zscore,EW,2999,1,16.0,0,PASS
+25_daily_rebalance,zscore,HSI_state5_overlay,2999,1,16.0,0,PASS
+26_monthly_hold_daily_valuation,rank,EW,2999,1,16.0,0,PASS
+26_monthly_hold_daily_valuation,rank,HSI_state5_overlay,2999,1,16.0,0,PASS
+26_monthly_hold_daily_valuation,zscore,EW,2999,1,16.0,0,PASS
+26_monthly_hold_daily_valuation,zscore,HSI_state5_overlay,2999,1,16.0,0,PASS
