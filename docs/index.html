@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--
+  HSI 연구 대시보드 — stlite (서버리스 Streamlit) 배포용
+  ─────────────────────────────────────────────────────
+  배포: GitHub repo Settings > Pages > Source: "Deploy from a branch",
+        Branch: main, Folder: /docs 선택 후 저장.
+        약 1분 뒤 https://larkrark.github.io/AIQuant-2nd-project/ 에서 접속 가능.
+  로컬 테스트: docs/ 폴더에서 `python -m http.server 8000` 실행 후
+        http://localhost:8000 접속. (file:// 로 직접 열면 상대경로 fetch가 막혀 동작 안 함)
+  주의: plotly는 stlite 알려진 이슈(altair 충돌)로 5.x에 고정함.
+-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>HSI 연구 대시보드</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@stlite/browser@1.8.1/build/stlite.css"
+  />
+  <style>
+    #root:empty::before {
+      content: "대시보드 로딩 중... 첫 접속 시 Python 패키지 다운로드로 30초~1분 걸릴 수 있습니다.";
+      display: block;
+      padding: 2rem;
+      font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module">
+    import { mount } from "https://cdn.jsdelivr.net/npm/@stlite/browser@1.8.1/build/stlite.js";
+
+    // 캐시 버스팅: 브라우저가 수정 전 .py/.csv를 캐시에서 재사용하는 문제 방지
+    const v = Date.now();
+    const u = (path) => ({ url: `${path}?v=${v}` });
+
+    mount(
+      {
+        requirements: ["pandas", "numpy", "plotly==5.24.1"],
+        entrypoint: "app.py",
+        files: {
+          "app.py": u("./app.py"),
+          "tab/__init__.py": "",
+          "tab/research_log.py": u("./tab/research_log.py"),
+          "tab/model_selection_dynamic.py": u("./tab/model_selection_dynamic.py"),
+          "tab/viz_hsi_candidate_tab.py": u("./tab/viz_hsi_candidate_tab.py"),
+          "tab/23_main_final_report_candidate_timeseries_subset.csv": u(
+            "./tab/23_main_final_report_candidate_timeseries_subset.csv"
+          ),
+          "tab/23_main_final_report_lambda_family_table.csv": u(
+            "./tab/23_main_final_report_lambda_family_table.csv"
+          ),
+          "tab/23_main_final_report_candidate_shortlist.csv": u(
+            "./tab/23_main_final_report_candidate_shortlist.csv"
+          ),
+          "tab/23_main_final_report_candidate_cost_pivot.csv": u(
+            "./tab/23_main_final_report_candidate_cost_pivot.csv"
+          ),
+        },
+      },
+      document.getElementById("root")
+    );
+  </script>
+</body>
+</html>
