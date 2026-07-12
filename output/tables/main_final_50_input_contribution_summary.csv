@@ -1,0 +1,6 @@
+﻿score_variable,signal_label,total_months,raw_valid_months,contribution_valid_months,raw_valid_ratio,absolute_contribution_sum,absolute_contribution_share,mean_signed_direction_contribution,mean_absolute_direction_contribution,is_active_in_contribution,exclusion_reason
+score_momentum,모멘텀(momentum),172,168,168,0.976744186,17.59802097,0.281437033,-0.018878126,0.104750125,TRUE,
+score_ma_pos,이동평균 대비 위치(ma_pos),172,169,168,0.98255814,15.59743031,0.249442509,-0.015837846,0.092841847,TRUE,
+score_return,수익률(return),172,168,168,0.976744186,15.40722879,0.246400704,-0.004306277,0.091709695,TRUE,
+score_vol,변동성(vol),172,168,168,0.976744186,13.92647893,0.222719754,0.003304935,0.082895708,TRUE,
+score_rs,상대강도(rs),172,0,0,0,0,0,,,FALSE,all_values_missing_or_not_provided

@@ -1,0 +1,26 @@
+﻿hsi_state,months,score_variable,signal_label,mean_risk_contribution,mean_relief_contribution,mean_direction_contribution,mean_intensity_contribution,valid_contribution_months
+risk_relief,81,score_return,수익률(return),0.004916994,0.088916732,-0.083999738,0.093833726,81
+risk_relief,81,score_ma_pos,이동평균 대비 위치(ma_pos),0.00049671,0.10422435,-0.10372764,0.10472106,81
+risk_relief,81,score_momentum,모멘텀(momentum),0.004007212,0.11284796,-0.108840748,0.116855172,81
+risk_relief,81,score_vol,변동성(vol),0.017673033,0.058172284,-0.040499251,0.075845316,81
+risk_relief,81,score_rs,상대강도(rs),,,,,0
+neutral_watch,35,score_return,수익률(return),0.029487,0.02006908,0.00941792,0.04955608,35
+neutral_watch,35,score_ma_pos,이동평균 대비 위치(ma_pos),0.015834992,0.015944843,-0.000109851,0.031779834,35
+neutral_watch,35,score_momentum,모멘텀(momentum),0.023468226,0.021648738,0.001819488,0.045116964,35
+neutral_watch,35,score_vol,변동성(vol),0.024432126,0.027197359,-0.002765233,0.051629485,35
+neutral_watch,35,score_rs,상대강도(rs),,,,,0
+conflict,4,score_return,수익률(return),0.062372172,0.012889786,0.049482387,0.075261958,4
+conflict,4,score_ma_pos,이동평균 대비 위치(ma_pos),0.069272169,0.012222949,0.05704922,0.081495118,4
+conflict,4,score_momentum,모멘텀(momentum),0.057608644,0.04742794,0.010180704,0.105036584,4
+conflict,4,score_vol,변동성(vol),0.04853494,0.116469341,-0.067934401,0.165004281,4
+conflict,4,score_rs,상대강도(rs),,,,,0
+risk_warning,14,score_return,수익률(return),0.078049592,0.005738054,0.072311539,0.083787646,14
+risk_warning,14,score_ma_pos,이동평균 대비 위치(ma_pos),0.047699029,0.003397041,0.044301988,0.051096069,14
+risk_warning,14,score_momentum,모멘텀(momentum),0.056347377,0.011357074,0.044990303,0.067704451,14
+risk_warning,14,score_vol,변동성(vol),0.061299273,0.013522165,0.047777108,0.074821437,14
+risk_warning,14,score_rs,상대강도(rs),,,,,0
+accident_zone,34,score_return,수익률(return),0.134393607,0.000846374,0.133547233,0.13523998,34
+accident_zone,34,score_ma_pos,이동평균 대비 위치(ma_pos),0.14497067,0.000953002,0.144017668,0.145923672,34
+accident_zone,34,score_momentum,모멘텀(momentum),0.14846994,0.004049167,0.144420772,0.152519107,34
+accident_zone,34,score_vol,변동성(vol),0.114761305,0.010781609,0.103979695,0.125542914,34
+accident_zone,34,score_rs,상대강도(rs),,,,,0

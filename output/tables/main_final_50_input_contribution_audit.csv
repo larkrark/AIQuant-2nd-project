@@ -1,0 +1,10 @@
+﻿audit_item,comparison,comparable_rows,mismatch_rows,max_abs_error,mean_abs_error,tolerance,status
+risk_component,risk_component_reconstructed vs risk_component,168,0,1.11E-16,3.14E-17,1.00E-10,OK
+relief_component,relief_component_reconstructed vs relief_component,168,0,1.11E-16,3.32E-17,1.00E-10,OK
+state_direction,state_direction_reconstructed vs state_direction,168,0,1.11E-16,4.68E-17,1.00E-10,OK
+state_intensity,state_intensity_reconstructed vs state_intensity,168,0,1.11E-16,4.03E-17,1.00E-10,OK
+valid_score_count,valid_score_count_reconstructed vs valid_score_count,172,0,0,0,1.00E-10,OK
+hsi_state,hsi_state_reconstructed vs hsi_state,172,0,,,,OK
+missing_months_in_input,state table only,172,0,,,,OK
+missing_months_in_state_table,input table only,172,0,,,,OK
+all_fields_row_match,all reconstructed fields,172,0,,,,OK

@@ -1,0 +1,9 @@
+﻿calculation_item,formula,meaning
+variable_risk_contribution,"max(score_j_t, 0) / (valid_score_count_t * 10)",변수 j가 위험 악화 성분에 더한 내부 계산값
+variable_relief_contribution,"max(-score_j_t, 0) / (valid_score_count_t * 10)",변수 j가 위험 완화 성분에 더한 내부 계산값
+variable_direction_contribution,score_j_t / (valid_score_count_t * 10),변수 j가 최종 direction에 더하거나 뺀 내부 계산값
+variable_intensity_contribution,abs(score_j_t) / (valid_score_count_t * 10),변수 j가 최종 intensity에 더한 내부 계산값
+risk_component,sum(variable_risk_contribution_j_t),위험 악화 방향 기여의 합
+relief_component,sum(variable_relief_contribution_j_t),위험 완화 방향 기여의 합
+state_direction,risk_component - relief_component,"양수는 위험 악화, 음수는 위험 완화 방향"
+state_intensity,risk_component + relief_component,방향과 무관한 전체 신호 강도
