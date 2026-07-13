@@ -1,26 +1,32 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="HSI 연구 대시보드",
+    page_title="HSI 기반 ETF 방어형 RoboAdvisor",
     page_icon="📊",
     layout="wide",
 )
 
-from tab.research_log import render_research_log
-from tab.model_selection_dynamic import render_model_selection_dynamic
-from tab.viz_hsi_candidate_tab import render_viz_hsi_candidate
+from tab.home import render_home
+from tab.experiments import render_experiments
 
-st.title("HSI 기반 ETF 방어형 Overlay 연구 대시보드")
-
-tab1, tab2, tab3 = st.tabs(
-    ["연구일지", "동적 모델 셀렉션", "후보 전략 시각화"]
+DRIVE_URL = (
+    "https://drive.google.com/drive/folders/"
+    "1jG4h1_-EZi40-aIPqgahfH7EyJT2zXtU?usp=drive_link"
 )
 
-with tab1:
-    render_research_log()
+PAGES = {
+    "메인": render_home,
+    "실험결과": render_experiments,
+}
 
-with tab2:
-    render_model_selection_dynamic()
+with st.sidebar:
+    st.markdown("## HSI RoboAdvisor")
+    page = st.radio("페이지", list(PAGES.keys()), label_visibility="collapsed")
+    st.link_button("📄 문서 (Google Drive)", DRIVE_URL, use_container_width=True)
+    st.divider()
+    st.caption(
+        "시장상태 해석(HSI) × 실행속도 조절(λ)로\n"
+        "낙폭을 관리하는 방어형 ETF 오버레이"
+    )
 
-with tab3:
-    render_viz_hsi_candidate()
+PAGES[page]()
